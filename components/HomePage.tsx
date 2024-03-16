@@ -75,7 +75,6 @@ const HomePage = () => {
               height={160}
               alt="Logo"
               objectFit="cover"
-              priority
             />
             <motion.div
               className="bg-white absolute top-0 left-0"
@@ -148,7 +147,6 @@ const HomePage = () => {
             layout="fill"
             objectFit="cover"
             alt="Thumnail"
-            priority
           />
         </div>
       )}
