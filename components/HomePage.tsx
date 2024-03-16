@@ -17,23 +17,12 @@ enum StepEnums {
 }
 
 const HomePage = () => {
-  const draw = {
-    hidden: { pathLength: 0, opacity: 0 },
-    visible: (i: number) => {
-      const delay = 1 + i * 0.5;
-      return {
-        pathLength: 1,
-        opacity: 1,
-        transition: {
-          pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
-          opacity: { delay, duration: 0.01 },
-        },
-      };
-    },
-  };
+  const [loaded, setLoaded] = useState(false);
   const [step, setStep] = useState<StepEnums>(StepEnums.ONE);
-
   useEffect(() => {
+    if (!loaded) {
+      return;
+    }
     const timeoutOne = setTimeout(() => {
       setStep(StepEnums.TWO);
     }, 1800);
@@ -44,14 +33,23 @@ const HomePage = () => {
       clearTimeout(timeoutOne);
       clearTimeout(timeoutTwo);
     };
-  }, []);
+  }, [loaded]);
 
   return (
     <div className="w-[100%] h-[100vh] bg-white flex justify-center items-center">
+      <Image
+        src={Logo}
+        width={0}
+        height={0}
+        alt="Logo"
+        style={{ width: "0", height: "0" }}
+        onLoadingComplete={() => setLoaded(true)}
+      />
       {step === StepEnums.ONE && (
         <div className="flex gap-4 h-40 items-end overflow-hidden">
           {Array.from({ length: 14 }, (_, i) => (
             <motion.div
+              key={i}
               className="bg-primary"
               initial={{
                 height: 160,
