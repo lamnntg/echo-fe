@@ -1,6 +1,15 @@
 import HomePage from "@/components/HomePage";
+import { Metadata } from "next";
 import Head from "next/head";
 
+export const metadata: Metadata = {
+  title: "Trang chủ - ECHO Design",
+  description: "Echo design",
+  other: {
+    ["or:title"]: "Trang chủ - ECHO Design",
+    ["og:site_name"]: "ECHO Design",
+  },
+};
 export default function Home() {
   return (
     <main>

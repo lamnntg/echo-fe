@@ -1,14 +1,19 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-const text = "Framer Motion is a really cool tool".split(" ");
-import { clsx } from "clsx";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
+import Slide2 from "@/public/slide_2.jpeg";
+import Slide1 from "@/public/slide_1.jpg";
+import Slide3 from "@/public/slide_3.jpeg";
+import useBreakpoint from "@/hooks/useBreakpoint";
+import { useAppStore } from "@/store/app.store";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
+
 const TITLE = "E C H O".split(" ");
 const DESCRIPTION = "I N T E R O R".split(" ");
 const DESIGN = "D E S I G N".split(" ");
-import HomeThumnail from "@/public/home_thumbnail.jpeg";
 
 enum StepEnums {
   ONE = "1",
@@ -17,8 +22,27 @@ enum StepEnums {
 }
 
 const HomePage = () => {
+  const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
   const [step, setStep] = useState<StepEnums>(StepEnums.ONE);
+  const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
+
+  const RESOLUTION = {
+    line: {
+      width: isMobile ? 11 : isMobileLarge ? 15 : 22,
+      height: isMobile ? 80 : isMobileLarge ? 112 : 160,
+    },
+    logo: {
+      width: isMobile ? 182 : isMobileLarge ? 254 : 364,
+      height: isMobile ? 80 : isMobileLarge ? 112 : 160,
+    },
+    line1: {
+      fontSize: isMobile ? 32 : isMobileLarge ? 38 : 62,
+    },
+    line2: {
+      fontSize: isMobile ? 18 : isMobileLarge ? 20 : 36,
+    },
+  };
   useEffect(() => {
     if (!loaded) {
       return;
@@ -35,25 +59,41 @@ const HomePage = () => {
     };
   }, [loaded]);
 
+  useEffect(() => {
+    if (step === StepEnums.THREE) {
+      setShowFooter(true);
+    } else {
+      setShowFooter(false);
+    }
+  }, [step]);
+
   return (
-    <div className="w-[100%] h-[100vh] bg-white flex justify-center items-center">
+    <div
+      className="w-[100%] bg-white flex justify-center items-center sticky top-0 left-0"
+      style={{
+        zIndex: step === StepEnums.THREE ? 1 : 3,
+        height: `calc(100vh - ${isMobileLargeDown ? 76 + 45 : 36 + 68}px)`,
+      }}
+    >
       <Image
         src={Logo}
         width={0}
         height={0}
         alt="Logo"
         style={{ width: "0", height: "0" }}
-        onLoadingComplete={() => setLoaded(true)}
+        onLoad={() => setLoaded(true)}
       />
       {step === StepEnums.ONE && (
-        <div className="flex gap-4 h-40 items-end overflow-hidden">
+        <div
+          className={`flex gap-2 sm:gap-3 md:gap-4 items-end overflow-hidden`}
+        >
           {Array.from({ length: 14 }, (_, i) => (
             <motion.div
               key={i}
               className="bg-primary"
               initial={{
-                height: 160,
-                width: 22,
+                height: RESOLUTION.line.height,
+                width: RESOLUTION.line.width,
                 transform: i % 2 ? "translateY(100%)" : "translateY(-100%)",
               }}
               animate={{
@@ -69,18 +109,29 @@ const HomePage = () => {
       {step === StepEnums.TWO && (
         <div className="flex items-center gap-4">
           <div className="relative overflow-hidden">
-            <Image
-              src={Logo}
-              width={364}
-              height={160}
-              alt="Logo"
-              objectFit="cover"
-            />
+            <div
+              className="relative"
+              style={{
+                height: RESOLUTION.logo.height,
+                width: RESOLUTION.logo.width,
+              }}
+            >
+              <Image
+                src={Logo}
+                alt="Logo"
+                fill
+                sizes="100vw"
+                style={{
+                  objectFit: "cover",
+                }}
+                priority
+              />
+            </div>
             <motion.div
               className="bg-white absolute top-0 left-0"
               initial={{
-                height: 160,
-                width: 364,
+                height: RESOLUTION.logo.height,
+                width: RESOLUTION.logo.width,
                 transform: "translateX(0)",
               }}
               animate={{
@@ -101,13 +152,16 @@ const HomePage = () => {
                   delay: i / 10,
                 }}
                 key={i}
-                className="text-[62px] mr-1 leading-none font-medium inline-block text-[#333]"
+                className={`mr-1 leading-none font-medium inline-block text-[#333]`}
+                style={{
+                  fontSize: RESOLUTION.line1.fontSize,
+                }}
               >
                 {el}
               </motion.span>
             ))}
             <br />
-            <div className="mt-2"></div>
+            <div className="mt-0 sm:mt-1 md:mt-2"></div>
             {DESCRIPTION.map((el, i) => (
               <motion.span
                 initial={{ opacity: 0, scale: 1.2 }}
@@ -117,7 +171,10 @@ const HomePage = () => {
                   delay: i / 10 + 0.5,
                 }}
                 key={i}
-                className="text-4xl font-extralight inline-block"
+                className="font-extralight inline-block"
+                style={{
+                  fontSize: RESOLUTION.line2.fontSize,
+                }}
               >
                 {el}
               </motion.span>
@@ -132,7 +189,10 @@ const HomePage = () => {
                   delay: i / 10 + 1,
                 }}
                 key={i}
-                className="text-4xl font-extralight inline-block"
+                className="font-extralight inline-block -mt-3"
+                style={{
+                  fontSize: RESOLUTION.line2.fontSize,
+                }}
               >
                 {el}
               </motion.span>
@@ -141,13 +201,47 @@ const HomePage = () => {
         </div>
       )}
       {step === StepEnums.THREE && (
-        <div className="w-[100%] h-[100vh]">
-          <Image
-            src={HomeThumnail}
-            layout="fill"
-            objectFit="cover"
-            alt="Thumnail"
-          />
+        <div className="w-[100%] h-[100%] relative">
+          <Swiper
+            className="w-[100%] h-[100%]"
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, EffectFade]}
+            effect="fade"
+          >
+            <SwiperSlide>
+              <Image
+                src={Slide1}
+                fill
+                style={{ objectFit: "cover" }}
+                alt="Thumnail"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={Slide2}
+                fill
+                style={{ objectFit: "cover" }}
+                alt="Thumnail"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={Slide3}
+                fill
+                style={{ objectFit: "cover" }}
+                alt="Thumnail"
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
       )}
     </div>
