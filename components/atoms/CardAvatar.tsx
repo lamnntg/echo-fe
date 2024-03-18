@@ -9,7 +9,7 @@ const CardAvatar = () => {
   return (
     <div className="animate-bottomToTop">
       <div
-        className="relative w-[336px] lg:w-[232px] h-[270px] object-cover overflow-hidden"
+        className="relative w-[336px] lg:w-[232px] h-[270px] object-cover overflow-hidden px-2"
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
       >

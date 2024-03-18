@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MenuToggle } from "../atoms/MenuToggle";
 import { motion } from "framer-motion";
 import useBreakpoint from "@/hooks/useBreakpoint";
@@ -11,6 +11,7 @@ import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 import clsx from "clsx";
 import { useAppStore } from "@/store/app.store";
+import { usePathname } from "next/navigation";
 
 const menu = {
   open: {
@@ -57,15 +58,23 @@ const Header = () => {
   };
   const { isMobileLargeDown } = useBreakpoint();
   const [show, setShow] = useState(false);
+  const pathname = usePathname();
+  const { setShowFooter } = useAppStore();
+  useEffect(() => {
+    if (pathname !== "/") {
+      setShowFooter(true);
+    }
+  }, []);
+
   if (!showFooter) {
     return null;
   }
 
   return (
-    <div className="sticky top-0 left-0 z-[2] bg-white w-full">
+    <div className="sticky top-0 left-0 z-[2] bg-white w-full px-3">
       {isMobileLargeDown ? (
         <motion.nav initial={false} animate={show ? "open" : "closed"}>
-          <div className="flex justify-between px-3 pr-4 relative py-2">
+          <div className="flex justify-between pr-4 relative py-2">
             <Link href="/">
               <Image
                 width={145}
@@ -156,7 +165,7 @@ const Header = () => {
           </div>
         </motion.nav>
       ) : (
-        <div className="container mx-auto w-full flex justify-between">
+        <div className="container mx-auto w-full flex justify-between py-1">
           <Link href="/" className=" block h-12 w-36 mt-1">
             <Image
               src={LogoText}
@@ -164,6 +173,7 @@ const Header = () => {
               height={48}
               objectFit="cover"
               alt="Logo echo"
+              className="py-1"
             />
           </Link>
           <div className="flex items-center">

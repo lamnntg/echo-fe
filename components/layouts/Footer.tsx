@@ -18,7 +18,7 @@ const Footer = () => {
     <footer className="flex container mx-auto bg-white py-2 text-sm text-[#333] justify-between flex-col items-center md:flex-row">
       <div>
         <FontAwesomeIcon icon={faLocationDot} className="text-[#333] mr-2" />
-        <span className="hover:text-primary transition">
+        <span className="hover:text-primary transition opacity-70 text-xs">
           Số 6 Kim Đồng, Giáp Bát, Hoàng Mai, Hanoi, Vietnam
         </span>
       </div>
@@ -26,7 +26,7 @@ const Footer = () => {
         <FontAwesomeIcon icon={faPhoneVolume} className="text-[#333] mr-2" />
         <Link
           href="tel:088 688 99 95"
-          className="hover:text-primary transition"
+          className="hover:text-primary transition opacity-70 text-xs"
         >
           088 688 99 95
         </Link>
@@ -36,7 +36,7 @@ const Footer = () => {
         <Link
           href="mailto:nmq.echodesign@gmail.com"
           target="_blank"
-          className="hover:text-primary transition"
+          className="hover:text-primary transition opacity-70 text-xs"
         >
           nmq.echodesign@gmail.com
         </Link>

@@ -10,7 +10,7 @@ export const useAppStore = create<AppState>()(
   devtools(
     persist(
       (set) => ({
-        showFooter: true,
+        showFooter: false,
         setShowFooter: (show) => {
           set(() => ({ showFooter: show }));
         },

@@ -15,6 +15,14 @@ const config: Config = {
         sm: "576px",
         lg: "992px",
       },
+      container: {
+        screens: {
+          sm: "600px",
+          md: "728px",
+          lg: "984px",
+          xl: "1200px",
+        },
+      },
       keyframes: {
         leftToRight: {
           "0%": { transform: "translateX(-100%)", opacity: "0" },
