@@ -1,6 +1,7 @@
 [
     {
         "name": "MS Duplex",
+        "slug": "ms-duplex",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
@@ -18,6 +19,7 @@
     },
     {
         "name": "S Man Cave",
+        "slug": "s-man-cave",
         "address": "Hà Nội",
         "area": "92m2",
         "year_completed": "01/2024",
@@ -35,6 +37,7 @@
     },
     {
         "name": "Yoko Penthouse",
+        "slug": "yoko-penthouse",
         "address": "Bình Thạnh – TP Hồ Chí Minh",
         "area": "280m2",
         "year_completed": "06/2023",
@@ -52,6 +55,7 @@
     },
     {
         "name": "So Na House",
+        "slug": "so-na-house",
         "address": "Thảo Điền – Quận 2 – TP Hồ Chí Minh",
         "area": "350m2",
         "year_completed": "07/2023",
@@ -68,6 +72,7 @@
     },
     {
         "name": "L Apartment",
+        "slug": "l-apartment",
         "address": "Vinhomes Symphony – Long Biên – Hà Nội",
         "area": "155m2",
         "year_completed": "06/2021",
@@ -81,6 +86,212 @@
             "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/4444.jpg?alt=media&token=b1ec53e7-7294-44bb-9ee4-fdac3219c29c",
             "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/5555.jpg?alt=media&token=9f6503f5-ba2f-433c-b66f-5209b845b1c6",
             "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/6666.jpg?alt=media&token=e3d1fdbe-53e0-47ed-bb40-362c213e2d4f"
+        ]
+    },
+    {
+        "title": "FLAPPY MAN – LANCASTER",
+        "slug": "nhd-apartment",
+        "name": "NHD Apartment",
+        "address": "Tòa Lancaster – Núi Trúc – Ba Đình – Hà Nội",
+        "area": "85m2",
+        "year_completed": "08/2020",
+        "design_by": "W2D Studio",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/111.jpg?alt=media&token=db685f7b-ca05-48cf-85e4-51dfd154c2a0",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/222.jpg?alt=media&token=c555901e-632d-4450-adb0-84050670ed7a",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/333.jpg?alt=media&token=a10377dd-b0d0-493d-be49-b210d87648db",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/444.jpg?alt=media&token=2e06c67a-94da-44d3-9e77-cfb56fa29c32",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/555.jpg?alt=media&token=bbe07dd1-ea27-4f8f-b0fd-1e61f4099d53",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/666.jpg?alt=media&token=45076ced-1ee5-41fb-928d-10692232e2ee"
+        ],
+        "contractor": "Xưởng Mộc O2, Poly Aluminum Glass, Alis Lighting, Rehau, District Eight",
+        "write_by": "Minh Trang (VnExpress)",
+        "description": "<p>Trân trọng gửi đến các bạn toàn bộ ảnh chụp thực tế dự án căn hộ chungcư NHD Apartment tại Lancaster – Núi Trúc – Hà Nội, được thiết kế và thicông hoàn thiện bởi chúng tôi.</p><p>Sau 5 năm sử dụng, căn hộ 85 m2 ở quận Ba Đình đã xuống cấp, ẩm mốc nênchủ nhà quyết “đập hết” làm mới.</p><p>Sống một mình và dành nhiều thời gian cho công việc viết phần mềm, chủ nhà cần không gian làm việc tại gia. Bên cạnh đó, anh muốn căn hộ của mình đơn giản, ít màu sắc, hạn chế vân gỗ và vân đá, không khí thật trong lành. </p> <p>Sau cải tạo, căn hộ được phá dỡ hết phần trần thạch cao và sàn nhà. Chúng tôi cũng thay toàn bộ gạch ốp lát, hệ thống điều hòa, thiết bị điện và vệ sinh cũ. </p><p> Phòng làm việc riêng của gia chủ nằm ngay gần cửa ra vào, được trang trí với tông màu xám và bố trí cửa kính điện tử thông minh, có thể chuyển thành kính mờ hoặc kính trong tùy nhu cầu của người sử dụng. Bàn làm việc cũng được yêu cầu phải có kích thước lớn, phòng khi chủ nhà có cộng sự sang làm việc nhóm. </p> <p> sự sang làm việc nhóm. Nhằm đem tới sự khác biệt so với căn hộ cũ, chúng tôi đặt bếp ở trung tâm. Đảo bếp kết hợp bàn ăn trở thành điểm nhấn cho công trình, đồng thời tiết kiệm diện tích hơn việc dùng bàn ăn riêng. Bếp từ tích hợp hút mùi giải phóng không gian, làm khu vực giữa nhà thông thoáng. Tủ lạnh và máy rửa bát đều được làm âm, ẩn sau những cánh tủ trắng cho đồng bộ. </p> <p> Gia chủ thích sự ngăn nắp, cần nhiều chỗ để đồ nên các hệ tủ được bố trí khắp nhà. Tủ hạn chế dùng tay nắm, nhìn qua như những bức tường phẳng để tránh cảm giác nặng nề, nhất là khi căn hộ không quá lớn. Cũng nhờ những hệ tủ này mà kể cả khi gia chủ bận bịu, không có thời gian dọn dẹp, căn hộ trông vẫn gọn gàng. </p> <p> Môi trường bên ngoài tòa nhà rất nhiều bụi nên gia chủ mong muốn có một phòng giặt kết hợp phơi ngay trong căn hộ. Sau khi cân nhắc nhu cầu sử dụng cùng gia chủ, chúng tôi quyết định loại bỏ một nhà vệ sinh và thay thế bằng một phòng giặt – sấy – phơi khép kín. Trong phòng có hệ thống quạt hút gió, thổi gió mát, thổi gió ấm và khử ẩm. </p> <p> Màu trắng chủ đạo của căn hộ giúp không gian sạch sẽ nhưng cũng dễ gây sự lạnh lẽo. Để thêm màu sắc và sự ấm áp cho công trình, chúng tôi đưa vào những mảng trang trí như kệ để tạp chí chạy từ cửa chính đến phòng khách, vườn xương rồng nhỏ cạnh tủ tivi, một vài bức tranh. Phòng ngủ cũng được điểm xuyết những góc bo tròn trên tường và nội thất, giúp chỗ nghỉ ngơi của gia chủ mềm mại, gần gũi hơn. </p> <p> Chân thành cảm ơn sự tin tưởng của gia chủ cùng với một ngân sách đầu tư không nhỏ để chúng tôi thực hiện trọn vẹn dự án tâm huyết này. </p>"
+    },
+    {
+        "name": "M.S Apartment",
+        "slug": "m-s-apartment",
+        "address": "Seasons Avenue – Mỗ Lao – Hà Đông – Hà Nội",
+        "area": "125m2",
+        "year_completed": "12/2019",
+        "design_by": "W2D Studio",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/11.jpg?alt=media&token=ae97bb97-52fd-419b-ad3d-4d99f167945c",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/22.jpg?alt=media&token=266b82af-3816-4a42-bd6f-c44231de1242",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/33.jpg?alt=media&token=8ad464c2-3c54-43c4-8767-8434fc22a788",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/44.jpg?alt=media&token=1343003e-ce9a-4611-968b-74a6f71eba6a",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/55.jpg?alt=media&token=0fd2b779-e3c9-41cd-9252-c81c937a8781",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/66.jpg?alt=media&token=87122b04-eeac-4a2b-b300-32da13417ccd"
+        ]
+    },
+    {
+        "name": "Q Apartment",
+        "slug": "q-apartment",
+        "address": "Seasons Avenue – Mỗ Lao – Hà Đông – Hà Nội",
+        "area": "76m2",
+        "year_completed": "12/2018",
+        "design_by": "W2D Studio",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/1.jpg?alt=media&token=47236608-c848-4506-b7ed-d05acd9dccaf",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/2.jpg?alt=media&token=9d33e3bf-e4dc-49a8-a9df-c49c941722f3",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/3.jpg?alt=media&token=b95b40bb-6bd3-4ea5-a8fa-2da52c4e9a02",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/4.jpg?alt=media&token=246aacbc-7a52-46d5-bb04-ae13fb0e5e84",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/5.jpg?alt=media&token=6acb7f3f-2f2c-4a30-8c9a-3fea2938211a",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/6.jpg?alt=media&token=28e44aa8-49c9-4408-a119-579fde1c74ad"
+        ]
+    },
+    {
+        "name": "KA House",
+        "slug": "ka-house",
+        "address": "Vinhomes GreenBay – Hà Nội",
+        "status": "doing",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/o_1.jpg?alt=media&token=662b58c5-392e-4ff3-b7f1-a9dd4e485793",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/o_2.jpg?alt=media&token=2b0bee54-fbf0-438d-b27f-c946cbabd7a9",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/o_3.jpg?alt=media&token=dec3c286-7901-44d1-a999-f784c43cd048",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/o_4.jpg?alt=media&token=d0e60f90-62e1-46df-b4cc-e85586d48caf",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/o_5.jpg?alt=media&token=428b0767-ae6a-4645-a203-a328c9286d93",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/o_6.jpg?alt=media&token=13f115b3-8e74-4dc4-b928-d554fa1bca76"
+        ]
+    },
+    {
+        "name": "L House",
+        "slug": "l-house",
+        "address": "Vinhomes GreenBay – Hà Nội",
+        "status": "doing",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/n_1.jpg?alt=media&token=359af8cb-d12f-4ff0-b452-b70856f787bc",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/n_2.jpg?alt=media&token=997a0ad4-9eee-4868-b851-c8f3e0d3db4e",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/n_3.jpg?alt=media&token=a8ff5f1d-314c-4ade-9002-cb72d153d3a9",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/n_4.jpg?alt=media&token=5fcef16e-f4c6-4ecf-b10f-fa80fdbeeeee",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/n_5.jpg?alt=media&token=c53fe6ee-17d0-439b-a6c7-b7138fb63e32",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/n_6.jpg?alt=media&token=0dc8194e-fca1-4e93-a7ce-c83ca827d6a9"
+        ]
+    },
+    {
+        "name": "NMT Apartment",
+        "slug": "nmt-apartment",
+        "address": "Hoàn Kiếm - Hà Nội",
+        "area": "130m2",
+        "status": "doing",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/m_1.jpg?alt=media&token=5a775ab7-c996-4dfd-9dfa-1a9395e4c847",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/m_2.jpg?alt=media&token=8f8668df-c2e6-4a87-980a-b4223d4dadd3",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/m_3.jpg?alt=media&token=8bbd5361-5a7e-4246-8d9e-2fdeb9a727fb",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/m_4.jpg?alt=media&token=64a7e9ef-2a67-4d10-9b61-19d9007c64d3",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/m_5.jpg?alt=media&token=ef043121-24d0-442d-a94b-f15b05f799ce",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/m_6.jpg?alt=media&token=85d70e07-866b-4236-837d-2454d14b8d74"
+        ]
+    },
+    {
+        "name": "OLV Apartment",
+        "slug": "olv-apartment",
+        "address": "City Garden - Bình Thạnh - Sài Gòn",
+        "area": "130m2",
+        "status": "doing",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/l_1.jpg?alt=media&token=6bd47c5a-b66b-4f94-b952-3792ef9ad503",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/l_2.jpg?alt=media&token=a9c3f00d-d9f5-4381-b220-e54e39856a7c",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/l_3.jpg?alt=media&token=67346040-831d-4914-83d0-56c3fc8f68a2",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/l_4.jpg?alt=media&token=7ec00caa-b517-4a1c-83ae-4526c93c8f10",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/l_5.jpg?alt=media&token=c6ff6995-c567-498b-9e67-aa036325c244",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/l_6.jpg?alt=media&token=b9d12c53-361b-4913-99c2-d7ca07daf3fa"
+        ]
+    },
+    {
+        "name": "T Apartment",
+        "slug": "t-apartment",
+        "address": "City Garden - Bình Thạnh - Sài Gòn",
+        "area": "130m2",
+        "status": "doing",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/k_1.jpg?alt=media&token=52cba591-ddd4-47ba-8c47-d058e058930a",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/k_2.jpg?alt=media&token=77e635dd-d187-4c39-a285-903d4bfdb5d8",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/k_3.jpg?alt=media&token=73c2f8d8-a2e6-4f30-be4f-8cc635ec7304",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/k_4.jpg?alt=media&token=384d5905-7c11-4fc7-975e-9ec066b6d3f6",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/k_5.jpg?alt=media&token=f8a11ea1-090e-4091-a545-20d9058bbaff",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/k_6.jpg?alt=media&token=9c569660-266f-4d3d-be83-4384e3bef999"
+        ]
+    },
+    {
+        "name": "B Apartment",
+        "slug": "b-apartment",
+        "address": "Novaland Sunrise Reverside – Nhà Bè – Sài Gòn",
+        "area": "70m2",
+        "status": "doing",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/j_1.jpg?alt=media&token=7d2c66b8-d01f-41fd-be15-0ababb47c6e8",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/j_2.jpg?alt=media&token=2eb3c070-4f01-4d0d-baf9-bccbdc88f13d",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/j_3.jpg?alt=media&token=b58156f3-d0a7-4fc0-9fdd-01d469e80d41",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/j_4.jpg?alt=media&token=be746223-3d1b-48bd-82c2-53d6f796d499",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/j_5.jpg?alt=media&token=878671df-bb4a-4e7b-b40b-6495a93cb8e5",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/j_6.jpg?alt=media&token=3d8ef790-d3aa-4741-9051-6057ef43acc1"
+        ]
+    },
+    {
+        "name": "HH House",
+        "slug": "hh-house",
+        "address": "Dương Nội - Hà Nội",
+        "area": "70m2",
+        "status": "doing",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/h_1.jpg?alt=media&token=bb044b1e-0d9b-487a-8a6b-92a1bf763467",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/h_2.jpg?alt=media&token=54d1f7fe-d830-4647-9505-a20cabc1d845",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/h_3.jpg?alt=media&token=648e7da7-f37b-484b-a562-a99570a49b42",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/h_4.jpg?alt=media&token=bbb67aab-a5c5-4565-bd88-0be4b3c38c56",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/h_5.jpg?alt=media&token=e6a16bf6-38fd-442d-9d0e-3243fbdfbbc6",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/h_6.jpg?alt=media&token=e8b0bda4-8c50-42a8-b9ae-0236fca42174"
+        ]
+    },
+    {
+        "name": "Chaplin Penthouse",
+        "slug": "chaplin-penthouse",
+        "address": "E4 Tower - Cầu Giấy - Hà Nội",
+        "area": "300m2",
+        "status": "doing",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/i_1.jpg?alt=media&token=fe2f609f-6590-4816-8856-af4c63548616",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/i_2.jpg?alt=media&token=90924991-0bb4-4f6a-992e-0925c456b18e",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/i_3.jpg?alt=media&token=342cdb50-54ef-4606-a723-e031b62b8b36",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/i_4.jpg?alt=media&token=fe769fda-bf51-479f-a1fe-d39cc2709029",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/i_5.jpg?alt=media&token=708ee163-c5ed-485c-811b-9a99ae316073",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/i_6.jpg?alt=media&token=7a5398f3-2ab5-45fe-be71-58f0f22844a7"
+        ]
+    },
+    {
+        "name": "T.R House",
+        "slug": "t-r-house",
+        "address": "Thạch Bàn - Hà Nội",
+        "area": "300m2",
+        "status": "doing",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/f_1.jpg?alt=media&token=8f556e66-12c5-455a-8c70-601be8933e75",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/f_2.jpg?alt=media&token=092b7fc7-8062-4344-9245-18a619b1d6d2",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/f_3.jpg?alt=media&token=40289093-2147-4dab-94e9-7145e4d8e232",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/f_4.jpg?alt=media&token=2b5eed34-ac45-480b-8375-119dc75465ac",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/f_5.jpg?alt=media&token=ebbbc0ad-eaca-487e-bf1c-bd5cba837ce9",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/f_6.jpg?alt=media&token=3ea0fd07-0fbd-46af-90d6-a3c716af3cd0"
+        ]
+    },
+    {
+        "name": "T.L Apartment",
+        "slug": "t-l-apartment",
+        "address": "D’Le Roi Soleil – Tây Hồ – Hà Nội",
+        "area": "450m2",
+        "status": "doing",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/e_1.jpg?alt=media&token=706d8680-344f-4c89-b77a-ccf4c967872a",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/e_2.jpg?alt=media&token=fcb73a49-e9d9-44a4-bdeb-164d8925719c",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/e_3.jpg?alt=media&token=208487e9-329d-4369-b2c3-5f50b90b2d5f",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/e_4.jpg?alt=media&token=439001a8-b5c7-4d0f-bb0e-5aa91d602f39",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/e_5.jpg?alt=media&token=67441f00-cb40-437b-88c4-4fd87a5a59c4",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/e_6.jpg?alt=media&token=08bbd4bb-58a6-43ce-ae78-10c1b52680ce"
         ]
     }
 ]

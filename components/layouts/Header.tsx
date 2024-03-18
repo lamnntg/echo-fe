@@ -125,13 +125,13 @@ const Header = () => {
                   variants={menu}
                 >
                   <Link
-                    href="/completed"
+                    href="/du-an-da-hoan-thanh"
                     className="text-nowrap my-2 hover:text-primary px-2 block transition"
                   >
                     Đã hoàn thành
                   </Link>
                   <Link
-                    href="/in-progress"
+                    href="/du-an-dang-trien-khai"
                     className=" text-nowrap my-2 hover:text-primary px-2 block transition"
                   >
                     Đang triển khai
@@ -210,13 +210,13 @@ const Header = () => {
               >
                 <div className=" bg-white py-4 rounded-b-md">
                   <Link
-                    href="/completed"
+                    href="/du-an-da-hoan-thanh"
                     className="text-nowrap my-2 px-8 block hover:text-primary transition"
                   >
                     Đã hoàn thành
                   </Link>
                   <Link
-                    href="/in-progress"
+                    href="/du-an-dang-trien-khai"
                     className=" text-nowrap my-2 px-8 block hover:text-primary transition"
                   >
                     Đang triển khai
