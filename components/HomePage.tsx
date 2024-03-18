@@ -21,6 +21,12 @@ enum StepEnums {
   THREE = "3",
 }
 
+const HEIGHT_HEADER_MOBILE = 56;
+const HEIGHT_FOOTER_MOBILE = 76;
+
+const HEIGHT_HEADER_DESKTOP = 52;
+const HEIGHT_FOOTER_DESKTOP = 36;
+
 const HomePage = () => {
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
@@ -72,7 +78,11 @@ const HomePage = () => {
       className="w-[100%] bg-white flex justify-center items-center sticky top-0 left-0"
       style={{
         zIndex: step === StepEnums.THREE ? 1 : 3,
-        height: `calc(100vh - ${isMobileLargeDown ? 76 + 45 : 36 + 68}px)`,
+        height: `calc(100vh - ${
+          isMobileLargeDown
+            ? HEIGHT_FOOTER_MOBILE + HEIGHT_HEADER_MOBILE
+            : HEIGHT_FOOTER_DESKTOP + HEIGHT_HEADER_DESKTOP
+        }px)`,
       }}
     >
       <Image
