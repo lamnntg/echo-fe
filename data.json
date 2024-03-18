@@ -1,0 +1,86 @@
+[
+    {
+        "name": "MS Duplex",
+        "address": "T-Palace - Hà Nội",
+        "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
+        "year_completed": "07/2023",
+        "design_by": "W2D Studio",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_1.jpeg?alt=media&token=f4381cd7-de0c-46ff-a1ce-f7236bf06988",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_2.jpeg?alt=media&token=fe70ffa4-f78a-4872-b7af-13af415e20fe",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_3.jpeg?alt=media&token=47031105-600a-4bbe-ac9e-459cd8968741",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_4.jpeg?alt=media&token=27f1c299-a57f-4074-9d4a-c11ea4a693ce",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_5.jpeg?alt=media&token=4f9f1083-5a94-4831-8137-0fe8d396890e",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_6.jpeg?alt=media&token=f7be45b5-5862-4dc8-befe-ab905768557d"
+        ]
+    },
+    {
+        "name": "S Man Cave",
+        "address": "Hà Nội",
+        "area": "92m2",
+        "year_completed": "01/2024",
+        "design_by": "W2D Studio",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/c_1.jpg?alt=media&token=ee8550ea-0f6e-4b99-876a-15dbd690ea7a",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/c_2.jpg?alt=media&token=52543bb7-8ccd-447e-b8ea-cad42a641160",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/c_3.jpg?alt=media&token=92ee7aa5-5dbd-4435-ac5e-abb972db3196",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/c_4.jpg?alt=media&token=75671cb8-972f-43fb-a4d1-bc108cc0127e",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/c_5.jpg?alt=media&token=88654f54-dd52-443f-9412-7718401c7f6f",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/c_6.jpg?alt=media&token=deb5cdfb-8bbb-4a6c-be8c-62bc9f0efec4"
+        ]
+    },
+    {
+        "name": "Yoko Penthouse",
+        "address": "Bình Thạnh – TP Hồ Chí Minh",
+        "area": "280m2",
+        "year_completed": "06/2023",
+        "design_by": "W2D Studio",
+        "photo": "Đỗ Sỹ, Wuyhoang",
+        "status": "completed",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/b_1.jpg?alt=media&token=de0d9349-5704-4b12-8e60-dea8ab62c73b",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/b_2.jpg?alt=media&token=2ac5f151-e565-403a-a9bc-d840330d8e9d",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/b_3.jpg?alt=media&token=13f4def3-2dd5-4737-8d1c-b0b505aa2159",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/b_4.jpg?alt=media&token=44bf5ff6-a4a7-4725-a993-06e2d2523e9a",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/b_5.jpg?alt=media&token=34cf9ab2-9215-4f73-85df-ef4c6c8c6ef3",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/b_6.jpg?alt=media&token=4c4ed260-96e7-4776-92c2-061950ea6bf0"
+        ]
+    },
+    {
+        "name": "So Na House",
+        "address": "Thảo Điền – Quận 2 – TP Hồ Chí Minh",
+        "area": "350m2",
+        "year_completed": "07/2023",
+        "design_by": "W2D Studio",
+        "photo": "Đỗ Sỹ",
+        "status": "completed",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/a1.jpg?alt=media&token=bd78f19d-a73b-44c7-8583-211e31ddfafa",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/a2.jpg?alt=media&token=402199af-ce51-4cc5-9590-ce3156e18f67",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/a3.jpg?alt=media&token=c94927ef-b83e-43db-bb26-28346bebd465",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/a4.jpg?alt=media&token=f4b48c92-6b0c-4d88-aa51-b9edf292c2fb",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/a5.jpg?alt=media&token=5c1dd589-7fd3-4742-b211-86f890395f72"
+        ]
+    },
+    {
+        "name": "L Apartment",
+        "address": "Vinhomes Symphony – Long Biên – Hà Nội",
+        "area": "155m2",
+        "year_completed": "06/2021",
+        "design_by": "W2D Studio",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/1111.jpg?alt=media&token=7a553273-9d71-4098-b06a-32a03fe88bce",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/2222.jpg?alt=media&token=9e0e428c-716c-4d6f-96a4-d16d5ecbd34a",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/3333.jpg?alt=media&token=7f862817-8c65-4a04-ad9f-262e0065ed3a",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/4444.jpg?alt=media&token=b1ec53e7-7294-44bb-9ee4-fdac3219c29c",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/5555.jpg?alt=media&token=9f6503f5-ba2f-433c-b66f-5209b845b1c6",
+            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/6666.jpg?alt=media&token=e3d1fdbe-53e0-47ed-bb40-362c213e2d4f"
+        ]
+    }
+]
