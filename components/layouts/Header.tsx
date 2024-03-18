@@ -96,13 +96,13 @@ const Header = () => {
             >
               <Link
                 href="/"
-                className="flex items-center px-8 text-sm hover:text-primary transition my-3 leading-6 text-base"
+                className="flex items-center px-8 hover:text-primary transition my-3 leading-6 text-base"
               >
                 Trang chủ
               </Link>
               <Link
                 href="/gioi-thieu"
-                className="flex items-center px-8 text-sm hover:text-primary transition my-3 leading-6 text-base"
+                className="flex items-center px-8 hover:text-primary transition my-3 leading-6 text-base"
               >
                 Giới thiệu
               </Link>
@@ -136,7 +136,7 @@ const Header = () => {
               </div>
               <Link
                 href="/lien-he"
-                className="flex items-center px-8 text-sm hover:text-primary transition mr-4 my-3 leading-6 text-base"
+                className="flex items-center px-8 hover:text-primary transition mr-4 my-3 leading-6 text-base"
               >
                 Liên hệ
               </Link>
