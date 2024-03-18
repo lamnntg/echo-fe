@@ -24,7 +24,7 @@ enum StepEnums {
 const HEIGHT_HEADER_MOBILE = 56;
 const HEIGHT_FOOTER_MOBILE = 76;
 
-const HEIGHT_HEADER_DESKTOP = 60;
+const HEIGHT_HEADER_DESKTOP = 68;
 const HEIGHT_FOOTER_DESKTOP = 36;
 
 const HomePage = () => {
