@@ -66,6 +66,10 @@ const Header = () => {
     }
   }, []);
 
+  useEffect(() => {
+    setShow(false);
+  }, [pathname]);
+
   if (!showFooter) {
     return null;
   }
