@@ -107,6 +107,7 @@ const Header = () => {
               <Link
                 href="/gioi-thieu"
                 className="flex items-center px-8 hover:text-primary transition my-3 leading-6 text-base"
+                prefetch
               >
                 Giới thiệu
               </Link>
@@ -127,12 +128,14 @@ const Header = () => {
                   <Link
                     href="/du-an-da-hoan-thanh"
                     className="text-nowrap my-2 hover:text-primary px-2 block transition"
+                    prefetch
                   >
                     Đã hoàn thành
                   </Link>
                   <Link
                     href="/du-an-dang-trien-khai"
                     className=" text-nowrap my-2 hover:text-primary px-2 block transition"
+                    prefetch
                   >
                     Đang triển khai
                   </Link>
@@ -141,6 +144,7 @@ const Header = () => {
               <Link
                 href="/lien-he"
                 className="flex items-center px-8 hover:text-primary transition mr-4 my-3 leading-6 text-base"
+                prefetch
               >
                 Liên hệ
               </Link>
@@ -190,6 +194,7 @@ const Header = () => {
             <Link
               href="/gioi-thieu"
               className="flex items-center px-8 text-sm hover:text-primary transition"
+              prefetch
             >
               Giới thiệu
             </Link>
@@ -212,12 +217,14 @@ const Header = () => {
                   <Link
                     href="/du-an-da-hoan-thanh"
                     className="text-nowrap my-2 px-8 block hover:text-primary transition"
+                    prefetch
                   >
                     Đã hoàn thành
                   </Link>
                   <Link
                     href="/du-an-dang-trien-khai"
                     className=" text-nowrap my-2 px-8 block hover:text-primary transition"
+                    prefetch
                   >
                     Đang triển khai
                   </Link>
@@ -227,6 +234,7 @@ const Header = () => {
             <Link
               href="/lien-he"
               className="flex items-center px-8 text-sm hover:text-primary transition mr-4"
+              prefetch
             >
               Liên hệ
             </Link>
