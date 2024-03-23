@@ -155,8 +155,8 @@ const HomePage = () => {
           <div>
             {TITLE.map((el, i) => (
               <motion.span
-                initial={{ opacity: 0, scale: 1.2 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{
                   duration: 0.5,
                   delay: i / 10,
@@ -174,8 +174,8 @@ const HomePage = () => {
             <div className="mt-0 sm:mt-1 md:mt-2"></div>
             {DESCRIPTION.map((el, i) => (
               <motion.span
-                initial={{ opacity: 0, scale: 1.2 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{
                   duration: 0.5,
                   delay: i / 10 + 0.5,
@@ -192,8 +192,8 @@ const HomePage = () => {
             <br />
             {DESIGN.map((el, i) => (
               <motion.span
-                initial={{ opacity: 0, scale: 1.2 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{
                   duration: 0.5,
                   delay: i / 10 + 1,
