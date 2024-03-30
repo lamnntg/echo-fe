@@ -3,17 +3,17 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
-import Slide2 from "@/public/slide_2.jpeg";
+import Slide2 from "@/public/slide_2.jpg";
 import Slide1 from "@/public/slide_1.jpg";
-import Slide3 from "@/public/slide_3.jpeg";
+import Slide3 from "@/public/slide_3.jpg";
+import Slide4 from "@/public/slide_4.jpg";
 import useBreakpoint from "@/hooks/useBreakpoint";
 import { useAppStore } from "@/store/app.store";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 
 const TITLE = "E C H O".split(" ");
-const DESCRIPTION = "I N T E R O R".split(" ");
-const DESIGN = "D E S I G N".split(" ");
+const DESCRIPTION = "A R C H I T E C T U R E . I N T E R I O R".split(" ");
 
 enum StepEnums {
   ONE = "1",
@@ -34,9 +34,14 @@ const HomePage = () => {
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
 
   const RESOLUTION = {
+    fullHeight: 160,
     line: {
-      width: isMobile ? 11 : isMobileLarge ? 15 : 22,
-      height: isMobile ? 80 : isMobileLarge ? 112 : 160,
+      width: isMobile ? 11 : isMobileLarge ? 15 : 160,
+      height: isMobile ? 80 : isMobileLarge ? 112 : 22,
+    },
+    strike: {
+      width: 160,
+      height: 10,
     },
     logo: {
       width: isMobile ? 182 : isMobileLarge ? 254 : 364,
@@ -46,7 +51,7 @@ const HomePage = () => {
       fontSize: isMobile ? 32 : isMobileLarge ? 38 : 62,
     },
     line2: {
-      fontSize: isMobile ? 18 : isMobileLarge ? 20 : 36,
+      fontSize: 16,
     },
   };
   useEffect(() => {
@@ -55,10 +60,10 @@ const HomePage = () => {
     }
     const timeoutOne = setTimeout(() => {
       setStep(StepEnums.TWO);
-    }, 1800);
+    }, 3000);
     const timeoutTwo = setTimeout(() => {
       setStep(StepEnums.THREE);
-    }, 5000);
+    }, 6000);
     return () => {
       clearTimeout(timeoutOne);
       clearTimeout(timeoutTwo);
@@ -95,25 +100,144 @@ const HomePage = () => {
       />
       {step === StepEnums.ONE && (
         <div
-          className={`flex gap-2 sm:gap-3 md:gap-4 items-end overflow-hidden`}
+          className={`flex relative gap-2 sm:gap-3 md:gap-4 items-end overflow-hidden`}
         >
-          {Array.from({ length: 14 }, (_, i) => (
+          <div className="relative">
             <motion.div
-              key={i}
               className="bg-primary"
               initial={{
-                height: RESOLUTION.line.height,
+                height: RESOLUTION.line.width,
                 width: RESOLUTION.line.width,
-                transform: i % 2 ? "translateY(100%)" : "translateY(-100%)",
+                transform: "translateX(-100%)",
               }}
               animate={{
-                transform: "translateY(0)",
+                transform: "translateX(0)",
                 transition: {
-                  duration: 0.8,
+                  duration: 0.5,
                 },
               }}
             ></motion.div>
-          ))}
+            <div className="absolute top-[31%] left-0">
+              <motion.div
+                className="bg-white"
+                initial={{
+                  height: RESOLUTION.strike.height,
+                  width: RESOLUTION.strike.width,
+                  transform: "translateX(-100%)",
+                }}
+                animate={{
+                  transform: "translateX(0)",
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.5,
+                  },
+                }}
+              ></motion.div>
+            </div>
+            <div className="absolute top-[66%] left-0">
+              <motion.div
+                className="bg-white"
+                initial={{
+                  height: RESOLUTION.strike.height,
+                  width: RESOLUTION.strike.width,
+                  transform: "translateX(-100%)",
+                }}
+                animate={{
+                  transform: "translateX(0)",
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.5,
+                  },
+                }}
+              ></motion.div>
+            </div>
+          </div>
+          <div className="relative rounded-full">
+            <motion.div
+              className="bg-primary"
+              initial={{
+                height: RESOLUTION.line.width,
+                width: RESOLUTION.line.width,
+                transform: "translateX(-100%)",
+                borderRadius: "50%",
+                opacity: 0,
+              }}
+              animate={{
+                transform: "translateX(0)",
+                opacity: 1,
+                transition: {
+                  duration: 0.5,
+                  delay: 1,
+                },
+              }}
+            ></motion.div>
+            <div
+              className="absolute right-1 top-0"
+              style={{
+                height: RESOLUTION.fullHeight,
+              }}
+            >
+              <motion.div
+                className="bg-white"
+                initial={{
+                  height: RESOLUTION.fullHeight,
+                  width: 4,
+                  transform: "translateY(-100%)",
+                }}
+                animate={{
+                  transform: "translateY(0)",
+                  transition: {
+                    duration: 0.5,
+                    delay: 2,
+                  },
+                }}
+              ></motion.div>
+            </div>
+            <div
+              className="absolute right-4 top-0"
+              style={{
+                height: RESOLUTION.fullHeight,
+              }}
+            >
+              <motion.div
+                className="bg-white"
+                initial={{
+                  height: RESOLUTION.fullHeight,
+                  width: 4,
+                  transform: "translateY(-100%)",
+                }}
+                animate={{
+                  transform: "translateY(0)",
+                  transition: {
+                    duration: 0.5,
+                    delay: 2,
+                  },
+                }}
+              ></motion.div>
+            </div>
+            <div
+              className="absolute right-8 top-0"
+              style={{
+                height: RESOLUTION.fullHeight,
+              }}
+            >
+              <motion.div
+                className="bg-white"
+                initial={{
+                  height: RESOLUTION.fullHeight,
+                  width: 4,
+                  transform: "translateY(-100%)",
+                }}
+                animate={{
+                  transform: "translateY(0)",
+                  transition: {
+                    duration: 0.5,
+                    delay: 2,
+                  },
+                }}
+              ></motion.div>
+            </div>
+          </div>
         </div>
       )}
       {step === StepEnums.TWO && (
@@ -177,29 +301,11 @@ const HomePage = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
-                  duration: 0.5,
-                  delay: i / 10 + 0.5,
+                  duration: 0.3,
+                  delay: i / 10,
                 }}
                 key={i}
                 className="font-extralight inline-block"
-                style={{
-                  fontSize: RESOLUTION.line2.fontSize,
-                }}
-              >
-                {el}
-              </motion.span>
-            ))}
-            <br />
-            {DESIGN.map((el, i) => (
-              <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  duration: 0.5,
-                  delay: i / 10 + 1,
-                }}
-                key={i}
-                className="font-extralight inline-block -mt-3"
                 style={{
                   fontSize: RESOLUTION.line2.fontSize,
                 }}
@@ -246,6 +352,14 @@ const HomePage = () => {
             <SwiperSlide>
               <Image
                 src={Slide3}
+                fill
+                style={{ objectFit: "cover" }}
+                alt="Thumnail"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={Slide4}
                 fill
                 style={{ objectFit: "cover" }}
                 alt="Thumnail"

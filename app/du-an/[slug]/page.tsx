@@ -1,7 +1,6 @@
 import React from "react";
 import data from "@/data.json";
 import { ProjectDef } from "@/types/project.type";
-import { useRouter } from "next/navigation";
 
 export default function Page({ params }: { params: { slug: string } }) {
   const project = (data as ProjectDef[]).find(

@@ -4,7 +4,7 @@ import { MenuToggle } from "../atoms/MenuToggle";
 import { motion } from "framer-motion";
 import useBreakpoint from "@/hooks/useBreakpoint";
 import Image from "next/image";
-import LogoText from "@/public/logo-text.png";
+import LogoText from "@/public/logo-text.jpg";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -12,6 +12,7 @@ import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 import clsx from "clsx";
 import { useAppStore } from "@/store/app.store";
 import { usePathname } from "next/navigation";
+import DropdownMenu from "../DropdownMenu";
 
 const menu = {
   open: {
@@ -111,12 +112,13 @@ const Header = () => {
               >
                 Giới thiệu
               </Link>
+              <DropdownMenu />
               <div className="text-nowrap px-8 gap-2 transition cursor-pointer my-3 leading-6 text-base">
                 <div
                   className="flex items-center gap-2 hover:text-primary"
                   onClick={() => setShowSubMenu(!showSubMenu)}
                 >
-                  Dự án
+                  Công trình thực tế
                   <FontAwesomeIcon icon={faSortDown} className="-mt-1" />
                 </div>
                 <motion.div
@@ -173,7 +175,7 @@ const Header = () => {
           </div>
         </motion.nav>
       ) : (
-        <div className="container mx-auto w-full flex justify-between py-1">
+        <div className="container mx-auto w-full flex justify-between py-1 px-3">
           <Link href="/" className=" block h-12 w-36 mt-1">
             <Image
               src={LogoText}
@@ -198,13 +200,15 @@ const Header = () => {
             >
               Giới thiệu
             </Link>
+            <DropdownMenu />
+
             <motion.div
               className="relative"
               onHoverStart={toggleHoverMenu}
               onHoverEnd={toggleHoverMenu}
             >
               <div className="text-nowrap flex items-center px-8 gap-2 text-sm hover:text-primary transition cursor-pointer">
-                Dự án
+                Công trình thực tế
                 <FontAwesomeIcon icon={faSortDown} className="-mt-1" />
               </div>
               <motion.div
