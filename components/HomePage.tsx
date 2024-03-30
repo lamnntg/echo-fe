@@ -54,21 +54,21 @@ const HomePage = () => {
       fontSize: 16,
     },
   };
-  // useEffect(() => {
-  //   if (!loaded) {
-  //     return;
-  //   }
-  //   const timeoutOne = setTimeout(() => {
-  //     setStep(StepEnums.TWO);
-  //   }, 3000);
-  //   const timeoutTwo = setTimeout(() => {
-  //     setStep(StepEnums.THREE);
-  //   }, 6000);
-  //   return () => {
-  //     clearTimeout(timeoutOne);
-  //     clearTimeout(timeoutTwo);
-  //   };
-  // }, [loaded]);
+  useEffect(() => {
+    if (!loaded) {
+      return;
+    }
+    const timeoutOne = setTimeout(() => {
+      setStep(StepEnums.TWO);
+    }, 3000);
+    const timeoutTwo = setTimeout(() => {
+      setStep(StepEnums.THREE);
+    }, 6000);
+    return () => {
+      clearTimeout(timeoutOne);
+      clearTimeout(timeoutTwo);
+    };
+  }, [loaded]);
 
   useEffect(() => {
     if (step === StepEnums.THREE) {
