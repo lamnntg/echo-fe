@@ -36,7 +36,7 @@ const HomePage = () => {
   const RESOLUTION = {
     fullHeight: 160,
     line: {
-      width: isMobile ? 11 : isMobileLarge ? 15 : 160,
+      width: isMobile ? 100 : 160,
       height: isMobile ? 80 : isMobileLarge ? 112 : 22,
     },
     strike: {
@@ -54,21 +54,21 @@ const HomePage = () => {
       fontSize: 16,
     },
   };
-  useEffect(() => {
-    if (!loaded) {
-      return;
-    }
-    const timeoutOne = setTimeout(() => {
-      setStep(StepEnums.TWO);
-    }, 3000);
-    const timeoutTwo = setTimeout(() => {
-      setStep(StepEnums.THREE);
-    }, 6000);
-    return () => {
-      clearTimeout(timeoutOne);
-      clearTimeout(timeoutTwo);
-    };
-  }, [loaded]);
+  // useEffect(() => {
+  //   if (!loaded) {
+  //     return;
+  //   }
+  //   const timeoutOne = setTimeout(() => {
+  //     setStep(StepEnums.TWO);
+  //   }, 3000);
+  //   const timeoutTwo = setTimeout(() => {
+  //     setStep(StepEnums.THREE);
+  //   }, 6000);
+  //   return () => {
+  //     clearTimeout(timeoutOne);
+  //     clearTimeout(timeoutTwo);
+  //   };
+  // }, [loaded]);
 
   useEffect(() => {
     if (step === StepEnums.THREE) {
@@ -117,7 +117,7 @@ const HomePage = () => {
                 },
               }}
             ></motion.div>
-            <div className="absolute top-[31%] left-0">
+            <div className="absolute top-[30%] left-0">
               <motion.div
                 className="bg-white"
                 initial={{
