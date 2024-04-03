@@ -11,6 +11,9 @@ import useBreakpoint from "@/hooks/useBreakpoint";
 import { useAppStore } from "@/store/app.store";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
+import localFont from "next/font/local";
+
+const FuturaNow = localFont({ src: "../fonts/FuturaNowHeadline.ttf" });
 
 const TITLE = "E C H O".split(" ");
 const DESCRIPTION = "A R C H I T E C T U R E . I N T E R I O R".split(" ");
@@ -30,7 +33,7 @@ const HEIGHT_FOOTER_DESKTOP = 36;
 const HomePage = () => {
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.ONE);
+  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
 
   const RESOLUTION = {
@@ -305,7 +308,7 @@ const HomePage = () => {
                   delay: i / 10,
                 }}
                 key={i}
-                className="font-extralight inline-block"
+                className={`font-extralight inline-block ${FuturaNow.className} mx-[1px]`}
                 style={{
                   fontSize: RESOLUTION.line2.fontSize,
                 }}
