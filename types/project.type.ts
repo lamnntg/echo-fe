@@ -10,3 +10,11 @@ export type ProjectDef = {
   photo?: string;
   images: string[];
 };
+
+export type DropdownLink = {
+  label: string;
+  items: {
+    href: string;
+    label: string;
+  }[];
+};

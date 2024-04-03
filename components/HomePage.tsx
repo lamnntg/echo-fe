@@ -11,13 +11,15 @@ import useBreakpoint from "@/hooks/useBreakpoint";
 import { useAppStore } from "@/store/app.store";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
-import localFont from "next/font/local";
-
-const FuturaNow = localFont({ src: "../fonts/FuturaNowHeadline.ttf" });
+import { FuturaNow } from "@/utils/font";
+import clsx from "clsx";
 
 const TITLE = "E C H O".split(" ");
 const DESCRIPTION = "A R C H I T E C T U R E . I N T E R I O R".split(" ");
-
+const SLOGAN = "T i m e l e s s".split(" ");
+const SLOGAN2 = "d e s i g n ,".split(" ");
+const SLOGAN3 = "e n d l e s s".split(" ");
+const SLOGAN4 = "e c h o .".split(" ");
 enum StepEnums {
   ONE = "1",
   TWO = "2",
@@ -25,15 +27,15 @@ enum StepEnums {
 }
 
 const HEIGHT_HEADER_MOBILE = 56;
-const HEIGHT_FOOTER_MOBILE = 76;
+const HEIGHT_FOOTER_MOBILE = 28;
 
 const HEIGHT_HEADER_DESKTOP = 68;
-const HEIGHT_FOOTER_DESKTOP = 36;
+const HEIGHT_FOOTER_DESKTOP = 28;
 
 const HomePage = () => {
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
+  const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
 
   const RESOLUTION = {
@@ -57,21 +59,21 @@ const HomePage = () => {
       fontSize: 16,
     },
   };
-  useEffect(() => {
-    if (!loaded) {
-      return;
-    }
-    const timeoutOne = setTimeout(() => {
-      setStep(StepEnums.TWO);
-    }, 3000);
-    const timeoutTwo = setTimeout(() => {
-      setStep(StepEnums.THREE);
-    }, 6000);
-    return () => {
-      clearTimeout(timeoutOne);
-      clearTimeout(timeoutTwo);
-    };
-  }, [loaded]);
+  // useEffect(() => {
+  //   if (!loaded) {
+  //     return;
+  //   }
+  //   const timeoutOne = setTimeout(() => {
+  //     setStep(StepEnums.TWO);
+  //   }, 3000);
+  //   const timeoutTwo = setTimeout(() => {
+  //     setStep(StepEnums.THREE);
+  //   }, 9000);
+  //   return () => {
+  //     clearTimeout(timeoutOne);
+  //     clearTimeout(timeoutTwo);
+  //   };
+  // }, [loaded]);
 
   useEffect(() => {
     if (step === StepEnums.THREE) {
@@ -175,7 +177,7 @@ const HomePage = () => {
               }}
             ></motion.div>
             <div
-              className="absolute right-1 top-0"
+              className="absolute right-2 top-0"
               style={{
                 height: RESOLUTION.fullHeight,
               }}
@@ -184,7 +186,7 @@ const HomePage = () => {
                 className="bg-white"
                 initial={{
                   height: RESOLUTION.fullHeight,
-                  width: 4,
+                  width: 8,
                   transform: "translateY(-100%)",
                 }}
                 animate={{
@@ -197,7 +199,7 @@ const HomePage = () => {
               ></motion.div>
             </div>
             <div
-              className="absolute right-4 top-0"
+              className="absolute right-6 top-0"
               style={{
                 height: RESOLUTION.fullHeight,
               }}
@@ -206,7 +208,7 @@ const HomePage = () => {
                 className="bg-white"
                 initial={{
                   height: RESOLUTION.fullHeight,
-                  width: 4,
+                  width: 8,
                   transform: "translateY(-100%)",
                 }}
                 animate={{
@@ -219,7 +221,7 @@ const HomePage = () => {
               ></motion.div>
             </div>
             <div
-              className="absolute right-8 top-0"
+              className="absolute right-10 top-0"
               style={{
                 height: RESOLUTION.fullHeight,
               }}
@@ -228,7 +230,7 @@ const HomePage = () => {
                 className="bg-white"
                 initial={{
                   height: RESOLUTION.fullHeight,
-                  width: 4,
+                  width: 8,
                   transform: "translateY(-100%)",
                 }}
                 animate={{
@@ -244,78 +246,146 @@ const HomePage = () => {
         </div>
       )}
       {step === StepEnums.TWO && (
-        <div className="flex items-center gap-4">
-          <div className="relative overflow-hidden">
-            <div
-              className="relative"
-              style={{
-                height: RESOLUTION.logo.height,
-                width: RESOLUTION.logo.width,
-              }}
-            >
-              <Image
-                src={Logo}
-                alt="Logo"
-                fill
-                sizes="100vw"
+        <div>
+          <div className="flex items-center gap-4">
+            <div className="relative overflow-hidden">
+              <div
+                className="relative"
                 style={{
-                  objectFit: "cover",
+                  height: RESOLUTION.logo.height,
+                  width: RESOLUTION.logo.width,
                 }}
-                priority
-              />
+              >
+                <Image
+                  src={Logo}
+                  alt="Logo"
+                  fill
+                  sizes="100vw"
+                  style={{
+                    objectFit: "cover",
+                  }}
+                  priority
+                />
+              </div>
+              <motion.div
+                className="bg-white absolute top-0 left-0"
+                initial={{
+                  height: RESOLUTION.logo.height,
+                  width: RESOLUTION.logo.width,
+                  transform: "translateX(0)",
+                }}
+                animate={{
+                  transform: "translateX(-100%)",
+                  transition: {
+                    duration: 1.2,
+                  },
+                }}
+              ></motion.div>
             </div>
-            <motion.div
-              className="bg-white absolute top-0 left-0"
-              initial={{
-                height: RESOLUTION.logo.height,
-                width: RESOLUTION.logo.width,
-                transform: "translateX(0)",
-              }}
-              animate={{
-                transform: "translateX(-100%)",
-                transition: {
-                  duration: 1.2,
-                },
-              }}
-            ></motion.div>
+            <div>
+              {TITLE.map((el, i) => (
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: i / 10,
+                  }}
+                  key={i}
+                  className={`mr-1 leading-none font-medium inline-block text-[#333]`}
+                  style={{
+                    fontSize: RESOLUTION.line1.fontSize,
+                  }}
+                >
+                  {el}
+                </motion.span>
+              ))}
+              <br />
+              <div className="mt-0 sm:mt-1 md:mt-2"></div>
+              {DESCRIPTION.map((el, i) => (
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: i / 10,
+                  }}
+                  key={i}
+                  className={`font-extralight inline-block ${FuturaNow.className} mx-[1px]`}
+                  style={{
+                    fontSize: RESOLUTION.line2.fontSize,
+                  }}
+                >
+                  {el}
+                </motion.span>
+              ))}
+            </div>
           </div>
-          <div>
-            {TITLE.map((el, i) => (
-              <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  duration: 0.5,
-                  delay: i / 10,
-                }}
-                key={i}
-                className={`mr-1 leading-none font-medium inline-block text-[#333]`}
-                style={{
-                  fontSize: RESOLUTION.line1.fontSize,
-                }}
-              >
-                {el}
-              </motion.span>
-            ))}
-            <br />
-            <div className="mt-0 sm:mt-1 md:mt-2"></div>
-            {DESCRIPTION.map((el, i) => (
-              <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  duration: 0.3,
-                  delay: i / 10,
-                }}
-                key={i}
-                className={`font-extralight inline-block ${FuturaNow.className} mx-[1px]`}
-                style={{
-                  fontSize: RESOLUTION.line2.fontSize,
-                }}
-              >
-                {el}
-              </motion.span>
-            ))}
+          <div className="text-center text-5xl mt-4 flex items-center gap-x-3">
+            <div>
+              {SLOGAN.map((el, i) => (
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: i / 10 + 2.5,
+                  }}
+                  key={i}
+                  className={`text-5xl inline-block mx-[1px] ${FuturaNow.className}`}
+                >
+                  {el}
+                </motion.span>
+              ))}
+            </div>
+            <div>
+              {SLOGAN2.map((el, i) => (
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: i / 10 + 0.8 + 2.5,
+                  }}
+                  key={i}
+                  className={`text-5xl inline-block mx-[1px] ${FuturaNow.className}`}
+                >
+                  {el}
+                </motion.span>
+              ))}
+            </div>
+            <div>
+              {SLOGAN3.map((el, i) => (
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: i / 10 + 1.5 + 2.5,
+                  }}
+                  key={i}
+                  className={`text-5xl inline-block mx-[1px] ${FuturaNow.className}`}
+                >
+                  {el}
+                </motion.span>
+              ))}
+            </div>
+            <div>
+              {SLOGAN4.map((el, i) => (
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: i / 10 + 2.2 + 2.5,
+                  }}
+                  key={i}
+                  className={`text-5xl inline-block mx-[1px] ${FuturaNow.className}`}
+                >
+                  {el}
+                </motion.span>
+              ))}
+            </div>
           </div>
         </div>
       )}

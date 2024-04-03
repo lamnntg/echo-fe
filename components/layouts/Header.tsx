@@ -200,41 +200,21 @@ const Header = () => {
             >
               Giới thiệu
             </Link>
-            <DropdownMenu />
-
-            <motion.div
-              className="relative"
-              onHoverStart={toggleHoverMenu}
-              onHoverEnd={toggleHoverMenu}
-            >
-              <div className="text-nowrap flex items-center px-8 gap-2 text-sm hover:text-primary transition cursor-pointer">
-                Công trình thực tế
-                <FontAwesomeIcon icon={faSortDown} className="-mt-1" />
-              </div>
-              <motion.div
-                className="absolute top-full left-0 z-[2]"
-                initial="exit"
-                animate={isHover ? "enter" : "exit"}
-                variants={subMenuAnimate}
-              >
-                <div className=" bg-white py-4 rounded-b-md">
-                  <Link
-                    href="/du-an-da-hoan-thanh"
-                    className="text-nowrap my-2 px-8 block hover:text-primary transition"
-                    prefetch
-                  >
-                    Đã hoàn thành
-                  </Link>
-                  <Link
-                    href="/du-an-dang-trien-khai"
-                    className=" text-nowrap my-2 px-8 block hover:text-primary transition"
-                    prefetch
-                  >
-                    Đang triển khai
-                  </Link>
-                </div>
-              </motion.div>
-            </motion.div>
+            <DropdownMenu
+              item={{
+                label: "Dự án thiết kế",
+                items: [
+                  {
+                    label: "Thiết kế nội thất",
+                    href: "/thiet-ke",
+                  },
+                  {
+                    label: "Thiết kế kiến trúc sân vườn",
+                    href: "/thiet-ke",
+                  },
+                ],
+              }}
+            />
             <Link
               href="/lien-he"
               className="flex items-center px-8 text-sm hover:text-primary transition mr-4"

@@ -1,47 +1,108 @@
 "use client";
 import { useAppStore } from "@/store/app.store";
-import {
-  faEnvelope,
-  faLocationDot,
-  faPhoneVolume,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
 import React, { memo } from "react";
+import ContactFooter from "./ContactFooter";
+import clsx from "clsx";
+import { FuturaNow } from "@/utils/font";
+import { usePathname } from "next/navigation";
+import Logo from "@/public/logo-text.jpg";
+import Image from "next/image";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   const { showFooter } = useAppStore();
+  const pathname = usePathname();
   if (!showFooter) {
     return null;
   }
-  return (
-    <footer className="flex container mx-auto bg-white py-2 text-sm text-[#333] justify-between flex-col items-center md:flex-row">
-      <div>
-        <FontAwesomeIcon icon={faLocationDot} className="text-[#333] mr-2" />
-        <span className="hover:text-primary transition opacity-70 text-xs">
-          Số 6 Kim Đồng, Giáp Bát, Hoàng Mai, Hanoi, Vietnam
-        </span>
-      </div>
-      <div>
-        <FontAwesomeIcon icon={faPhoneVolume} className="text-[#333] mr-2" />
-        <Link
-          href="tel:088 688 99 95"
-          className="hover:text-primary transition opacity-70 text-xs"
-        >
-          088 688 99 95
-        </Link>
-      </div>
-      <div>
-        <FontAwesomeIcon icon={faEnvelope} className="text-[#333] mr-2" />
-        <Link
-          href="mailto:nmq.echodesign@gmail.com"
-          target="_blank"
-          className="hover:text-primary transition opacity-70 text-xs"
-        >
-          nmq.echodesign@gmail.com
-        </Link>
-      </div>
+  return pathname === "/" ? (
+    <footer className="bg-white py-2 text-sm text-[#333] text-center">
+      <p className={clsx("text-center", FuturaNow.className)}>
+        Timeless design, endless echo
+      </p>
+      <ContactFooter />
     </footer>
+  ) : (
+    <div className="bg-[#4b4b4b] text-white pt-10 pb-6">
+      <div className="container mx-auto flex gap-8 flex-wrap px-2">
+        <div>
+          <Image
+            src={Logo}
+            style={{
+              objectFit: "cover",
+              width: "135px",
+            }}
+            alt="Logo"
+          />
+          <p className="mt-6">
+            Số 6 Kim Đồng, Giáp Bát, Hoàng Mai, Hanoi, Vietnam
+          </p>
+          <p className="mt-3">
+            <Link
+              href="tel:088 688 99 95"
+              className="hover:text-primary transition"
+            >
+              088 688 99 95
+            </Link>
+          </p>
+          <p className="mt-3">
+            <Link
+              href="mailto:nmq.echodesign@gmail.com"
+              target="_blank"
+              className="hover:text-primary transition"
+            >
+              nmq.echodesign@gmail.com
+            </Link>
+          </p>
+        </div>
+
+        <div className="flex flex-col">
+          <p className="mb-7">VỀ CHÚNG TÔI</p>
+          <Link className="mb-3 transition hover:text-primary" href="/">
+            Trang chủ
+          </Link>
+          <Link className="mb-3 transition hover:text-primary" href="/">
+            Giới thiệu
+          </Link>
+          <Link className="mb-3 transition hover:text-primary" href="/">
+            Dự án thiết kế
+          </Link>
+          <Link className="mb-3 transition hover:text-primary" href="/">
+            Dự án thi công hoàn thiện
+          </Link>
+        </div>
+
+        <div>
+          <p className="mb-7">LIÊN HỆ CHÚNG TÔI</p>
+          <div className="flex items-center gap-2 mb-3 transition hover:text-primary cursor-pointer">
+            <Link
+              href="https://www.youtube.com/@ECHO.design"
+              className="flex items-center"
+              target="_blank"
+            >
+              <div className="w-[30px]">
+                <FontAwesomeIcon icon={faFacebookF} size="lg" />
+              </div>
+              Facebook
+            </Link>
+          </div>
+          <div className="flex items-center gap-2 transition hover:text-primary cursor-pointer">
+            <Link
+              href="https://www.youtube.com/@ECHO.design"
+              className="flex items-center"
+              target="_blank"
+            >
+              <div className="w-[30px]">
+                <FontAwesomeIcon icon={faYoutube} size="lg" />
+              </div>
+              Youtube
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

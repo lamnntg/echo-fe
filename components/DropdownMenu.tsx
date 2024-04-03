@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { motion } from "framer-motion";
 import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import useBreakpoint from "@/hooks/useBreakpoint";
+import { DropdownLink } from "@/types/project.type";
 
 const menu = {
   open: {
@@ -42,7 +43,11 @@ const subMenuAnimate = {
   },
 };
 
-const DropdownMenu = () => {
+type DropdownMenuProps = {
+  item: DropdownLink;
+};
+
+const DropdownMenu: FC<DropdownMenuProps> = ({ item }) => {
   const { isMobileLargeDown } = useBreakpoint();
   const [showSubMenu, setShowSubMenu] = useState(false);
   const [isHover, setIsHover] = useState(false);
@@ -56,7 +61,7 @@ const DropdownMenu = () => {
         className="flex items-center gap-2 hover:text-primary"
         onClick={() => setShowSubMenu(!showSubMenu)}
       >
-        Dự án thiết kế
+        {item.label}
         <FontAwesomeIcon icon={faSortDown} className="-mt-1" />
       </div>
       <motion.div
@@ -65,13 +70,15 @@ const DropdownMenu = () => {
         animate={showSubMenu ? "open" : "close"}
         variants={menu}
       >
-        <Link
-          href="/thiet-ke"
-          className="text-nowrap my-2 hover:text-primary px-2 block transition"
-          prefetch
-        >
-          Thiết kế nội thất
-        </Link>
+        {item.items.map((l) => (
+          <Link
+            href={l.href}
+            className="text-nowrap my-2 hover:text-primary px-2 block transition"
+            prefetch
+          >
+            {l.label}
+          </Link>
+        ))}
         <Link
           href="/thiet-ke"
           className=" text-nowrap my-2 hover:text-primary px-2 block transition"
