@@ -1,6 +1,6 @@
 import "./globals.css";
 import Header from "@/components/layouts/Header";
-import { Source_Sans_3 } from "next/font/google";
+import { Source_Sans_3, Raleway } from "next/font/google";
 import Footer from "@/components/layouts/Footer";
 import "swiper/css";
 import "swiper/css/effect-fade";

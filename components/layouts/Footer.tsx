@@ -63,7 +63,10 @@ const Footer = () => {
           <Link className="mb-3 transition hover:text-primary" href="/">
             Trang chủ
           </Link>
-          <Link className="mb-3 transition hover:text-primary" href="/">
+          <Link
+            className="mb-3 transition hover:text-primary"
+            href="/gioi-thieu"
+          >
             Giới thiệu
           </Link>
           <Link className="mb-3 transition hover:text-primary" href="/">
@@ -102,6 +105,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <ContactFooter />
     </div>
   );
 };

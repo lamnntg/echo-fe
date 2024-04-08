@@ -13,6 +13,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { FuturaNow } from "@/utils/font";
 import clsx from "clsx";
+import Link from "next/link";
+import { MENU_HOME } from "@/constants/app.constants";
 
 const TITLE = "E C H O".split(" ");
 const DESCRIPTION = "A R C H I T E C T U R E . I N T E R I O R".split(" ");
@@ -27,10 +29,10 @@ enum StepEnums {
 }
 
 const HEIGHT_HEADER_MOBILE = 56;
-const HEIGHT_FOOTER_MOBILE = 28;
+const HEIGHT_FOOTER_MOBILE = -8;
 
 const HEIGHT_HEADER_DESKTOP = 68;
-const HEIGHT_FOOTER_DESKTOP = 28;
+const HEIGHT_FOOTER_DESKTOP = -8;
 
 const HomePage = () => {
   const { setShowFooter } = useAppStore();
@@ -49,14 +51,14 @@ const HomePage = () => {
       height: 10,
     },
     logo: {
-      width: isMobile ? 182 : isMobileLarge ? 254 : 364,
+      width: isMobile ? 120 : isMobileLarge ? 254 : 364,
       height: isMobile ? 80 : isMobileLarge ? 112 : 160,
     },
     line1: {
-      fontSize: isMobile ? 32 : isMobileLarge ? 38 : 62,
+      fontSize: isMobile ? 40 : isMobileLarge ? 80 : 120,
     },
     line2: {
-      fontSize: 16,
+      fontSize: isMobile ? 12 : 16,
     },
   };
   // useEffect(() => {
@@ -84,361 +86,511 @@ const HomePage = () => {
   }, [step]);
 
   return (
-    <div
-      className="w-[100%] bg-white flex justify-center items-center sticky top-0 left-0"
-      style={{
-        zIndex: step === StepEnums.THREE ? 1 : 3,
-        height: `calc(100vh - ${
-          isMobileLargeDown
-            ? HEIGHT_FOOTER_MOBILE + HEIGHT_HEADER_MOBILE
-            : HEIGHT_FOOTER_DESKTOP + HEIGHT_HEADER_DESKTOP
-        }px)`,
-      }}
-    >
-      <Image
-        src={Logo}
-        width={0}
-        height={0}
-        alt="Logo"
-        style={{ width: "0", height: "0" }}
-        onLoad={() => setLoaded(true)}
-      />
-      {step === StepEnums.ONE && (
-        <div
-          className={`flex relative gap-2 sm:gap-3 md:gap-4 items-end overflow-hidden`}
-        >
-          <div className="relative">
-            <motion.div
-              className="bg-primary"
-              initial={{
-                height: RESOLUTION.line.width,
-                width: RESOLUTION.line.width,
-                transform: "translateX(-100%)",
-              }}
-              animate={{
-                transform: "translateX(0)",
-                transition: {
-                  duration: 0.5,
-                },
-              }}
-            ></motion.div>
-            <div className="absolute top-[30%] left-0">
+    <div>
+      <div
+        className="w-[100%] bg-white flex justify-center items-center"
+        style={{
+          zIndex: step === StepEnums.THREE ? 1 : 3,
+          height: `calc(100vh - ${
+            isMobileLargeDown
+              ? HEIGHT_FOOTER_MOBILE + HEIGHT_HEADER_MOBILE
+              : HEIGHT_FOOTER_DESKTOP + HEIGHT_HEADER_DESKTOP
+          }px)`,
+        }}
+      >
+        <Image
+          src={Logo}
+          width={0}
+          height={0}
+          alt="Logo"
+          style={{ width: "0", height: "0" }}
+          onLoad={() => setLoaded(true)}
+        />
+        {step === StepEnums.ONE && (
+          <div
+            className={`flex relative gap-2 sm:gap-3 md:gap-4 items-end overflow-hidden`}
+          >
+            <div className="relative">
               <motion.div
-                className="bg-white"
+                className="bg-primary"
                 initial={{
-                  height: RESOLUTION.strike.height,
-                  width: RESOLUTION.strike.width,
+                  height: RESOLUTION.line.width,
+                  width: RESOLUTION.line.width,
                   transform: "translateX(-100%)",
                 }}
                 animate={{
                   transform: "translateX(0)",
                   transition: {
                     duration: 0.5,
-                    delay: 0.5,
                   },
                 }}
               ></motion.div>
+              <div className="absolute top-[30%] left-0">
+                <motion.div
+                  className="bg-white"
+                  initial={{
+                    height: RESOLUTION.strike.height,
+                    width: RESOLUTION.strike.width,
+                    transform: "translateX(-100%)",
+                  }}
+                  animate={{
+                    transform: "translateX(0)",
+                    transition: {
+                      duration: 0.5,
+                      delay: 1.5,
+                    },
+                  }}
+                ></motion.div>
+              </div>
+              <div className="absolute top-[66%] left-0">
+                <motion.div
+                  className="bg-white"
+                  initial={{
+                    height: RESOLUTION.strike.height,
+                    width: RESOLUTION.strike.width,
+                    transform: "translateX(-100%)",
+                  }}
+                  animate={{
+                    transform: "translateX(0)",
+                    transition: {
+                      duration: 0.5,
+                      delay: 1.5,
+                    },
+                  }}
+                ></motion.div>
+              </div>
             </div>
-            <div className="absolute top-[66%] left-0">
+            <div className="relative rounded-full">
               <motion.div
-                className="bg-white"
+                className="bg-primary"
                 initial={{
-                  height: RESOLUTION.strike.height,
-                  width: RESOLUTION.strike.width,
+                  height: RESOLUTION.line.width,
+                  width: RESOLUTION.line.width,
                   transform: "translateX(-100%)",
+                  borderRadius: "50%",
+                  opacity: 0,
                 }}
                 animate={{
                   transform: "translateX(0)",
+                  opacity: 1,
                   transition: {
                     duration: 0.5,
                     delay: 0.5,
                   },
                 }}
               ></motion.div>
-            </div>
-          </div>
-          <div className="relative rounded-full">
-            <motion.div
-              className="bg-primary"
-              initial={{
-                height: RESOLUTION.line.width,
-                width: RESOLUTION.line.width,
-                transform: "translateX(-100%)",
-                borderRadius: "50%",
-                opacity: 0,
-              }}
-              animate={{
-                transform: "translateX(0)",
-                opacity: 1,
-                transition: {
-                  duration: 0.5,
-                  delay: 1,
-                },
-              }}
-            ></motion.div>
-            <div
-              className="absolute right-2 top-0"
-              style={{
-                height: RESOLUTION.fullHeight,
-              }}
-            >
-              <motion.div
-                className="bg-white"
-                initial={{
-                  height: RESOLUTION.fullHeight,
-                  width: 8,
-                  transform: "translateY(-100%)",
-                }}
-                animate={{
-                  transform: "translateY(0)",
-                  transition: {
-                    duration: 0.5,
-                    delay: 2,
-                  },
-                }}
-              ></motion.div>
-            </div>
-            <div
-              className="absolute right-6 top-0"
-              style={{
-                height: RESOLUTION.fullHeight,
-              }}
-            >
-              <motion.div
-                className="bg-white"
-                initial={{
-                  height: RESOLUTION.fullHeight,
-                  width: 8,
-                  transform: "translateY(-100%)",
-                }}
-                animate={{
-                  transform: "translateY(0)",
-                  transition: {
-                    duration: 0.5,
-                    delay: 2,
-                  },
-                }}
-              ></motion.div>
-            </div>
-            <div
-              className="absolute right-10 top-0"
-              style={{
-                height: RESOLUTION.fullHeight,
-              }}
-            >
-              <motion.div
-                className="bg-white"
-                initial={{
-                  height: RESOLUTION.fullHeight,
-                  width: 8,
-                  transform: "translateY(-100%)",
-                }}
-                animate={{
-                  transform: "translateY(0)",
-                  transition: {
-                    duration: 0.5,
-                    delay: 2,
-                  },
-                }}
-              ></motion.div>
-            </div>
-          </div>
-        </div>
-      )}
-      {step === StepEnums.TWO && (
-        <div>
-          <div className="flex items-center gap-4">
-            <div className="relative overflow-hidden">
               <div
-                className="relative"
+                className="absolute right-2 top-0"
                 style={{
-                  height: RESOLUTION.logo.height,
-                  width: RESOLUTION.logo.width,
+                  height: RESOLUTION.fullHeight,
                 }}
               >
-                <Image
-                  src={Logo}
-                  alt="Logo"
-                  fill
-                  sizes="100vw"
-                  style={{
-                    objectFit: "cover",
+                <motion.div
+                  className="bg-white"
+                  initial={{
+                    height: RESOLUTION.fullHeight,
+                    width: 8,
+                    transform: "translateY(-100%)",
                   }}
-                  priority
-                />
+                  animate={{
+                    transform: "translateY(0)",
+                    transition: {
+                      duration: 0.5,
+                      delay: 1.5,
+                    },
+                  }}
+                ></motion.div>
               </div>
-              <motion.div
-                className="bg-white absolute top-0 left-0"
-                initial={{
-                  height: RESOLUTION.logo.height,
-                  width: RESOLUTION.logo.width,
-                  transform: "translateX(0)",
+              <div
+                className="absolute right-6 top-0"
+                style={{
+                  height: RESOLUTION.fullHeight,
                 }}
-                animate={{
-                  transform: "translateX(-100%)",
-                  transition: {
-                    duration: 1.2,
-                  },
+              >
+                <motion.div
+                  className="bg-white"
+                  initial={{
+                    height: RESOLUTION.fullHeight,
+                    width: 8,
+                    transform: "translateY(-100%)",
+                  }}
+                  animate={{
+                    transform: "translateY(0)",
+                    transition: {
+                      duration: 0.5,
+                      delay: 1.5,
+                    },
+                  }}
+                ></motion.div>
+              </div>
+              <div
+                className="absolute right-10 top-0"
+                style={{
+                  height: RESOLUTION.fullHeight,
                 }}
-              ></motion.div>
-            </div>
-            <div>
-              {TITLE.map((el, i) => (
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: i / 10,
+              >
+                <motion.div
+                  className="bg-white"
+                  initial={{
+                    height: RESOLUTION.fullHeight,
+                    width: 8,
+                    transform: "translateY(-100%)",
                   }}
-                  key={i}
-                  className={`mr-1 leading-none font-medium inline-block text-[#333]`}
-                  style={{
-                    fontSize: RESOLUTION.line1.fontSize,
+                  animate={{
+                    transform: "translateY(0)",
+                    transition: {
+                      duration: 0.5,
+                      delay: 1.5,
+                    },
                   }}
-                >
-                  {el}
-                </motion.span>
-              ))}
-              <br />
-              <div className="mt-0 sm:mt-1 md:mt-2"></div>
-              {DESCRIPTION.map((el, i) => (
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{
-                    duration: 0.3,
-                    delay: i / 10,
-                  }}
-                  key={i}
-                  className={`font-extralight inline-block ${FuturaNow.className} mx-[1px]`}
-                  style={{
-                    fontSize: RESOLUTION.line2.fontSize,
-                  }}
-                >
-                  {el}
-                </motion.span>
-              ))}
+                ></motion.div>
+              </div>
             </div>
           </div>
-          <div className="text-center text-5xl mt-4 flex items-center gap-x-3">
-            <div>
-              {SLOGAN.map((el, i) => (
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{
-                    duration: 0.3,
-                    delay: i / 10 + 2.5,
+        )}
+        {step === StepEnums.TWO && (
+          <div>
+            <div className="flex items-center gap-4">
+              <div className="relative overflow-hidden">
+                <div
+                  className="relative flex items-center"
+                  style={{
+                    height: RESOLUTION.logo.height,
+                    width: RESOLUTION.logo.width,
                   }}
-                  key={i}
-                  className={`text-5xl inline-block mx-[1px] ${FuturaNow.className}`}
                 >
-                  {el}
-                </motion.span>
-              ))}
-            </div>
-            <div>
-              {SLOGAN2.map((el, i) => (
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{
-                    duration: 0.3,
-                    delay: i / 10 + 0.8 + 2.5,
+                  <Image
+                    src={Logo}
+                    alt="Logo"
+                    sizes="100vw"
+                    style={{
+                      objectFit: "cover",
+                    }}
+                    priority
+                  />
+                </div>
+                <motion.div
+                  className="bg-white absolute top-0 left-0"
+                  initial={{
+                    height: RESOLUTION.logo.height,
+                    width: RESOLUTION.logo.width,
+                    transform: "translateX(0)",
                   }}
-                  key={i}
-                  className={`text-5xl inline-block mx-[1px] ${FuturaNow.className}`}
-                >
-                  {el}
-                </motion.span>
-              ))}
-            </div>
-            <div>
-              {SLOGAN3.map((el, i) => (
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{
-                    duration: 0.3,
-                    delay: i / 10 + 1.5 + 2.5,
+                  animate={{
+                    transform: "translateX(-100%)",
+                    transition: {
+                      duration: 1.2,
+                    },
                   }}
-                  key={i}
-                  className={`text-5xl inline-block mx-[1px] ${FuturaNow.className}`}
-                >
-                  {el}
-                </motion.span>
-              ))}
+                ></motion.div>
+              </div>
+              <div>
+                {TITLE.map((el, i) => (
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.5,
+                      delay: i / 10,
+                    }}
+                    key={i}
+                    className={`mr-1 leading-none font-medium inline-block text-[#333]`}
+                    style={{
+                      fontSize: RESOLUTION.line1.fontSize,
+                    }}
+                  >
+                    {el}
+                  </motion.span>
+                ))}
+                <br />
+                <div className="mt-0 sm:mt-1 md:mt-2"></div>
+                {DESCRIPTION.map((el, i) => (
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: i / 10,
+                    }}
+                    key={i}
+                    className={`font-extralight inline-block ${FuturaNow.className} mx-[1px]`}
+                    style={{
+                      fontSize: RESOLUTION.line2.fontSize,
+                    }}
+                  >
+                    {el}
+                  </motion.span>
+                ))}
+              </div>
             </div>
-            <div>
-              {SLOGAN4.map((el, i) => (
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{
-                    duration: 0.3,
-                    delay: i / 10 + 2.2 + 2.5,
-                  }}
-                  key={i}
-                  className={`text-5xl inline-block mx-[1px] ${FuturaNow.className}`}
-                >
-                  {el}
-                </motion.span>
-              ))}
+            <div className="flex justify-center text-5xl md:mt-10 items-center gap-x-3">
+              <div>
+                {SLOGAN.map((el, i) => (
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: i / 10 + 2.5,
+                    }}
+                    key={i}
+                    className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
+                  >
+                    {el}
+                  </motion.span>
+                ))}
+              </div>
+              <div>
+                {SLOGAN2.map((el, i) => (
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: i / 10 + 0.8 + 2.5,
+                    }}
+                    key={i}
+                    className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
+                  >
+                    {el}
+                  </motion.span>
+                ))}
+              </div>
+              <div>
+                {SLOGAN3.map((el, i) => (
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: i / 10 + 1.5 + 2.5,
+                    }}
+                    key={i}
+                    className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
+                  >
+                    {el}
+                  </motion.span>
+                ))}
+              </div>
+              <div>
+                {SLOGAN4.map((el, i) => (
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: i / 10 + 2.2 + 2.5,
+                    }}
+                    key={i}
+                    className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
+                  >
+                    {el}
+                  </motion.span>
+                ))}
+              </div>
             </div>
+          </div>
+        )}
+        {step === StepEnums.THREE && (
+          <div className="w-[100%] h-[100%] relative">
+            <Swiper
+              className="w-[100%] h-[100%]"
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, EffectFade]}
+              effect="fade"
+            >
+              <SwiperSlide>
+                <Image
+                  src={Slide1}
+                  fill
+                  style={{ objectFit: "cover" }}
+                  alt="Thumnail"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={Slide2}
+                  fill
+                  style={{ objectFit: "cover" }}
+                  alt="Thumnail"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={Slide3}
+                  fill
+                  style={{ objectFit: "cover" }}
+                  alt="Thumnail"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={Slide4}
+                  fill
+                  style={{ objectFit: "cover" }}
+                  alt="Thumnail"
+                />
+              </SwiperSlide>
+            </Swiper>
+            <div className="absolute bottom-[50%] translate-y-[50%] left-24 z-10 uppercase font-semibold">
+              <p className="text-white text-[24px] md:text-[28px] lg:text-[56px]">
+                Thiết kế & thi công
+              </p>
+              <p className="text-primary  text-[24px]  md:text-[28px] lg:text-[56px]">
+                Kiến trúc nội thất chuyên nghiệp
+              </p>
+            </div>
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-[9]"></div>
+          </div>
+        )}
+      </div>
+      {step === StepEnums.THREE && (
+        <div className="container mx-auto">
+          <div className="flex items-center flex-col md:flex-row flex-wrap gap-6 mt-16">
+            <div className="flex-1">
+              <h3 className="text-3xl mb-8">ECHO DESIGN</h3>
+              <p>
+                Là công ty chuyên sâu trong lĩnh vực tư vấn{" "}
+                <span className="font-semibold">
+                  thiết kế nội thất và thi công nội/ngoại thất
+                </span>{" "}
+                khách sạn, nhà hàng, biệt thự, chung cư, penthouse, nhà phố,
+                resort. Bằng tâm huyết cùng sự am hiểu và sáng tạo, đội ngũ tự
+                tin mang tới quý khách hàng những phong cách kiến trúc giàu tính
+                thẩm mỹ, nâng tầm giá trị.
+              </p>
+              <div>
+                <Link
+                  className="bg-black px-10 mt-10 inline-block py-3 text-white"
+                  href="/gioi-thieu"
+                >
+                  TÌM HIỂU THÊM
+                </Link>
+              </div>
+            </div>
+            <div className="flex-1">
+              <Image
+                src={Slide1}
+                style={{ objectFit: "cover" }}
+                alt="Thumnail"
+              />
+            </div>
+          </div>
+          <div className="flex justify-center mt-10 relative">
+            <div className="px-8 bg-white relative z-[2] ">
+              <Link
+                href="/"
+                className={clsx(
+                  "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-2xl py-4 pb-3 inline-flex justify-center items-center",
+                  FuturaNow.className
+                )}
+              >
+                <span className="leading-[40px]">Dự án thiết kế</span>
+              </Link>
+            </div>
+            <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
           </div>
         </div>
       )}
       {step === StepEnums.THREE && (
-        <div className="w-[100%] h-[100%] relative">
-          <Swiper
-            className="w-[100%] h-[100%]"
-            spaceBetween={30}
-            centeredSlides={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[Autoplay, EffectFade]}
-            effect="fade"
-          >
-            <SwiperSlide>
-              <Image
-                src={Slide1}
-                fill
-                style={{ objectFit: "cover" }}
-                alt="Thumnail"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                src={Slide2}
-                fill
-                style={{ objectFit: "cover" }}
-                alt="Thumnail"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                src={Slide3}
-                fill
-                style={{ objectFit: "cover" }}
-                alt="Thumnail"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                src={Slide4}
-                fill
-                style={{ objectFit: "cover" }}
-                alt="Thumnail"
-              />
-            </SwiperSlide>
-          </Swiper>
+        <div>
+          <div className="bg-[#efefef] mt-10">
+            <div className="container mx-auto">
+              <div className="flex justify-center py-6">
+                {MENU_HOME.map((item, index) => (
+                  <div
+                    key={item.label}
+                    className={clsx(
+                      "relative before:content-['/'] text-center before:right-0 before:top-[50%] before:translate-y-[-50%] before:absolute text-base py-[10px] px-7",
+                      index === MENU_HOME.length - 1 ? "before:hidden" : ""
+                    )}
+                  >
+                    <Link href={item.to} className="text-center">
+                      {item.label}
+                    </Link>
+                  </div>
+                ))}
+              </div>
+              <div className="grid grid-cols-2 gap-6">
+                <div className="cursor-pointer">
+                  <Image
+                    src={Slide1}
+                    style={{ objectFit: "cover" }}
+                    alt="Thumnail"
+                  />
+                </div>
+                <div className="cursor-pointer">
+                  <Image
+                    src={Slide1}
+                    style={{ objectFit: "cover" }}
+                    alt="Thumnail"
+                  />
+                </div>
+              </div>
+              <div className="text-center mt-8 pb-6 flex justify-center">
+                <Link
+                  href="/"
+                  className="bg-[#1c1c1c] text-white w-[140px] flex justify-center items-center py-3 rounded-md border border-solid border-black hover:bg-white transition hover:text-black"
+                >
+                  Xem thêm
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="container mx-auto flex justify-center mt-10 relative">
+            <div className="px-8 bg-white relative z-[2] ">
+              <Link
+                href="/"
+                className={clsx(
+                  "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-2xl py-4 pb-3 inline-flex justify-center items-center",
+                  FuturaNow.className
+                )}
+              >
+                <span className="leading-[40px] uppercase">
+                  Công trình hoàn thiện thực tế
+                </span>
+              </Link>
+            </div>
+            <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
+          </div>
+          <div className="bg-[#efefef] mt-10">
+            <div className="container mx-auto">
+              <div className="grid grid-cols-2 gap-6 pt-10">
+                <div className="cursor-pointer">
+                  <Image
+                    src={Slide1}
+                    style={{ objectFit: "cover" }}
+                    alt="Thumnail"
+                  />
+                </div>
+                <div className="cursor-pointer">
+                  <Image
+                    src={Slide1}
+                    style={{ objectFit: "cover" }}
+                    alt="Thumnail"
+                  />
+                </div>
+              </div>
+              <div className="text-center mt-8 pb-6 flex justify-center">
+                <Link
+                  href="/"
+                  className="bg-[#1c1c1c] text-white w-[140px] flex justify-center items-center py-3 rounded-md border border-solid border-black hover:bg-white transition hover:text-black"
+                >
+                  Xem thêm
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       )}
     </div>

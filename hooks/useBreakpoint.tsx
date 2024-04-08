@@ -12,7 +12,16 @@ const useBreakpoint = () => {
 
   const isMobileLargeDown = useMediaQuery({ maxWidth: 767 });
 
-  return { isDesktop, isTablet, isMobile, isMobileLarge, isMobileLargeDown };
+  const isDesktopDown = useMediaQuery({ maxWidth: 1200 });
+
+  return {
+    isDesktop,
+    isTablet,
+    isMobile,
+    isMobileLarge,
+    isMobileLargeDown,
+    isDesktopDown,
+  };
 };
 
 export default useBreakpoint;

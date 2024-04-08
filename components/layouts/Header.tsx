@@ -57,7 +57,7 @@ const Header = () => {
   const toggleHoverMenu = () => {
     setIsHover(!isHover);
   };
-  const { isMobileLargeDown } = useBreakpoint();
+  const { isMobileLargeDown, isDesktopDown } = useBreakpoint();
   const [show, setShow] = useState(false);
   const pathname = usePathname();
   const { setShowFooter } = useAppStore();
@@ -76,8 +76,8 @@ const Header = () => {
   }
 
   return (
-    <div className="sticky top-0 left-0 z-[2] bg-white w-full px-3">
-      {isMobileLargeDown ? (
+    <div className="sticky top-0 left-0 z-[11] bg-white w-full px-3">
+      {isDesktopDown ? (
         <motion.nav initial={false} animate={show ? "open" : "closed"}>
           <div className="flex justify-between pr-4 relative py-2">
             <Link href="/">
@@ -101,56 +101,81 @@ const Header = () => {
             >
               <Link
                 href="/"
-                className="flex items-center px-8 hover:text-primary transition my-3 leading-6 text-base"
+                className="flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base"
               >
                 Trang chủ
               </Link>
               <Link
                 href="/gioi-thieu"
-                className="flex items-center px-8 hover:text-primary transition my-3 leading-6 text-base"
-                prefetch
+                className="flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base"
               >
                 Giới thiệu
               </Link>
-              <DropdownMenu />
-              <div className="text-nowrap px-8 gap-2 transition cursor-pointer my-3 leading-6 text-base">
-                <div
-                  className="flex items-center gap-2 hover:text-primary"
-                  onClick={() => setShowSubMenu(!showSubMenu)}
-                >
-                  Công trình thực tế
-                  <FontAwesomeIcon icon={faSortDown} className="-mt-1" />
-                </div>
-                <motion.div
-                  style={{ overflow: "hidden" }}
-                  initial="close"
-                  animate={showSubMenu ? "open" : "close"}
-                  variants={menu}
-                >
-                  <Link
-                    href="/du-an-da-hoan-thanh"
-                    className="text-nowrap my-2 hover:text-primary px-2 block transition"
-                    prefetch
-                  >
-                    Đã hoàn thành
-                  </Link>
-                  <Link
-                    href="/du-an-dang-trien-khai"
-                    className=" text-nowrap my-2 hover:text-primary px-2 block transition"
-                    prefetch
-                  >
-                    Đang triển khai
-                  </Link>
-                </motion.div>
-              </div>
+              <DropdownMenu
+                item={{
+                  label: "Dự án thiết kế",
+                  items: [
+                    {
+                      href: "/",
+                      label: "Thiết kế nội thất chung cư",
+                    },
+                    {
+                      href: "/",
+                      label: "Thiết kế nội thất nhà phố",
+                    },
+                    {
+                      href: "/",
+                      label: "Thiết kế nội thất biệt thự",
+                    },
+                    {
+                      href: "/",
+                      label: "Thiết kế nội thất văn phòng",
+                    },
+                    {
+                      href: "/",
+                      label: "Thiết kế nhà hàng, khách sạn, coffee",
+                    },
+                    {
+                      href: "/",
+                      label: "Thiết kế kiến trúc, sân vườn",
+                    },
+                  ],
+                }}
+              />
+              <Link
+                href="/du-an-da-hoan-thanh"
+                className="flex items-center px-4 hover:text-primary transition mr-4 my-3 leading-6 text-base"
+                prefetch
+              >
+                Công trình hoàn thiện thực tế
+              </Link>
+              <DropdownMenu
+                item={{
+                  label: "Tin tức",
+                  items: [
+                    {
+                      href: "/quy-trinh-thiet-ke",
+                      label: "Quy trình thiết kế, thi công",
+                    },
+                    {
+                      href: "/bao-gia",
+                      label: "Báo giá",
+                    },
+                    {
+                      href: "/chinh-sach",
+                      label: "Chính sách",
+                    },
+                  ],
+                }}
+              />
               <Link
                 href="/lien-he"
-                className="flex items-center px-8 hover:text-primary transition mr-4 my-3 leading-6 text-base"
+                className="flex items-center px-4 hover:text-primary transition mr-4 my-3 leading-6 text-base"
                 prefetch
               >
                 Liên hệ
               </Link>
-              <div className="px-8 my-3 leading-6 text-base">
+              <div className="px-4 my-3 leading-6 text-base">
                 <Link
                   href="https://www.facebook.com/echo.interior/"
                   target="_blank"
@@ -186,17 +211,16 @@ const Header = () => {
               className="py-1"
             />
           </Link>
-          <div className="flex items-center">
+          <div className="flex items-center uppercase">
             <Link
               href="/"
-              className="flex items-center px-8 text-sm hover:text-primary transition"
+              className="flex items-center px-4 text-sm hover:text-primary transition"
             >
               Trang chủ
             </Link>
             <Link
               href="/gioi-thieu"
-              className="flex items-center px-8 text-sm hover:text-primary transition"
-              prefetch
+              className="flex items-center px-4 text-sm hover:text-primary transition"
             >
               Giới thiệu
             </Link>
@@ -205,19 +229,61 @@ const Header = () => {
                 label: "Dự án thiết kế",
                 items: [
                   {
-                    label: "Thiết kế nội thất",
-                    href: "/thiet-ke",
+                    href: "/",
+                    label: "Thiết kế nội thất chung cư",
                   },
                   {
-                    label: "Thiết kế kiến trúc sân vườn",
-                    href: "/thiet-ke",
+                    href: "/",
+                    label: "Thiết kế nội thất nhà phố",
+                  },
+                  {
+                    href: "/",
+                    label: "Thiết kế nội thất biệt thự",
+                  },
+                  {
+                    href: "/",
+                    label: "Thiết kế nội thất văn phòng",
+                  },
+                  {
+                    href: "/",
+                    label: "Thiết kế nhà hàng, khách sạn, coffee",
+                  },
+                  {
+                    href: "/",
+                    label: "Thiết kế kiến trúc, sân vườn",
+                  },
+                ],
+              }}
+            />
+            <Link
+              href="/du-an-da-hoan-thanh"
+              className="flex items-center px-4 text-sm hover:text-primary transition"
+              prefetch
+            >
+              Công trình hoàn thiện thực tế
+            </Link>
+            <DropdownMenu
+              item={{
+                label: "Tin tức",
+                items: [
+                  {
+                    href: "/quy-trinh-thiet-ke",
+                    label: "Quy trình thiết kế, thi công",
+                  },
+                  {
+                    href: "/bao-gia",
+                    label: "Báo giá",
+                  },
+                  {
+                    href: "/chinh-sach",
+                    label: "Chính sách",
                   },
                 ],
               }}
             />
             <Link
               href="/lien-he"
-              className="flex items-center px-8 text-sm hover:text-primary transition mr-4"
+              className="flex items-center px-4 text-sm hover:text-primary transition mr-4"
               prefetch
             >
               Liên hệ

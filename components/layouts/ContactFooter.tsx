@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
+import Link from "next/link";
 import React, { memo, useState } from "react";
 
 const ContactFooter = () => {
@@ -15,7 +16,7 @@ const ContactFooter = () => {
     <>
       <div
         className={clsx(
-          "rotate-[270deg] fixed right-10 bottom-[184px] z-10 transition-all cursor-pointer",
+          "rotate-[270deg] fixed right-10 bottom-[184px] z-10 transition-all cursor-pointer text-primary",
           active ? "translate-y-[260px]" : ""
         )}
         onClick={() => setActive(!active)}
@@ -38,7 +39,9 @@ const ContactFooter = () => {
             />
           </div>
           <div className="bg-[#6db703] rounded-full w-10 h-10 flex justify-center items-center mb-3 cursor-pointer">
-            <FontAwesomeIcon icon={faPhone} color="#fff" size="xl" />
+            <Link href="tel:+0886889995">
+              <FontAwesomeIcon icon={faPhone} color="#fff" size="xl" />
+            </Link>
           </div>
           <div
             className="bg-[#f58634] rounded-full w-10 h-10 flex justify-center items-center cursor-pointer"

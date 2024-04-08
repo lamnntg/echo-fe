@@ -48,15 +48,15 @@ type DropdownMenuProps = {
 };
 
 const DropdownMenu: FC<DropdownMenuProps> = ({ item }) => {
-  const { isMobileLargeDown } = useBreakpoint();
+  const { isDesktopDown } = useBreakpoint();
   const [showSubMenu, setShowSubMenu] = useState(false);
   const [isHover, setIsHover] = useState(false);
 
   const toggleHoverMenu = () => {
     setIsHover(!isHover);
   };
-  return isMobileLargeDown ? (
-    <div className="text-nowrap px-8 gap-2 transition cursor-pointer my-3 leading-6 text-base">
+  return isDesktopDown ? (
+    <div className="text-nowrap px-4 gap-2 transition cursor-pointer my-3 leading-6 text-base">
       <div
         className="flex items-center gap-2 hover:text-primary"
         onClick={() => setShowSubMenu(!showSubMenu)}
@@ -79,13 +79,6 @@ const DropdownMenu: FC<DropdownMenuProps> = ({ item }) => {
             {l.label}
           </Link>
         ))}
-        <Link
-          href="/thiet-ke"
-          className=" text-nowrap my-2 hover:text-primary px-2 block transition"
-          prefetch
-        >
-          Thiết kế kiến trúc sân vườn
-        </Link>
       </motion.div>
     </div>
   ) : (
@@ -94,8 +87,8 @@ const DropdownMenu: FC<DropdownMenuProps> = ({ item }) => {
       onHoverStart={toggleHoverMenu}
       onHoverEnd={toggleHoverMenu}
     >
-      <div className="text-nowrap flex items-center px-8 gap-2 text-sm hover:text-primary transition cursor-pointer">
-        Dự án thiết kế
+      <div className="text-nowrap flex items-center px-4 gap-2 text-sm hover:text-primary transition cursor-pointer">
+        {item.label}
         <FontAwesomeIcon icon={faSortDown} className="-mt-1" />
       </div>
       <motion.div
@@ -105,20 +98,15 @@ const DropdownMenu: FC<DropdownMenuProps> = ({ item }) => {
         variants={subMenuAnimate}
       >
         <div className=" bg-white py-4 rounded-b-md">
-          <Link
-            href="/thiet-ke"
-            className="text-nowrap my-2 px-8 block hover:text-primary transition"
-            prefetch
-          >
-            Thiết kế nội thất
-          </Link>
-          <Link
-            href="/thiet-ke"
-            className=" text-nowrap my-2 px-8 block hover:text-primary transition"
-            prefetch
-          >
-            Thiết kế kiến trúc sân vườn
-          </Link>
+          {item.items.map((l) => (
+            <Link
+              href={l.href}
+              className=" text-nowrap my-2 px-8 block hover:text-primary transition"
+              prefetch
+            >
+              {l.label}
+            </Link>
+          ))}
         </div>
       </motion.div>
     </motion.div>
