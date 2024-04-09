@@ -490,11 +490,13 @@ const HomePage = () => {
               <Link
                 href="/"
                 className={clsx(
-                  "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-2xl py-4 pb-3 inline-flex justify-center items-center",
+                  "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-base md:text-2xl py-4 pb-3 inline-flex justify-center items-center",
                   FuturaNow.className
                 )}
               >
-                <span className="leading-[40px]">Dự án thiết kế</span>
+                <span className="leading-[20px] md:leading-[40px]">
+                  Dự án thiết kế
+                </span>
               </Link>
             </div>
             <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
@@ -505,7 +507,7 @@ const HomePage = () => {
         <div>
           <div className="bg-[#efefef] mt-10">
             <div className="container mx-auto">
-              <div className="flex justify-center py-6">
+              <div className="flex justify-center py-6 flex-wrap">
                 {MENU_HOME.map((item, index) => (
                   <div
                     key={item.label}
@@ -552,11 +554,11 @@ const HomePage = () => {
               <Link
                 href="/"
                 className={clsx(
-                  "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-2xl py-4 pb-3 inline-flex justify-center items-center",
+                  "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-base text-center md:text-2xl py-4 pb-3 inline-flex justify-center items-center",
                   FuturaNow.className
                 )}
               >
-                <span className="leading-[40px] uppercase">
+                <span className="leading-[20px] md:leading-[40px] uppercase">
                   Công trình hoàn thiện thực tế
                 </span>
               </Link>
