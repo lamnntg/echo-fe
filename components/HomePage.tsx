@@ -37,7 +37,7 @@ const HEIGHT_FOOTER_DESKTOP = -8;
 const HomePage = () => {
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
+  const [step, setStep] = useState<StepEnums>(StepEnums.ONE);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
 
   const RESOLUTION = {
@@ -61,21 +61,21 @@ const HomePage = () => {
       fontSize: isMobile ? 12 : 16,
     },
   };
-  // useEffect(() => {
-  //   if (!loaded) {
-  //     return;
-  //   }
-  //   const timeoutOne = setTimeout(() => {
-  //     setStep(StepEnums.TWO);
-  //   }, 3000);
-  //   const timeoutTwo = setTimeout(() => {
-  //     setStep(StepEnums.THREE);
-  //   }, 9000);
-  //   return () => {
-  //     clearTimeout(timeoutOne);
-  //     clearTimeout(timeoutTwo);
-  //   };
-  // }, [loaded]);
+  useEffect(() => {
+    if (!loaded) {
+      return;
+    }
+    const timeoutOne = setTimeout(() => {
+      setStep(StepEnums.TWO);
+    }, 3000);
+    const timeoutTwo = setTimeout(() => {
+      setStep(StepEnums.THREE);
+    }, 9000);
+    return () => {
+      clearTimeout(timeoutOne);
+      clearTimeout(timeoutTwo);
+    };
+  }, [loaded]);
 
   useEffect(() => {
     if (step === StepEnums.THREE) {
