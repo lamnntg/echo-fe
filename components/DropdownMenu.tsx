@@ -72,6 +72,7 @@ const DropdownMenu: FC<DropdownMenuProps> = ({ item }) => {
       >
         {item.items.map((l) => (
           <Link
+            key={l.href + l.label}
             href={l.href}
             className="text-nowrap my-2 hover:text-primary px-2 block transition"
             prefetch

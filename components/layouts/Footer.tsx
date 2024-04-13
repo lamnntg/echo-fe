@@ -10,6 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { FACEBOOK_LINK } from "@/constants/app.constants";
 
 const Footer = () => {
   const { showFooter } = useAppStore();
@@ -81,7 +82,7 @@ const Footer = () => {
           <p className="mb-7">LIÊN HỆ CHÚNG TÔI</p>
           <div className="flex items-center gap-2 mb-3 transition hover:text-primary cursor-pointer">
             <Link
-              href="https://www.youtube.com/@ECHO.design"
+              href={FACEBOOK_LINK}
               className="flex items-center"
               target="_blank"
             >

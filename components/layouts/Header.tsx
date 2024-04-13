@@ -8,11 +8,11 @@ import LogoText from "@/public/logo-text.jpg";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 import clsx from "clsx";
 import { useAppStore } from "@/store/app.store";
 import { usePathname } from "next/navigation";
 import DropdownMenu from "../DropdownMenu";
+import { FACEBOOK_LINK, RoutesEnum } from "@/constants/app.constants";
 
 const menu = {
   open: {
@@ -100,13 +100,13 @@ const Header = () => {
               variants={menu}
             >
               <Link
-                href="/"
+                href={RoutesEnum.HOME}
                 className="flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base"
               >
                 Trang chủ
               </Link>
               <Link
-                href="/gioi-thieu"
+                href={RoutesEnum.INTRODUCE}
                 className="flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base"
               >
                 Giới thiệu
@@ -116,34 +116,34 @@ const Header = () => {
                   label: "Dự án thiết kế",
                   items: [
                     {
-                      href: "/",
+                      href: RoutesEnum.CHUNG_CU,
                       label: "Thiết kế nội thất chung cư",
                     },
                     {
-                      href: "/",
+                      href: RoutesEnum.NHA_PHO,
                       label: "Thiết kế nội thất nhà phố",
                     },
                     {
-                      href: "/",
+                      href: RoutesEnum.BIET_THU,
                       label: "Thiết kế nội thất biệt thự",
                     },
                     {
-                      href: "/",
+                      href: RoutesEnum.VAN_PHONG,
                       label: "Thiết kế nội thất văn phòng",
                     },
                     {
-                      href: "/",
-                      label: "Thiết kế nhà hàng, khách sạn, coffee",
+                      href: RoutesEnum.KHACH_SAN,
+                      label: "Thiết kế khách sạn, coffee",
                     },
                     {
-                      href: "/",
-                      label: "Thiết kế kiến trúc, sân vườn",
+                      href: RoutesEnum.NHA_HANG,
+                      label: "Thiết kế Nhà hàng",
                     },
                   ],
                 }}
               />
               <Link
-                href="/du-an-da-hoan-thanh"
+                href={RoutesEnum.COMPLETED}
                 className="flex items-center px-4 hover:text-primary transition mr-4 my-3 leading-6 text-base"
                 prefetch
               >
@@ -154,33 +154,29 @@ const Header = () => {
                   label: "Tin tức",
                   items: [
                     {
-                      href: "/quy-trinh-thiet-ke",
+                      href: RoutesEnum.QUY_TRINH_THIET_KE,
                       label: "Quy trình thiết kế, thi công",
                     },
                     {
-                      href: "/bao-gia",
+                      href: RoutesEnum.BAO_GIA,
                       label: "Báo giá",
                     },
                     {
-                      href: "/chinh-sach",
+                      href: RoutesEnum.CHINH_SACH,
                       label: "Chính sách",
                     },
                   ],
                 }}
               />
               <Link
-                href="/lien-he"
+                href={RoutesEnum.LIEN_HE}
                 className="flex items-center px-4 hover:text-primary transition mr-4 my-3 leading-6 text-base"
                 prefetch
               >
                 Liên hệ
               </Link>
               <div className="px-4 my-3 leading-6 text-base">
-                <Link
-                  href="https://www.facebook.com/echo.interior/"
-                  target="_blank"
-                  className="mr-4"
-                >
+                <Link href={FACEBOOK_LINK} target="_blank" className="mr-4">
                   <FontAwesomeIcon
                     icon={faFacebookF}
                     className="cursor-pointer hover:text-primary transition"
@@ -213,13 +209,13 @@ const Header = () => {
           </Link>
           <div className="flex items-center uppercase">
             <Link
-              href="/"
+              href={RoutesEnum.HOME}
               className="flex items-center px-4 text-sm hover:text-primary transition"
             >
               Trang chủ
             </Link>
             <Link
-              href="/gioi-thieu"
+              href={RoutesEnum.INTRODUCE}
               className="flex items-center px-4 text-sm hover:text-primary transition"
             >
               Giới thiệu
@@ -229,34 +225,34 @@ const Header = () => {
                 label: "Dự án thiết kế",
                 items: [
                   {
-                    href: "/",
+                    href: RoutesEnum.CHUNG_CU,
                     label: "Thiết kế nội thất chung cư",
                   },
                   {
-                    href: "/",
+                    href: RoutesEnum.NHA_PHO,
                     label: "Thiết kế nội thất nhà phố",
                   },
                   {
-                    href: "/",
+                    href: RoutesEnum.BIET_THU,
                     label: "Thiết kế nội thất biệt thự",
                   },
                   {
-                    href: "/",
+                    href: RoutesEnum.VAN_PHONG,
                     label: "Thiết kế nội thất văn phòng",
                   },
                   {
-                    href: "/",
-                    label: "Thiết kế nhà hàng, khách sạn, coffee",
+                    href: RoutesEnum.KHACH_SAN,
+                    label: "Thiết kế khách sạn, coffee",
                   },
                   {
-                    href: "/",
-                    label: "Thiết kế kiến trúc, sân vườn",
+                    href: RoutesEnum.NHA_HANG,
+                    label: "Thiết kế Nhà hàng",
                   },
                 ],
               }}
             />
             <Link
-              href="/du-an-da-hoan-thanh"
+              href={RoutesEnum.COMPLETED}
               className="flex items-center px-4 text-sm hover:text-primary transition"
               prefetch
             >
@@ -267,32 +263,28 @@ const Header = () => {
                 label: "Tin tức",
                 items: [
                   {
-                    href: "/quy-trinh-thiet-ke",
+                    href: RoutesEnum.QUY_TRINH_THIET_KE,
                     label: "Quy trình thiết kế, thi công",
                   },
                   {
-                    href: "/bao-gia",
+                    href: RoutesEnum.BAO_GIA,
                     label: "Báo giá",
                   },
                   {
-                    href: "/chinh-sach",
+                    href: RoutesEnum.CHINH_SACH,
                     label: "Chính sách",
                   },
                 ],
               }}
             />
             <Link
-              href="/lien-he"
+              href={RoutesEnum.LIEN_HE}
               className="flex items-center px-4 text-sm hover:text-primary transition mr-4"
               prefetch
             >
               Liên hệ
             </Link>
-            <Link
-              href="https://www.facebook.com/echo.interior/"
-              target="_blank"
-              className="mr-4"
-            >
+            <Link href={FACEBOOK_LINK} target="_blank" className="mr-4">
               <FontAwesomeIcon
                 icon={faFacebookF}
                 className="cursor-pointer hover:text-primary transition"

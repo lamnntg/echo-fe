@@ -4,6 +4,7 @@ import { Source_Sans_3, Raleway } from "next/font/google";
 import Footer from "@/components/layouts/Footer";
 import "swiper/css";
 import "swiper/css/effect-fade";
+import { Metadata } from "next";
 
 const sourceSansPro = Source_Sans_3({
   subsets: ["latin"],
@@ -12,6 +13,14 @@ const sourceSansPro = Source_Sans_3({
   style: ["normal", "italic"],
   display: "swap",
 });
+
+export const metadata: Metadata = {
+  title: "ECHO Design",
+  other: {
+    ["or:title"]: "ECHO Design",
+    ["og:site_name"]: "ECHO Design",
+  },
+};
 
 export default function RootLayout({
   children,

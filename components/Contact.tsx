@@ -5,6 +5,7 @@ import Slide3 from "@/public/slide_3.jpg";
 import Image from "next/image";
 import { Clock, MapPin, Phone, StickyNote } from "lucide-react";
 import Link from "next/link";
+import { FACEBOOK_LINK, IFRAME_GOOGLE_MAP } from "@/constants/app.constants";
 
 const defaultProps = {
   center: {
@@ -58,11 +59,11 @@ const Contact = () => {
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <MapPin />
               <Link
-                href="https://www.facebook.com/ed.interior.architecture"
+                href={FACEBOOK_LINK}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                https://www.facebook.com/ed.interior.architecture
+                {FACEBOOK_LINK}
               </Link>
             </li>
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
@@ -149,7 +150,7 @@ const Contact = () => {
           </form>
           <div className="flex-1 overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.232017641082!2d105.83771318512251!3d20.98333463947274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac42eb8919b9%3A0x6b6a3f524a46ddbe!2zNiBQLiBLaW0gxJDhu5NuZywgR2nDoXAgQsOhdCwgSG_DoG5nIE1haSwgSMOgIE7hu5lpIDEwMDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1711789649828!5m2!1svi!2s"
+              src={IFRAME_GOOGLE_MAP}
               width="600"
               height="450"
               loading="lazy"
