@@ -18,14 +18,7 @@ const Footer = () => {
   if (!showFooter) {
     return null;
   }
-  return pathname === "/" ? (
-    <footer className="bg-white py-2 text-sm text-[#333] text-center">
-      <p className={clsx("text-center", FuturaNow.className)}>
-        Timeless design, endless echo
-      </p>
-      <ContactFooter />
-    </footer>
-  ) : (
+  return (
     <div className="bg-[#4b4b4b] text-white pt-10 pb-6">
       <div className="container mx-auto flex gap-8 flex-wrap px-2">
         <div>

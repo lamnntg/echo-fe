@@ -11,10 +11,11 @@ import useBreakpoint from "@/hooks/useBreakpoint";
 import { useAppStore } from "@/store/app.store";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
-import { FuturaNow } from "@/utils/font";
+import { FuturaNow, Litera } from "@/utils/font";
 import clsx from "clsx";
 import Link from "next/link";
 import { MENU_HOME } from "@/constants/app.constants";
+import { cn } from "@/lib/utils";
 
 const TITLE = "E C H O".split(" ");
 const DESCRIPTION = "A R C H I T E C T U R E . I N T E R I O R".split(" ");
@@ -37,7 +38,7 @@ const HEIGHT_FOOTER_DESKTOP = -8;
 const HomePage = () => {
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.ONE);
+  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
 
   const RESOLUTION = {
@@ -65,14 +66,10 @@ const HomePage = () => {
     if (!loaded) {
       return;
     }
-    const timeoutOne = setTimeout(() => {
-      setStep(StepEnums.TWO);
-    }, 3000);
     const timeoutTwo = setTimeout(() => {
       setStep(StepEnums.THREE);
     }, 9000);
     return () => {
-      clearTimeout(timeoutOne);
       clearTimeout(timeoutTwo);
     };
   }, [loaded]);
@@ -88,7 +85,7 @@ const HomePage = () => {
   return (
     <div>
       <div
-        className="w-[100%] bg-white flex justify-center items-center"
+        className="w-[100%] bg-white flex justify-center items-center relative"
         style={{
           zIndex: step === StepEnums.THREE ? 1 : 3,
           height: `calc(100vh - ${
@@ -98,6 +95,14 @@ const HomePage = () => {
           }px)`,
         }}
       >
+        <p
+          className={cn(
+            "text-center absolute left-[50%] translate-x-[-50%] bottom-4 z-10 text-white",
+            FuturaNow.className
+          )}
+        >
+          Timeless design, endless echo
+        </p>
         <Image
           src={Logo}
           width={0}
@@ -106,183 +111,150 @@ const HomePage = () => {
           style={{ width: "0", height: "0" }}
           onLoad={() => setLoaded(true)}
         />
-        {step === StepEnums.ONE && (
-          <div
-            className={`flex relative gap-2 sm:gap-3 md:gap-4 items-end overflow-hidden`}
-          >
-            <div className="relative">
-              <motion.div
-                className="bg-primary"
-                initial={{
-                  height: RESOLUTION.line.width,
-                  width: RESOLUTION.line.width,
-                  transform: "translateX(-100%)",
-                }}
-                animate={{
-                  transform: "translateX(0)",
-                  transition: {
-                    duration: 0.5,
-                  },
-                }}
-              ></motion.div>
-              <div className="absolute top-[30%] left-0">
-                <motion.div
-                  className="bg-white"
-                  initial={{
-                    height: RESOLUTION.strike.height,
-                    width: RESOLUTION.strike.width,
-                    transform: "translateX(-100%)",
-                  }}
-                  animate={{
-                    transform: "translateX(0)",
-                    transition: {
-                      duration: 0.5,
-                      delay: 1.5,
-                    },
-                  }}
-                ></motion.div>
-              </div>
-              <div className="absolute top-[66%] left-0">
-                <motion.div
-                  className="bg-white"
-                  initial={{
-                    height: RESOLUTION.strike.height,
-                    width: RESOLUTION.strike.width,
-                    transform: "translateX(-100%)",
-                  }}
-                  animate={{
-                    transform: "translateX(0)",
-                    transition: {
-                      duration: 0.5,
-                      delay: 1.5,
-                    },
-                  }}
-                ></motion.div>
-              </div>
-            </div>
-            <div className="relative rounded-full">
-              <motion.div
-                className="bg-primary"
-                initial={{
-                  height: RESOLUTION.line.width,
-                  width: RESOLUTION.line.width,
-                  transform: "translateX(-100%)",
-                  borderRadius: "50%",
-                  opacity: 0,
-                }}
-                animate={{
-                  transform: "translateX(0)",
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.5,
-                  },
-                }}
-              ></motion.div>
-              <div
-                className="absolute right-2 top-0"
-                style={{
-                  height: RESOLUTION.fullHeight,
-                }}
-              >
-                <motion.div
-                  className="bg-white"
-                  initial={{
-                    height: RESOLUTION.fullHeight,
-                    width: 8,
-                    transform: "translateY(-100%)",
-                  }}
-                  animate={{
-                    transform: "translateY(0)",
-                    transition: {
-                      duration: 0.5,
-                      delay: 1.5,
-                    },
-                  }}
-                ></motion.div>
-              </div>
-              <div
-                className="absolute right-6 top-0"
-                style={{
-                  height: RESOLUTION.fullHeight,
-                }}
-              >
-                <motion.div
-                  className="bg-white"
-                  initial={{
-                    height: RESOLUTION.fullHeight,
-                    width: 8,
-                    transform: "translateY(-100%)",
-                  }}
-                  animate={{
-                    transform: "translateY(0)",
-                    transition: {
-                      duration: 0.5,
-                      delay: 1.5,
-                    },
-                  }}
-                ></motion.div>
-              </div>
-              <div
-                className="absolute right-10 top-0"
-                style={{
-                  height: RESOLUTION.fullHeight,
-                }}
-              >
-                <motion.div
-                  className="bg-white"
-                  initial={{
-                    height: RESOLUTION.fullHeight,
-                    width: 8,
-                    transform: "translateY(-100%)",
-                  }}
-                  animate={{
-                    transform: "translateY(0)",
-                    transition: {
-                      duration: 0.5,
-                      delay: 1.5,
-                    },
-                  }}
-                ></motion.div>
-              </div>
-            </div>
-          </div>
-        )}
         {step === StepEnums.TWO && (
           <div>
             <div className="flex items-center gap-4">
               <div className="relative overflow-hidden">
                 <div
-                  className="relative flex items-center"
-                  style={{
-                    height: RESOLUTION.logo.height,
-                    width: RESOLUTION.logo.width,
-                  }}
+                  className={`flex relative gap-2 sm:gap-3 md:gap-4 items-end overflow-hidden`}
                 >
-                  <Image
-                    src={Logo}
-                    alt="Logo"
-                    sizes="100vw"
-                    style={{
-                      objectFit: "cover",
-                    }}
-                    priority
-                  />
+                  <div className="relative">
+                    <motion.div
+                      className="bg-primary"
+                      initial={{
+                        height: RESOLUTION.line.width,
+                        width: RESOLUTION.line.width,
+                        transform: "translateX(-100%)",
+                      }}
+                      animate={{
+                        transform: "translateX(0)",
+                        transition: {
+                          duration: 0.5,
+                        },
+                      }}
+                    ></motion.div>
+                    <div className="absolute top-[30%] left-0">
+                      <motion.div
+                        className="bg-white"
+                        initial={{
+                          height: RESOLUTION.strike.height,
+                          width: RESOLUTION.strike.width,
+                          transform: "translateX(-100%)",
+                        }}
+                        animate={{
+                          transform: "translateX(0)",
+                          transition: {
+                            duration: 0.5,
+                            delay: 1.5,
+                          },
+                        }}
+                      ></motion.div>
+                    </div>
+                    <div className="absolute top-[66%] left-0">
+                      <motion.div
+                        className="bg-white"
+                        initial={{
+                          height: RESOLUTION.strike.height,
+                          width: RESOLUTION.strike.width,
+                          transform: "translateX(-100%)",
+                        }}
+                        animate={{
+                          transform: "translateX(0)",
+                          transition: {
+                            duration: 0.5,
+                            delay: 1.5,
+                          },
+                        }}
+                      ></motion.div>
+                    </div>
+                  </div>
+                  <div className="relative rounded-full">
+                    <motion.div
+                      className="bg-primary"
+                      initial={{
+                        height: RESOLUTION.line.width,
+                        width: RESOLUTION.line.width,
+                        transform: "translateX(-100%)",
+                        borderRadius: "50%",
+                        opacity: 0,
+                      }}
+                      animate={{
+                        transform: "translateX(0)",
+                        opacity: 1,
+                        transition: {
+                          duration: 0.5,
+                          delay: 0.5,
+                        },
+                      }}
+                    ></motion.div>
+                    <div
+                      className="absolute right-2 top-0"
+                      style={{
+                        height: RESOLUTION.fullHeight,
+                      }}
+                    >
+                      <motion.div
+                        className="bg-white"
+                        initial={{
+                          height: RESOLUTION.fullHeight,
+                          width: 8,
+                          transform: "translateY(-100%)",
+                        }}
+                        animate={{
+                          transform: "translateY(0)",
+                          transition: {
+                            duration: 0.5,
+                            delay: 1.5,
+                          },
+                        }}
+                      ></motion.div>
+                    </div>
+                    <div
+                      className="absolute right-6 top-0"
+                      style={{
+                        height: RESOLUTION.fullHeight,
+                      }}
+                    >
+                      <motion.div
+                        className="bg-white"
+                        initial={{
+                          height: RESOLUTION.fullHeight,
+                          width: 8,
+                          transform: "translateY(-100%)",
+                        }}
+                        animate={{
+                          transform: "translateY(0)",
+                          transition: {
+                            duration: 0.5,
+                            delay: 1.5,
+                          },
+                        }}
+                      ></motion.div>
+                    </div>
+                    <div
+                      className="absolute right-10 top-0"
+                      style={{
+                        height: RESOLUTION.fullHeight,
+                      }}
+                    >
+                      <motion.div
+                        className="bg-white"
+                        initial={{
+                          height: RESOLUTION.fullHeight,
+                          width: 8,
+                          transform: "translateY(-100%)",
+                        }}
+                        animate={{
+                          transform: "translateY(0)",
+                          transition: {
+                            duration: 0.5,
+                            delay: 1.5,
+                          },
+                        }}
+                      ></motion.div>
+                    </div>
+                  </div>
                 </div>
-                <motion.div
-                  className="bg-white absolute top-0 left-0"
-                  initial={{
-                    height: RESOLUTION.logo.height,
-                    width: RESOLUTION.logo.width,
-                    transform: "translateX(0)",
-                  }}
-                  animate={{
-                    transform: "translateX(-100%)",
-                    transition: {
-                      duration: 1.2,
-                    },
-                  }}
-                ></motion.div>
               </div>
               <div>
                 {TITLE.map((el, i) => (
@@ -291,10 +263,13 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.5,
-                      delay: i / 10,
+                      delay: i / 7 + 2,
                     }}
                     key={i}
-                    className={`mr-1 leading-none font-medium inline-block text-[#333]`}
+                    className={cn(
+                      `mr-1 leading-none font-medium inline-block text-[#333]`,
+                      Litera.className
+                    )}
                     style={{
                       fontSize: RESOLUTION.line1.fontSize,
                     }}
@@ -309,8 +284,8 @@ const HomePage = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
-                      duration: 0.3,
-                      delay: i / 10,
+                      duration: 0.5,
+                      delay: i / 20 + 2.5,
                     }}
                     key={i}
                     className={`font-extralight inline-block ${FuturaNow.className} mx-[1px]`}
@@ -331,7 +306,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.3,
-                      delay: i / 10 + 2.5,
+                      delay: i / 10 + 1 + 3,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -347,7 +322,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.3,
-                      delay: i / 10 + 0.8 + 2.5,
+                      delay: i / 10 + 0.8 + 1 + 3,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -363,7 +338,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.3,
-                      delay: i / 10 + 1.5 + 2.5,
+                      delay: i / 10 + 1.5 + 1 + 3,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -379,7 +354,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.3,
-                      delay: i / 10 + 2.2 + 2.5,
+                      delay: i / 10 + 2.2 + 1 + 3,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
