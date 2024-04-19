@@ -50,7 +50,7 @@ const HomePage = () => {
     return {
       fullHeight: 160,
       circleStrike: {
-        width: isMobileLargeDown ? 6 : 8,
+        width: isMobileLargeDown ? 4 : 8,
       },
       line: {
         width: isMobileLargeDown ? 80 : 160,
@@ -58,7 +58,7 @@ const HomePage = () => {
       },
       strike: {
         width: 160,
-        height: isMobileLargeDown ? 6 : 10,
+        height: isMobileLargeDown ? 4 : 10,
       },
       logo: {
         width: isMobile ? 120 : isMobileLarge ? 254 : 364,
@@ -77,12 +77,12 @@ const HomePage = () => {
     if (!loaded) {
       return;
     }
-    // const timeoutTwo = setTimeout(() => {
-    //   setStep(StepEnums.THREE);
-    // }, 9000);
-    // return () => {
-    //   clearTimeout(timeoutTwo);
-    // };
+    const timeoutTwo = setTimeout(() => {
+      setStep(StepEnums.THREE);
+    }, 9000);
+    return () => {
+      clearTimeout(timeoutTwo);
+    };
   }, [loaded]);
 
   useEffect(() => {
@@ -270,46 +270,68 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div>
-                {TITLE.map((el, i) => (
-                  <motion.span
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{
-                      duration: 0.5,
-                      delay: i / 7 + 1.5,
-                    }}
-                    key={i}
-                    className={cn(
-                      `mr-1 leading-none font-medium inline-block text-[#333]`,
-                      Litera.className
-                    )}
-                    style={{
-                      fontSize: RESOLUTION.line1.fontSize,
-                    }}
-                  >
-                    {el}
-                  </motion.span>
-                ))}
-                <br />
-                <div className="mt-0 sm:mt-1 md:mt-2"></div>
-                {DESCRIPTION.map((el, i) => (
-                  <motion.span
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{
-                      duration: 0.5,
-                      delay: i / 20 + 2.5,
-                    }}
-                    key={i}
-                    className={`font-extralight inline-block ${FuturaNow.className} mx-[1px]`}
-                    style={{
-                      fontSize: RESOLUTION.line2.fontSize,
-                    }}
-                  >
-                    {el}
-                  </motion.span>
-                ))}
+              <div
+                className="relative flex justify-center flex-col"
+                style={{
+                  height: RESOLUTION.logo.height,
+                }}
+              >
+                <motion.div
+                  className="absolute left-[-8px] top-0 bg-primary"
+                  initial={{
+                    height: "100%",
+                    width: 0,
+                    transform: "translateX(0px)",
+                  }}
+                  animate={{
+                    width: 3,
+                    transition: {
+                      duration: 0.2,
+                      delay: 1.5,
+                    },
+                  }}
+                ></motion.div>
+                <div>
+                  {TITLE.map((el, i) => (
+                    <motion.span
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: i / 7 + 1.5,
+                      }}
+                      key={i}
+                      className={cn(
+                        `mr-1 leading-none font-medium inline-block text-[#333]`,
+                        Litera.className
+                      )}
+                      style={{
+                        fontSize: RESOLUTION.line1.fontSize,
+                      }}
+                    >
+                      {el}
+                    </motion.span>
+                  ))}
+                </div>
+                <div className="mt-0 sm:mt-1 md:mt-2">
+                  {DESCRIPTION.map((el, i) => (
+                    <motion.span
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: i / 20 + 2.5,
+                      }}
+                      key={i}
+                      className={`font-extralight inline-block ${FuturaNow.className} mx-[1px]`}
+                      style={{
+                        fontSize: RESOLUTION.line2.fontSize,
+                      }}
+                    >
+                      {el}
+                    </motion.span>
+                  ))}
+                </div>
               </div>
             </div>
             <div className="flex justify-center text-5xl md:mt-10 items-center gap-x-3">
