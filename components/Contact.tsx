@@ -3,7 +3,7 @@ import useBreakpoint from "@/hooks/useBreakpoint";
 import React from "react";
 import Slide3 from "@/public/slide_3.jpg";
 import Image from "next/image";
-import { Clock, MapPin, Phone, StickyNote } from "lucide-react";
+import { Clock, Mail, MapPin, Phone, StickyNote } from "lucide-react";
 import Link from "next/link";
 import { FACEBOOK_LINK, IFRAME_GOOGLE_MAP } from "@/constants/app.constants";
 
@@ -28,17 +28,17 @@ const Contact = () => {
           }}
           alt="Liên hệ"
         />
-        <h2 className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] text-white z-[2] text-[48px] font-light">
+        <h2 className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] text-white z-[2] text-[22px] md:text-[48px] font-light">
           Liên hệ với chúng tôi
         </h2>
       </div>
       <div className="container mx-auto flex-col md:flex-row flex gap-8 my-10 flex-wrap">
-        <div className="flex-1">
-          <p>
+        <div className="flex-1 max-w-full">
+          <p className="text-wrap">
             Để được hỗ trợ tư vấn trực tiếp từ các kiến trúc sư hàng đầu quý
             khách vui lòng liên hệ theo các kênh liên lạc sau.
           </p>
-          <p>
+          <p className="text-wrap">
             Chúng tôi sẽ liên hệ và giới thiệu chi tiết về các dự án đã và đang
             thi công, cũng như tư vấn về dự án của quý khách.{" "}
             <span className="font-semibold">Echo design</span> cam kết đem đến
@@ -46,7 +46,7 @@ const Contact = () => {
             chóng nhất.
           </p>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 max-w-full">
           <ul className="border border-b-0 border-solid border-[rgba(0,0,0,.125)] rounded">
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <MapPin />
@@ -62,12 +62,13 @@ const Contact = () => {
                 href={FACEBOOK_LINK}
                 rel="noopener noreferrer"
                 target="_blank"
+                className="break-words w-[85%]"
               >
                 {FACEBOOK_LINK}
               </Link>
             </li>
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
-              <StickyNote />
+              <Mail />
               <Link href="mailto:info@echodesign.vn">info@echodesign.vn</Link>
             </li>
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">

@@ -42,7 +42,7 @@ export default function Introduce() {
         </p>
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-[1]"></div>
       </div>
-      <div className="grid grid-cols-2 gap-8 container mx-auto items-center my-[100px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 container mx-auto items-center my-[100px]">
         <div>
           <h1 className="text-[45px] font-semibold text-black leading-[45px] mb-6">
             CÔNG TY CỔ PHẦN ECHO DESIGN

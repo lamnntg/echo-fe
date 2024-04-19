@@ -9,7 +9,8 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_1.jpeg?alt=media&token=f4381cd7-de0c-46ff-a1ce-f7236bf06988"
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=YmlldHRodS8xLmpwZw==&version_id=null",
+            ""
         ],
         "description": "MR DU - XANH VILLAS"
     },

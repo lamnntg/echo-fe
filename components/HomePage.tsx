@@ -202,9 +202,10 @@ const HomePage = () => {
                       }}
                     ></motion.div>
                     <div
-                      className="absolute right-2 top-0"
+                      className="absolute top-0"
                       style={{
                         height: RESOLUTION.fullHeight,
+                        right: "0.5rem",
                       }}
                     >
                       <motion.div
@@ -224,9 +225,10 @@ const HomePage = () => {
                       ></motion.div>
                     </div>
                     <div
-                      className="absolute right-6 top-0"
+                      className="absolute top-0"
                       style={{
                         height: RESOLUTION.fullHeight,
+                        right: isMobileLargeDown ? "1rem" : "1.5rem",
                       }}
                     >
                       <motion.div
@@ -246,9 +248,10 @@ const HomePage = () => {
                       ></motion.div>
                     </div>
                     <div
-                      className="absolute right-10 top-0"
+                      className="absolute top-0"
                       style={{
                         height: RESOLUTION.fullHeight,
+                        right: isMobileLargeDown ? "1.5rem" : "2.5rem",
                       }}
                     >
                       <motion.div

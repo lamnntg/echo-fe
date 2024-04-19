@@ -17,13 +17,13 @@ import useBreakpoint from "@/hooks/useBreakpoint";
 import { Swiper as SwiperType } from "swiper/types";
 
 const Team = () => {
-  const { isDesktop } = useBreakpoint();
+  const { isDesktop, isMobileLargeDown, isMobile } = useBreakpoint();
   const [mySwipper, setMySwipper] = useState<SwiperType>();
   return (
     <div className="container mx-auto mt-[120px]">
       <h3 className="text-primary text-2xl">ECHO DESIGN</h3>
       <p className="text-[52px] font-semibold mt-1">ĐỘI NGŨ</p>
-      <div className="flex items-end mb-6">
+      <div className="flex items-end mb-6 flex-col md:flex-row">
         <p className="text-[#222]">
           Với sự đa dạng về kinh nghiệm và chuyên môn, mỗi thành viên của nhóm
           đều có thể mang đến những ý tưởng độc đáo và sáng tạo để tạo ra những
@@ -57,7 +57,7 @@ const Team = () => {
         // install Swiper modules
         modules={[Autoplay, EffectFade, FreeMode, Navigation, Thumbs]}
         spaceBetween={50}
-        slidesPerView={isDesktop ? 4 : 2}
+        slidesPerView={isMobile ? 1 : isMobileLargeDown ? 2 : 4}
         navigation
         loop={true}
         pagination={{ clickable: true }}
