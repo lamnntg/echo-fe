@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
@@ -16,6 +16,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { MENU_HOME } from "@/constants/app.constants";
 import { cn } from "@/lib/utils";
+import { useMediaQuery } from "react-responsive";
 
 const TITLE = "E C H O".split(" ");
 const DESCRIPTION = "A R C H I T E C T U R E . I N T E R I O R".split(" ");
@@ -39,39 +40,49 @@ const HomePage = () => {
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
   const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
+  const [mounted, setMounted] = useState(false);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-  const RESOLUTION = {
-    fullHeight: 160,
-    line: {
-      width: isMobile ? 100 : 160,
-      height: isMobile ? 80 : isMobileLarge ? 112 : 22,
-    },
-    strike: {
-      width: 160,
-      height: 10,
-    },
-    logo: {
-      width: isMobile ? 120 : isMobileLarge ? 254 : 364,
-      height: isMobile ? 80 : isMobileLarge ? 112 : 160,
-    },
-    line1: {
-      fontSize: isMobile ? 40 : isMobileLarge ? 80 : 120,
-    },
-    line2: {
-      fontSize: isMobile ? 12 : 16,
-    },
-  };
+  const RESOLUTION = useMemo(() => {
+    return {
+      fullHeight: 160,
+      circleStrike: {
+        width: isMobileLargeDown ? 6 : 8,
+      },
+      line: {
+        width: isMobileLargeDown ? 80 : 160,
+        height: isMobile ? 80 : isMobileLarge ? 112 : 22,
+      },
+      strike: {
+        width: 160,
+        height: isMobileLargeDown ? 6 : 10,
+      },
+      logo: {
+        width: isMobile ? 120 : isMobileLarge ? 254 : 364,
+        height: isMobile ? 80 : isMobileLarge ? 112 : 160,
+      },
+      line1: {
+        fontSize: isMobile ? 30 : isMobileLarge ? 80 : 120,
+      },
+      line2: {
+        fontSize: isMobileLargeDown ? 12 : 16,
+      },
+    };
+  }, [isMobile, isMobileLarge]);
+
   useEffect(() => {
     if (!loaded) {
       return;
     }
-    const timeoutTwo = setTimeout(() => {
-      setStep(StepEnums.THREE);
-    }, 9000);
-    return () => {
-      clearTimeout(timeoutTwo);
-    };
+    // const timeoutTwo = setTimeout(() => {
+    //   setStep(StepEnums.THREE);
+    // }, 9000);
+    // return () => {
+    //   clearTimeout(timeoutTwo);
+    // };
   }, [loaded]);
 
   useEffect(() => {
@@ -81,6 +92,9 @@ const HomePage = () => {
       setShowFooter(false);
     }
   }, [step]);
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div>
@@ -145,7 +159,7 @@ const HomePage = () => {
                           transform: "translateX(0)",
                           transition: {
                             duration: 0.5,
-                            delay: 1.5,
+                            delay: 4,
                           },
                         }}
                       ></motion.div>
@@ -162,7 +176,7 @@ const HomePage = () => {
                           transform: "translateX(0)",
                           transition: {
                             duration: 0.5,
-                            delay: 1.5,
+                            delay: 4,
                           },
                         }}
                       ></motion.div>
@@ -197,14 +211,14 @@ const HomePage = () => {
                         className="bg-white"
                         initial={{
                           height: RESOLUTION.fullHeight,
-                          width: 8,
+                          width: RESOLUTION.circleStrike.width,
                           transform: "translateY(-100%)",
                         }}
                         animate={{
                           transform: "translateY(0)",
                           transition: {
                             duration: 0.5,
-                            delay: 1.5,
+                            delay: 4,
                           },
                         }}
                       ></motion.div>
@@ -219,14 +233,14 @@ const HomePage = () => {
                         className="bg-white"
                         initial={{
                           height: RESOLUTION.fullHeight,
-                          width: 8,
+                          width: RESOLUTION.circleStrike.width,
                           transform: "translateY(-100%)",
                         }}
                         animate={{
                           transform: "translateY(0)",
                           transition: {
                             duration: 0.5,
-                            delay: 1.5,
+                            delay: 4,
                           },
                         }}
                       ></motion.div>
@@ -241,14 +255,14 @@ const HomePage = () => {
                         className="bg-white"
                         initial={{
                           height: RESOLUTION.fullHeight,
-                          width: 8,
+                          width: RESOLUTION.circleStrike.width,
                           transform: "translateY(-100%)",
                         }}
                         animate={{
                           transform: "translateY(0)",
                           transition: {
                             duration: 0.5,
-                            delay: 1.5,
+                            delay: 4,
                           },
                         }}
                       ></motion.div>
@@ -263,7 +277,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.5,
-                      delay: i / 7 + 2,
+                      delay: i / 7 + 1.5,
                     }}
                     key={i}
                     className={cn(
@@ -306,7 +320,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.3,
-                      delay: i / 10 + 1 + 3,
+                      delay: i / 10 + 1 + 4,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -322,7 +336,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.3,
-                      delay: i / 10 + 0.8 + 1 + 3,
+                      delay: i / 10 + 0.8 + 1 + 4,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -338,7 +352,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.3,
-                      delay: i / 10 + 1.5 + 1 + 3,
+                      delay: i / 10 + 1.5 + 1 + 4,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -354,7 +368,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.3,
-                      delay: i / 10 + 2.2 + 1 + 3,
+                      delay: i / 10 + 2.2 + 1 + 4,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}

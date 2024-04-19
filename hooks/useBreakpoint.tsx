@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import { useMediaQuery } from "react-responsive";
 
 const useBreakpoint = () => {
