@@ -41,7 +41,7 @@ const HomePage = () => {
   const router = useRouter();
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
+  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
   const [mounted, setMounted] = useState(false);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
   const [type, setType] = useState(1);
@@ -84,12 +84,12 @@ const HomePage = () => {
     if (!loaded) {
       return;
     }
-    // const timeoutTwo = setTimeout(() => {
-    //   setStep(StepEnums.THREE);
-    // }, 9000);
-    // return () => {
-    //   clearTimeout(timeoutTwo);
-    // };
+    const timeoutTwo = setTimeout(() => {
+      setStep(StepEnums.THREE);
+    }, 9000);
+    return () => {
+      clearTimeout(timeoutTwo);
+    };
   }, [loaded]);
 
   useEffect(() => {
