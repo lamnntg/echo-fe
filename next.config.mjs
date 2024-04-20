@@ -6,7 +6,7 @@ const nextConfig = {
     value: "public, max-age=300, s-maxage=300, stale-while-revalidate=300",
   },
   images: {
-    domains: ["firebasestorage.googleapis.com"],
+    domains: ["firebasestorage.googleapis.com", "minio.hdcs.tech"],
   },
 };
 

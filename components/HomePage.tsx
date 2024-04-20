@@ -14,9 +14,10 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import { FuturaNow, Litera } from "@/utils/font";
 import clsx from "clsx";
 import Link from "next/link";
-import { MENU_HOME } from "@/constants/app.constants";
+import { MENU_HOME, RoutesEnum } from "@/constants/app.constants";
 import { cn } from "@/lib/utils";
-import { useMediaQuery } from "react-responsive";
+import { useRouter } from "next/navigation";
+import khachsan from "@/data/khachsan.json";
 
 const TITLE = "E C H O".split(" ");
 const DESCRIPTION = "A R C H I T E C T U R E . I N T E R I O R".split(" ");
@@ -37,11 +38,17 @@ const HEIGHT_HEADER_DESKTOP = 68;
 const HEIGHT_FOOTER_DESKTOP = -8;
 
 const HomePage = () => {
+  const router = useRouter();
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
+  const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
   const [mounted, setMounted] = useState(false);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
+  const [type, setType] = useState(1);
+  const productDesign = useMemo(() => {
+    const res = MENU_HOME.find((item) => item.type === type);
+    return res || MENU_HOME[0];
+  }, [type]);
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -77,12 +84,12 @@ const HomePage = () => {
     if (!loaded) {
       return;
     }
-    const timeoutTwo = setTimeout(() => {
-      setStep(StepEnums.THREE);
-    }, 9000);
-    return () => {
-      clearTimeout(timeoutTwo);
-    };
+    // const timeoutTwo = setTimeout(() => {
+    //   setStep(StepEnums.THREE);
+    // }, 9000);
+    // return () => {
+    //   clearTimeout(timeoutTwo);
+    // };
   }, [loaded]);
 
   useEffect(() => {
@@ -501,8 +508,7 @@ const HomePage = () => {
           </div>
           <div className="flex justify-center mt-10 relative">
             <div className="px-8 bg-white relative z-[2] ">
-              <Link
-                href="/"
+              <div
                 className={clsx(
                   "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-base md:text-2xl py-4 pb-3 inline-flex justify-center items-center",
                   FuturaNow.className
@@ -511,7 +517,7 @@ const HomePage = () => {
                 <span className="leading-[20px] md:leading-[40px]">
                   Dự án thiết kế
                 </span>
-              </Link>
+              </div>
             </div>
             <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
           </div>
@@ -530,31 +536,41 @@ const HomePage = () => {
                       index === MENU_HOME.length - 1 ? "before:hidden" : ""
                     )}
                   >
-                    <Link href={item.to} className="text-center">
+                    <span
+                      className={cn(
+                        "text-center cursor-pointer",
+                        type === item.type ? "underline" : ""
+                      )}
+                      onClick={() => {
+                        setType(item.type);
+                      }}
+                    >
                       {item.label}
-                    </Link>
+                    </span>
                   </div>
                 ))}
               </div>
               <div className="grid grid-cols-2 gap-6">
-                <div className="cursor-pointer">
-                  <Image
-                    src={Slide1}
-                    style={{ objectFit: "cover" }}
-                    alt="Thumnail"
-                  />
-                </div>
-                <div className="cursor-pointer">
-                  <Image
-                    src={Slide1}
-                    style={{ objectFit: "cover" }}
-                    alt="Thumnail"
-                  />
-                </div>
+                {productDesign.data.slice(0, 2).map((item) => (
+                  <div key={item.slug} className="cursor-pointer">
+                    <img
+                      src={item.images[0]}
+                      style={{
+                        objectFit: "cover",
+                        width: "100%",
+                      }}
+                      className="h-[200px] md:h-[250px] lg:h-[400px]"
+                      alt="Thumnail"
+                      onClick={() =>
+                        router.push(productDesign.to + "/" + item.slug)
+                      }
+                    />
+                  </div>
+                ))}
               </div>
               <div className="text-center mt-8 pb-6 flex justify-center">
                 <Link
-                  href="/"
+                  href={productDesign.to}
                   className="bg-[#1c1c1c] text-white w-[140px] flex justify-center items-center py-3 rounded-md border border-solid border-black hover:bg-white transition hover:text-black"
                 >
                   Xem thêm
@@ -565,8 +581,7 @@ const HomePage = () => {
 
           <div className="container mx-auto flex justify-center mt-10 relative">
             <div className="px-8 bg-white relative z-[2] ">
-              <Link
-                href="/"
+              <div
                 className={clsx(
                   "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-base text-center md:text-2xl py-4 pb-3 inline-flex justify-center items-center",
                   FuturaNow.className
@@ -575,31 +590,33 @@ const HomePage = () => {
                 <span className="leading-[20px] md:leading-[40px] uppercase">
                   Công trình hoàn thiện thực tế
                 </span>
-              </Link>
+              </div>
             </div>
             <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
           </div>
           <div className="bg-[#efefef] mt-10">
             <div className="container mx-auto">
               <div className="grid grid-cols-2 gap-6 pt-10">
-                <div className="cursor-pointer">
-                  <Image
-                    src={Slide1}
-                    style={{ objectFit: "cover" }}
-                    alt="Thumnail"
-                  />
-                </div>
-                <div className="cursor-pointer">
-                  <Image
-                    src={Slide1}
-                    style={{ objectFit: "cover" }}
-                    alt="Thumnail"
-                  />
-                </div>
+                {khachsan.slice(0, 2).map((item) => (
+                  <div key={item.slug} className="cursor-pointer">
+                    <img
+                      src={item.images[0]}
+                      style={{
+                        objectFit: "cover",
+                        width: "100%",
+                      }}
+                      className="h-[200px] md:h-[250px] lg:h-[400px]"
+                      alt="Thumnail"
+                      onClick={() =>
+                        router.push(RoutesEnum.KHACH_SAN + "/" + item.slug)
+                      }
+                    />
+                  </div>
+                ))}
               </div>
               <div className="text-center mt-8 pb-6 flex justify-center">
                 <Link
-                  href="/"
+                  href={RoutesEnum.KHACH_SAN}
                   className="bg-[#1c1c1c] text-white w-[140px] flex justify-center items-center py-3 rounded-md border border-solid border-black hover:bg-white transition hover:text-black"
                 >
                   Xem thêm
