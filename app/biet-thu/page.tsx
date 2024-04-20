@@ -23,6 +23,7 @@ const page = () => {
                 src={item.images[0]}
                 alt={item.name}
                 width="100%"
+                loading="lazy"
                 className="hover:scale-125 transition duration-500"
                 style={{
                   width: "100%",

@@ -22,7 +22,7 @@ const page = ({ params }: { params: { slug: string } }) => {
       <p className="font-semibold text-xl mt-6 pb-3">{item.name}</p>
       <div className="flex flex-col pt-6 items-center justify-center gap-3">
         {item.images.map((image) => (
-          <img src={image} className="max-w-full object-cover" />
+          <img src={image} className="max-w-full object-cover" loading="lazy" />
         ))}
       </div>
     </main>
