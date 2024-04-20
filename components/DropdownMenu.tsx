@@ -5,6 +5,8 @@ import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import useBreakpoint from "@/hooks/useBreakpoint";
 import { DropdownLink } from "@/types/project.type";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 const menu = {
   open: {
@@ -48,6 +50,7 @@ type DropdownMenuProps = {
 };
 
 const DropdownMenu: FC<DropdownMenuProps> = ({ item }) => {
+  const pathname = usePathname();
   const { isDesktopDown } = useBreakpoint();
   const [showSubMenu, setShowSubMenu] = useState(false);
   const [isHover, setIsHover] = useState(false);
@@ -58,7 +61,10 @@ const DropdownMenu: FC<DropdownMenuProps> = ({ item }) => {
   return isDesktopDown ? (
     <div className="text-nowrap px-4 gap-2 transition cursor-pointer my-3 leading-6 text-base">
       <div
-        className="flex items-center gap-2 hover:text-primary"
+        className={cn(
+          "flex items-center gap-2 hover:text-primary",
+          item.items.find((item) => item.href === pathname) && "text-primary"
+        )}
         onClick={() => setShowSubMenu(!showSubMenu)}
       >
         {item.label}
@@ -74,7 +80,10 @@ const DropdownMenu: FC<DropdownMenuProps> = ({ item }) => {
           <Link
             key={l.href + l.label}
             href={l.href}
-            className="text-nowrap my-2 hover:text-primary px-2 block transition"
+            className={cn(
+              "text-nowrap my-2 hover:text-primary px-2 block transition",
+              pathname === l.href && "text-primary"
+            )}
             prefetch
           >
             {l.label}
@@ -88,7 +97,12 @@ const DropdownMenu: FC<DropdownMenuProps> = ({ item }) => {
       onHoverStart={toggleHoverMenu}
       onHoverEnd={toggleHoverMenu}
     >
-      <div className="text-nowrap flex items-center px-4 gap-2 text-sm hover:text-primary transition cursor-pointer">
+      <div
+        className={cn(
+          "text-nowrap flex items-center px-4 gap-2 text-sm hover:text-primary transition cursor-pointer",
+          item.items.find((item) => item.href === pathname) && "text-primary"
+        )}
+      >
         {item.label}
         <FontAwesomeIcon icon={faSortDown} className="-mt-1" />
       </div>
@@ -102,7 +116,10 @@ const DropdownMenu: FC<DropdownMenuProps> = ({ item }) => {
           {item.items.map((l) => (
             <Link
               href={l.href}
-              className=" text-nowrap my-2 px-8 block hover:text-primary transition"
+              className={cn(
+                " text-nowrap my-2 px-8 block hover:text-primary transition",
+                pathname === l.href && "text-primary"
+              )}
               prefetch
             >
               {l.label}

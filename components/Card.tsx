@@ -1,4 +1,5 @@
 "use client";
+import { RoutesEnum } from "@/constants/app.constants";
 import { ProjectDef } from "@/types/project.type";
 import { useRouter } from "next/navigation";
 import React, { FC } from "react";
@@ -13,7 +14,7 @@ const Card: FC<CardProps> = ({ project }) => {
     <div>
       <div
         className="w-full relative overflow-hidden group cursor-pointer"
-        onClick={() => router.push(`/du-an/${project.slug}`)}
+        onClick={() => router.push(`${RoutesEnum.KHACH_SAN}/${project.slug}`)}
       >
         <div className="w-full">
           <img
@@ -30,13 +31,6 @@ const Card: FC<CardProps> = ({ project }) => {
         </div>
         <div className="py-2 px-6 absolute transition-all duration-300 group-hover:bottom-0 bottom-[100%] left-0 w-full h-full backdrop-blur-[3px] bg-[rgb(0,0,0,0.4)] text-white">
           <p className="text-xl font-semibold mb-3">{project.name}</p>
-          <div className="text-base">
-            {project.address && <p>Địa điểm: {project.address}</p>}
-            {project.area && <p>Diện tích: {project.area}</p>}
-            {project.year_completed && (
-              <p>Năm hoàn thành: {project.year_completed}</p>
-            )}
-          </div>
         </div>
       </div>
       <p className="text-lg">{project.name}</p>

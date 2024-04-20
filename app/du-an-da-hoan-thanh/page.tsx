@@ -1,5 +1,5 @@
 import Card from "@/components/Card";
-import data from "@/data.json";
+import khachsan from "@/data/khachsan.json";
 import { ProjectDef } from "@/types/project.type";
 
 const page = () => {
@@ -9,7 +9,7 @@ const page = () => {
         DỰ ÁN DỰ ÁN ĐÃ HOÀN THÀNH
       </h1>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {(data as ProjectDef[])
+        {(khachsan as ProjectDef[])
           .filter((item) => item.status === "completed")
           .map((item) => (
             <Card key={item.name} project={item as ProjectDef} />

@@ -13,6 +13,7 @@ import { useAppStore } from "@/store/app.store";
 import { usePathname } from "next/navigation";
 import DropdownMenu from "../DropdownMenu";
 import { FACEBOOK_LINK, RoutesEnum } from "@/constants/app.constants";
+import { cn } from "@/lib/utils";
 
 const menu = {
   open: {
@@ -57,7 +58,7 @@ const Header = () => {
   const toggleHoverMenu = () => {
     setIsHover(!isHover);
   };
-  const { isMobileLargeDown, isDesktopDown } = useBreakpoint();
+  const { isDesktopDown } = useBreakpoint();
   const [show, setShow] = useState(false);
   const pathname = usePathname();
   const { setShowFooter } = useAppStore();
@@ -101,13 +102,19 @@ const Header = () => {
             >
               <Link
                 href={RoutesEnum.HOME}
-                className="flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base"
+                className={cn(
+                  "flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base",
+                  pathname === RoutesEnum.HOME && "text-primary"
+                )}
               >
                 Trang chủ
               </Link>
               <Link
                 href={RoutesEnum.INTRODUCE}
-                className="flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base"
+                className={cn(
+                  "flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base",
+                  pathname === RoutesEnum.INTRODUCE && "text-primary"
+                )}
               >
                 Giới thiệu
               </Link>
@@ -144,7 +151,10 @@ const Header = () => {
               />
               <Link
                 href={RoutesEnum.COMPLETED}
-                className="flex items-center px-4 hover:text-primary transition mr-4 my-3 leading-6 text-base"
+                className={cn(
+                  "flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base",
+                  pathname === RoutesEnum.COMPLETED && "text-primary"
+                )}
                 prefetch
               >
                 Công trình hoàn thiện thực tế
@@ -170,7 +180,10 @@ const Header = () => {
               />
               <Link
                 href={RoutesEnum.LIEN_HE}
-                className="flex items-center px-4 hover:text-primary transition mr-4 my-3 leading-6 text-base"
+                className={cn(
+                  "flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base",
+                  pathname === RoutesEnum.LIEN_HE && "text-primary"
+                )}
                 prefetch
               >
                 Liên hệ
@@ -210,13 +223,19 @@ const Header = () => {
           <div className="flex items-center uppercase">
             <Link
               href={RoutesEnum.HOME}
-              className="flex items-center px-4 text-sm hover:text-primary transition"
+              className={cn(
+                "flex items-center px-4 text-sm hover:text-primary transition",
+                pathname === RoutesEnum.HOME && "text-primary"
+              )}
             >
               Trang chủ
             </Link>
             <Link
               href={RoutesEnum.INTRODUCE}
-              className="flex items-center px-4 text-sm hover:text-primary transition"
+              className={cn(
+                "flex items-center px-4 text-sm hover:text-primary transition",
+                pathname === RoutesEnum.INTRODUCE && "text-primary"
+              )}
             >
               Giới thiệu
             </Link>
@@ -253,7 +272,10 @@ const Header = () => {
             />
             <Link
               href={RoutesEnum.COMPLETED}
-              className="flex items-center px-4 text-sm hover:text-primary transition"
+              className={cn(
+                "flex items-center px-4 text-sm hover:text-primary transition",
+                pathname === RoutesEnum.COMPLETED && "text-primary"
+              )}
               prefetch
             >
               Công trình hoàn thiện thực tế
@@ -279,7 +301,10 @@ const Header = () => {
             />
             <Link
               href={RoutesEnum.LIEN_HE}
-              className="flex items-center px-4 text-sm hover:text-primary transition mr-4"
+              className={cn(
+                "flex items-center px-4 text-sm hover:text-primary transition",
+                pathname === RoutesEnum.LIEN_HE && "text-primary"
+              )}
               prefetch
             >
               Liên hệ
