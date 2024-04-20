@@ -9,7 +9,23 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_1.jpeg?alt=media&token=f4381cd7-de0c-46ff-a1ce-f7236bf06988"
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vMS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vMi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vMy5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vNC5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vNS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vNi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vNy5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vOC5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vOS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vMTAuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vMTEuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vMTIuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vMTMuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vMTQuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vMTUuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vMTYuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vMTcuanBn&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     }

@@ -1,7 +1,7 @@
 [
     {
         "name": "MING BABER",
-        "slug": "cetadine",
+        "slug": "ming-baber",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
@@ -9,13 +9,24 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_1.jpeg?alt=media&token=f4381cd7-de0c-46ff-a1ce-f7236bf06988"
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL01JTkcgQkFCRVIvMS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL01JTkcgQkFCRVIvMi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL01JTkcgQkFCRVIvMy5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL01JTkcgQkFCRVIvNC5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL01JTkcgQkFCRVIvNi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL01JTkcgQkFCRVIvNy5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL01JTkcgQkFCRVIvOC5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL01JTkcgQkFCRVIvOS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL01JTkcgQkFCRVIvMTAuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL01JTkcgQkFCRVIvbWF0IHRpZW4gMS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL01JTkcgQkFCRVIvbWF0IHRpZW4gMi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL01JTkcgQkFCRVIvbWF0IHRpZW4gMy5qcGc=&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
     {
         "name": "THỊT XIÊN HOÀNG ĐỨC",
-        "slug": "cetadine",
+        "slug": "thit-xien-hoang-duc",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
@@ -23,13 +34,19 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_1.jpeg?alt=media&token=f4381cd7-de0c-46ff-a1ce-f7236bf06988"
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1RI4buKVCBYScOKTiBIT8OATkcgxJDhu6hDL1NIT1AgVEjhu4pUIFhJw4pOIEhPw4BORyDEkOG7qEMvVEjhu4pUIFhJw4pOIEhPw4BORyDEkOG7qEMtMjAyNDA0MDVUMDcwNDQzWi0wMDEvVEjhu4pUIFhJw4pOIEhPw4BORyDEkOG7qEMvMS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1RI4buKVCBYScOKTiBIT8OATkcgxJDhu6hDL1NIT1AgVEjhu4pUIFhJw4pOIEhPw4BORyDEkOG7qEMvVEjhu4pUIFhJw4pOIEhPw4BORyDEkOG7qEMtMjAyNDA0MDVUMDcwNDQzWi0wMDEvVEjhu4pUIFhJw4pOIEhPw4BORyDEkOG7qEMvMi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1RI4buKVCBYScOKTiBIT8OATkcgxJDhu6hDL1NIT1AgVEjhu4pUIFhJw4pOIEhPw4BORyDEkOG7qEMvVEjhu4pUIFhJw4pOIEhPw4BORyDEkOG7qEMtMjAyNDA0MDVUMDcwNDQzWi0wMDEvVEjhu4pUIFhJw4pOIEhPw4BORyDEkOG7qEMvMy5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1RI4buKVCBYScOKTiBIT8OATkcgxJDhu6hDL1NIT1AgVEjhu4pUIFhJw4pOIEhPw4BORyDEkOG7qEMvVEjhu4pUIFhJw4pOIEhPw4BORyDEkOG7qEMtMjAyNDA0MDVUMDcwNDQzWi0wMDEvVEjhu4pUIFhJw4pOIEhPw4BORyDEkOG7qEMvNS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1RI4buKVCBYScOKTiBIT8OATkcgxJDhu6hDLzYuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1RI4buKVCBYScOKTiBIT8OATkcgxJDhu6hDLzcuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1RI4buKVCBYScOKTiBIT8OATkcgxJDhu6hDLzguanBn&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
     {
         "name": "ZONE SALON",
-        "slug": "mina-hotel-1",
+        "slug": "zone-salon",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
@@ -37,7 +54,23 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_1.jpeg?alt=media&token=f4381cd7-de0c-46ff-a1ce-f7236bf06988"
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vMS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vMi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vNC5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vNS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vNi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vNy5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vOC5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vOS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vMTAuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vMTQuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vMTUuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vMTYuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vMTcuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vMTguanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vMTkuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vMjAuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9TSE9QL1pPTkUgU0FMT04vMjIuanBn&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     }

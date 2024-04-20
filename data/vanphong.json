@@ -1,7 +1,7 @@
 [
     {
         "name": "AMAVET",
-        "slug": "cetadine",
+        "slug": "amavet",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
@@ -9,13 +9,24 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_1.jpeg?alt=media&token=f4381cd7-de0c-46ff-a1ce-f7236bf06988"
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzEuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzIuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzMuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzQuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzUuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzYuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzcuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzguanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBOSMOCTiBWScOKTi8xLmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBOSMOCTiBWScOKTi8yLmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1PhuqJOSC8xLmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1PhuqJOSC8yLmpwZw==&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
     {
         "name": "COLAVIT",
-        "slug": "cetadine",
+        "slug": "colavit",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
@@ -23,13 +34,15 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_1.jpeg?alt=media&token=f4381cd7-de0c-46ff-a1ce-f7236bf06988"
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9jb2xhdmkvU0hPUCBMT0dPL0zDg05IIMSQ4bqgTyAyLzEuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9jb2xhdmkvU0hPUCBMT0dPL0zDg05IIMSQ4bqgTyAyLzIuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9jb2xhdmkvU0hPUCBMT0dPL0zDg05IIMSQ4bqgTyAyLzMuanBn&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
     {
         "name": "HINODE",
-        "slug": "mina-hotel-1",
+        "slug": "hinode",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
@@ -37,13 +50,26 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_1.jpeg?alt=media&token=f4381cd7-de0c-46ff-a1ce-f7236bf06988"
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvQ0hVIFRJQ0ggMS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvQ0hVIFRJQ0ggMi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvR0lBTSBET0MgMi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvR0lBTSBET0MgMy5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvTEFNIFZJRUMgMS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvTEFNIFZJRUMgMi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvTEFNIFZJRUMgNC5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvTEFNIFZJRUMgNi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvTEUgVEFOIDEuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvTEUgVEFOIDQuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvTEUgVEFOIDUuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvUEhPTkcgSE9QIDEuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvUEhPTkcgSE9QIDIuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvUEhPVE8gSU4uanBn&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
     {
         "name": "MYOR",
-        "slug": "cetadine",
+        "slug": "myor",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
@@ -51,13 +77,23 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_1.jpeg?alt=media&token=f4381cd7-de0c-46ff-a1ce-f7236bf06988"
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzEuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzIuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzMuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzQuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzUuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzguanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzkuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzEwLmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzExLmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzEyLmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzEzLmpwZw==&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
     {
         "name": "THAN KHOANG SAN",
-        "slug": "cetadine",
+        "slug": "than-khoang-san",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
@@ -65,13 +101,14 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_1.jpeg?alt=media&token=f4381cd7-de0c-46ff-a1ce-f7236bf06988"
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy90aGFuIGtob2FuZyBzYW4vU0hPUCBMT0dPL0zEkC8xLmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy90aGFuIGtob2FuZyBzYW4vU0hPUCBMT0dPL0zEkC8yLmpwZw==&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
     {
         "name": "WIDO GAME",
-        "slug": "mina-hotel-1",
+        "slug": "wido-game",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
@@ -79,7 +116,28 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://firebasestorage.googleapis.com/v0/b/class-app-25748.appspot.com/o/ms_duplex_1.jpeg?alt=media&token=f4381cd7-de0c-46ff-a1ce-f7236bf06988"
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvU0FOSCAxLmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvU0FOSCAzLmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvU0FOSCA0LmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvU0FOSCA1LmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvV0VMQ09NRSAxLmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvV0VMQ09NRSAyLmpwZw==&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvejM5NTQwNTQ2OTU4ODFfZDYyNTFhODhiOWI2Y2UxNThkMzk3ZjA2ODQ2MTk4Y2IuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvejM5NTQwNTQ3MDA0MThfNGJlZjcyZTIxNjQyMDNlNmZmYzlhMDI0ZTlkMDFiNGQuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvejM5NTQwNTQ3MDA0MjVfNjNiZjAwNjJlNTVhOGZhOThhODI0MzMxNWIzMjk4ZTUuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvejM5NTQwNTQ3MDkxODRfMzkxZTNiY2JhODg0NTk1NWIxMDAwMjU2NjU1ODdkYTQuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvSE9QIDEuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvSE9QIDIuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvTEFNIFZJRUMgMS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvTEFNIFZJRUMgMy5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvTEFNIFZJRUMgNC5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvTEFNIFZJRUMgNy5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvTEFNIFZJRUMgOC5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvU0FOIEtIQVUgMS5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvU0FOIEtIQVUgMi5qcGc=&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvS0hPIDEuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvS0hPIDIuanBn&version_id=null",
+            "https://minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvS0hPIDMuanBn&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     }
