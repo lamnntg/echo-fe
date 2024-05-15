@@ -152,9 +152,9 @@ const Contact = () => {
           <div className="flex-1 overflow-hidden">
             <iframe
               src={IFRAME_GOOGLE_MAP}
-              width="600"
               height="450"
               loading="lazy"
+              className="w-full"
             ></iframe>
           </div>
         </div>

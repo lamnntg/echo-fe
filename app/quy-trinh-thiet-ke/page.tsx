@@ -6,14 +6,6 @@ import { Metadata } from "next";
 import { cn } from "@/lib/utils";
 import { RaleWay } from "@/utils/font";
 
-export const metadata: Metadata = {
-  title: "Quy trình thiết kế - ECHO Design",
-  other: {
-    ["or:title"]: "Quy trình thiết kế - ECHO Design",
-    ["og:site_name"]: "ECHO Design",
-  },
-};
-
 const page = () => {
   return (
     <main>

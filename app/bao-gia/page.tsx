@@ -1,14 +1,6 @@
 import { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
-  title: "Báo giá - ECHO Design",
-  other: {
-    ["or:title"]: "Báo giá - ECHO Design",
-    ["og:site_name"]: "ECHO Design",
-  },
-};
-
 const page = () => {
   return (
     <main className="text-[#555] font-light">

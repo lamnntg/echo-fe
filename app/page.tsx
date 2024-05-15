@@ -2,14 +2,6 @@ import HomePage from "@/components/HomePage";
 import { Metadata, Viewport } from "next";
 import Head from "next/head";
 
-export const metadata: Metadata = {
-  title: "Trang chủ - ECHO Design",
-  description: "Echo design",
-  other: {
-    ["or:title"]: "Trang chủ - ECHO Design",
-    ["og:site_name"]: "ECHO Design",
-  },
-};
 export const viewport: Viewport = {
   initialScale: 1,
   width: "device-width",

@@ -18,16 +18,6 @@ import {
 import SlideIntroduce from "@/components/SlideIntroduce";
 import Team from "@/components/Team";
 
-export const metadata: Metadata = {
-  title: "ECHO Design",
-  description:
-    "WELCOME TO ECHO DESIGN! Trải qua 10 năm kinh nghiệm trong ngành xây dựng nhà ở, đội ngũ của chúng tôi hướng tới vẻ đẹp hoàn mỹ của kiến trúc đương đại, kết hợp giữa vật liệu cao cấp, thân thiện với người sử dụng, cùng với các thiết bị thông minh giúp chủ nhân […]",
-  other: {
-    ["or:title"]: "Giới thiệu - ECHO Design",
-    ["og:site_name"]: "ECHO Design",
-  },
-};
-
 export default function Introduce() {
   return (
     <main className="pb-10">
@@ -155,8 +145,8 @@ export default function Introduce() {
           </div>
           <div className="flex flex-col items-center gap-4 text-primary w-[33.33%]">
             <SquarePen size={40} />
-            <p className="text-2xl font-medium text-primary text-center">
-              Thi công hoàn thiện kiến trúc, nội thất{" "}
+            <p className="text-2xl font-medium text-primary text-center text-nowrap">
+              Thi công hoàn thiện kiến trúc, nội thất
             </p>
           </div>
           <div className="flex flex-col items-center gap-4 text-primary w-[33.33%]">

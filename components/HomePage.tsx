@@ -75,7 +75,7 @@ const HomePage = () => {
         fontSize: isMobile ? 30 : isMobileLarge ? 80 : 120,
       },
       line2: {
-        fontSize: isMobileLargeDown ? 12 : 16,
+        fontSize: isMobileLargeDown ? 14 : 16,
       },
     };
   }, [isMobile, isMobileLarge]);
@@ -281,7 +281,7 @@ const HomePage = () => {
                 </div>
               </div>
               <div
-                className="relative flex justify-center flex-col"
+                className="relative flex justify-center flex-col w-fit"
                 style={{
                   height: RESOLUTION.logo.height,
                 }}
@@ -301,7 +301,7 @@ const HomePage = () => {
                     },
                   }}
                 ></motion.div>
-                <div>
+                <div className="relative -top-6 sm:-top-2 md:-top-9 left-0 flex">
                   {TITLE.map((el, i) => (
                     <motion.span
                       initial={{ opacity: 0 }}
@@ -323,7 +323,7 @@ const HomePage = () => {
                     </motion.span>
                   ))}
                 </div>
-                <div className="mt-0 sm:mt-1 md:mt-2">
+                <div className="ml-0 lg:ml-2 absolute bottom-0 left-0 flex">
                   {DESCRIPTION.map((el, i) => (
                     <motion.span
                       initial={{ opacity: 0 }}
@@ -344,7 +344,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center text-5xl md:mt-10 items-center gap-x-3">
+            <div className="flex justify-center text-5xl md:mt-10 items-center gap-x-3 w-full">
               <div>
                 {SLOGAN.map((el, i) => (
                   <motion.span
