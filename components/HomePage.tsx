@@ -60,7 +60,7 @@ const HomePage = () => {
         width: isMobileLargeDown ? 4 : 8,
       },
       line: {
-        width: isMobileLargeDown ? 80 : 160,
+        width: isMobile ? 80 : isMobileLargeDown ? 120 : 160,
         height: isMobile ? 80 : isMobileLarge ? 112 : 22,
       },
       strike: {
@@ -86,7 +86,7 @@ const HomePage = () => {
     }
     const timeoutTwo = setTimeout(() => {
       setStep(StepEnums.THREE);
-    }, 9000);
+    }, 7400);
     return () => {
       clearTimeout(timeoutTwo);
     };
@@ -323,7 +323,7 @@ const HomePage = () => {
                     </motion.span>
                   ))}
                 </div>
-                <div className="ml-0 lg:ml-2 absolute bottom-0 left-0 flex">
+                <div className="ml-0 lg:ml-2 absolute -bottom-2 left-0 flex">
                   {DESCRIPTION.map((el, i) => (
                     <motion.span
                       initial={{ opacity: 0 }}
@@ -351,8 +351,8 @@ const HomePage = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
-                      duration: 0.3,
-                      delay: i / 10 + 1 + 4,
+                      duration: 0.1,
+                      delay: i / 20 + 1 + 4,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -367,8 +367,8 @@ const HomePage = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
-                      duration: 0.3,
-                      delay: i / 10 + 0.8 + 1 + 4,
+                      duration: 0.1,
+                      delay: i / 20 + 0.5 + 1 + 4,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -383,8 +383,8 @@ const HomePage = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
-                      duration: 0.3,
-                      delay: i / 10 + 1.5 + 1 + 4,
+                      duration: 0.1,
+                      delay: i / 20 + 0.8 + 1 + 4,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -400,7 +400,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.3,
-                      delay: i / 10 + 2.2 + 1 + 4,
+                      delay: i / 20 + 1.2 + 1 + 4,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}

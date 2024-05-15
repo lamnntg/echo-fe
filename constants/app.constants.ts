@@ -9,6 +9,8 @@ import HaAnh from "@/public/HaAnh.jpg";
 import HoangOanh from "@/public/HoangOanh.jpg";
 import VietAnh from "@/public/VietAnh.jpg";
 import YenChi from "@/public/YenChi.jpg";
+import MinhBang from "@/public/MinhBang.jpg";
+import NoAvatar from "@/public/no-avatar.png";
 
 export enum RoutesEnum {
   HOME = "/",
@@ -108,7 +110,12 @@ export const CEO_INTRODUCE = [
   {
     name: "Lê Minh Bàng",
     role: "Sale & Marketing",
-    image: VietAnh,
+    image: MinhBang,
+  },
+  {
+    name: "Nguyễn Văn Giang",
+    role: "Quản lý dự án",
+    image: NoAvatar,
   },
   {
     name: "Nguyễn Thị Hoàng Oanh ",

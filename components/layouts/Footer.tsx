@@ -5,7 +5,7 @@ import ContactFooter from "./ContactFooter";
 import clsx from "clsx";
 import { FuturaNow } from "@/utils/font";
 import { usePathname } from "next/navigation";
-import Logo from "@/public/logo-text.jpg";
+import LogoWhite from "@/public/logo-text-white.png";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,7 +24,7 @@ const Footer = () => {
       <div className="container mx-auto flex gap-8 flex-wrap px-2">
         <div>
           <Image
-            src={Logo}
+            src={LogoWhite}
             style={{
               objectFit: "cover",
               width: "135px",
