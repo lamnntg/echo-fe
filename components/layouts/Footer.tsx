@@ -11,6 +11,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { FACEBOOK_LINK } from "@/constants/app.constants";
+import { FileVideo, NotepadText } from "lucide-react";
 
 const Footer = () => {
   const { showFooter } = useAppStore();
@@ -50,7 +51,7 @@ const Footer = () => {
               infor@echodesign.vn
             </Link>
           </p>
-          <p className="mt-3">Thời gian làm việc:</p>
+          <p className="mt-3">Thời gian làm việc: 8:30 - 18:00 (Th2 - Th7)</p>
         </div>
 
         <div className="flex flex-col">
@@ -104,26 +105,14 @@ const Footer = () => {
           <p className="mb-7">FANPAGE</p>
           <div className="flex items-center gap-2 mb-3 transition hover:text-primary cursor-pointer">
             <Link
-              href={FACEBOOK_LINK}
+              href="https://www.facebook.com/ed.interior.architecture"
               className="flex items-center"
               target="_blank"
             >
               <div className="w-[30px]">
-                <FontAwesomeIcon icon={faFacebookF} size="lg" />
+                <FileVideo />
               </div>
-              Facebook
-            </Link>
-          </div>
-          <div className="flex items-center gap-2 transition hover:text-primary cursor-pointer">
-            <Link
-              href="https://www.youtube.com/@ECHO.design"
-              className="flex items-center"
-              target="_blank"
-            >
-              <div className="w-[30px]">
-                <FontAwesomeIcon icon={faYoutube} size="lg" />
-              </div>
-              Youtube
+              ECHO design
             </Link>
           </div>
         </div>

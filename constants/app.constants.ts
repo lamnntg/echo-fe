@@ -4,6 +4,11 @@ import khachsan from "@/data/khachsan.json";
 import nhadat from "@/data/nhadat.json";
 import shop from "@/data/shop.json";
 import vanphong from "@/data/vanphong.json";
+import CEOAvatar from "@/public/ceo-avatar.jpeg";
+import HaAnh from "@/public/HaAnh.jpg";
+import HoangOanh from "@/public/HoangOanh.jpg";
+import VietAnh from "@/public/VietAnh.jpg";
+import YenChi from "@/public/YenChi.jpg";
 
 export enum RoutesEnum {
   HOME = "/",
@@ -83,26 +88,32 @@ export const CEO_INTRODUCE = [
   {
     name: "Nguyễn Minh Quang",
     role: "Founder - CEO",
+    image: CEOAvatar,
   },
   {
     name: "Nguyễn Thị Hà Anh",
     role: "Chuyên viên thiết kế nội thất - kỹ thuật",
+    image: HaAnh,
   },
   {
     name: "Phạm Việt Anh",
     role: "Kiến trúc sư",
+    image: VietAnh,
   },
   {
     name: "Bùi Thị Yến Chi",
     role: "Chuyên viên thiết kế nội thất - kỹ thuật",
+    image: YenChi,
   },
   {
     name: "Lê Minh Bàng",
     role: "Sale & Marketing",
+    image: VietAnh,
   },
   {
-    name: "Nguyễn Văn Giang",
-    role: "Quản lý dự án",
+    name: "Nguyễn Thị Hoàng Oanh ",
+    role: "Chuyên viên thiết kế nội thất - kỹ thuật",
+    image: HoangOanh,
   },
 ];
 

@@ -44,9 +44,9 @@ const ContactFooter = () => {
             </Link>
           </div>
           <div className="bg-[#6db703] rounded-full w-10 h-10 flex justify-center items-center mb-3 cursor-pointer">
-            <Link href="tel:+0886889995">
+            <a href="tel:+0886889995">
               <FontAwesomeIcon icon={faPhone} color="#fff" size="xl" />
-            </Link>
+            </a>
           </div>
           <div
             className="bg-[#f58634] rounded-full w-10 h-10 flex justify-center items-center cursor-pointer"

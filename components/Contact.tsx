@@ -3,7 +3,14 @@ import useBreakpoint from "@/hooks/useBreakpoint";
 import React from "react";
 import Slide3 from "@/public/slide_3.jpg";
 import Image from "next/image";
-import { Clock, Mail, MapPin, Phone, StickyNote } from "lucide-react";
+import {
+  Clock,
+  Mail,
+  MapPin,
+  Newspaper,
+  Phone,
+  StickyNote,
+} from "lucide-react";
 import Link from "next/link";
 import { FACEBOOK_LINK, IFRAME_GOOGLE_MAP } from "@/constants/app.constants";
 
@@ -74,6 +81,13 @@ const Contact = () => {
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <Clock />
               <span>Thời gian làm việc 8:30 - 18:00 (Th2 - Th7)</span>
+            </li>
+            <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
+              <Newspaper />
+              <span>
+                Giấy ĐKKD: Giấy ĐKKD số 0110511487 cấp ngày 17 - 10 - 2023 tại
+                Hà Nội
+              </span>
             </li>
           </ul>
         </div>

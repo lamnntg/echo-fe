@@ -5,6 +5,7 @@ import Footer from "@/components/layouts/Footer";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { Metadata } from "next";
+import ScrollToTop from "@/components/layouts/ScrollToTop";
 
 const sourceSansPro = Source_Sans_3({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

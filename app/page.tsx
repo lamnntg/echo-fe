@@ -1,5 +1,5 @@
 import HomePage from "@/components/HomePage";
-import { Metadata, Viewport } from "next";
+import { Viewport } from "next";
 import Head from "next/head";
 
 export const viewport: Viewport = {

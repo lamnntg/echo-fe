@@ -1,8 +1,7 @@
 "use client";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import React, { useState } from "react";
-import SlideIntroduce from "./SlideIntroduce";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { CEO_INTRODUCE } from "@/constants/app.constants";
 import {
   Autoplay,
@@ -11,7 +10,6 @@ import {
   Navigation,
   Thumbs,
 } from "swiper/modules";
-import CEOAvatar from "@/public/ceo-avatar.jpeg";
 import Image from "next/image";
 import useBreakpoint from "@/hooks/useBreakpoint";
 import { Swiper as SwiperType } from "swiper/types";
@@ -69,7 +67,7 @@ const Team = () => {
               <div className="flex flex-col items-center justify-normal">
                 <div className="p-2 border border-solid border-[#ececec] w-fit">
                   <Image
-                    src={CEOAvatar}
+                    src={item.image}
                     style={{ objectFit: "cover", width: 190, height: 190 }}
                     alt="Thumnail"
                   />
