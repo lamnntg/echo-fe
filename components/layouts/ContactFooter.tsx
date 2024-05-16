@@ -25,18 +25,20 @@ const ContactFooter = () => {
       </div>
       <div
         className={clsx(
-          "fixed right-2 bottom-[160px] z-10 transition-all",
+          "fixed right-2 bottom-[160px] z-10 transition-all opacity-75",
           active ? "translate-y-0" : "translate-y-[360px]"
         )}
       >
         <div>
           <div className="mb-3 bg-white rounded-full w-9 h-9 flex justify-center items-center cursor-pointer">
-            <FontAwesomeIcon
-              icon={faFacebookMessenger}
-              color="#0052c2"
-              size="3x"
-              fill="#fff"
-            />
+            <Link href="https://m.me/100144595512175" target="_blank">
+              <FontAwesomeIcon
+                icon={faFacebookMessenger}
+                color="#0052c2"
+                size="3x"
+                fill="#fff"
+              />
+            </Link>
           </div>
           <div className="mb-2 text-white bg-[#005be0] rounded-full w-11 h-11 flex justify-center items-center cursor-pointer -ml-1">
             <Link href="https://zalo.me/0886889995" target="_blank">

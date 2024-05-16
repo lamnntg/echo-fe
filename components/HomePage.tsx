@@ -75,7 +75,7 @@ const HomePage = () => {
         fontSize: isMobile ? 30 : isMobileLarge ? 80 : 120,
       },
       line2: {
-        fontSize: isMobileLargeDown ? 14 : 16,
+        fontSize: isMobileLargeDown ? 12 : 16,
       },
     };
   }, [isMobile, isMobileLarge]);
@@ -86,7 +86,7 @@ const HomePage = () => {
     }
     const timeoutTwo = setTimeout(() => {
       setStep(StepEnums.THREE);
-    }, 7400);
+    }, 5000);
     return () => {
       clearTimeout(timeoutTwo);
     };
@@ -133,7 +133,7 @@ const HomePage = () => {
           onLoad={() => setLoaded(true)}
         />
         {step === StepEnums.TWO && (
-          <div>
+          <div className="w-full px-2 flex justify-center flex-col items-center">
             <div className="flex items-center gap-4">
               <div className="relative overflow-hidden">
                 <div
@@ -150,7 +150,7 @@ const HomePage = () => {
                       animate={{
                         transform: "translateX(0)",
                         transition: {
-                          duration: 0.5,
+                          duration: 0.3,
                         },
                       }}
                     ></motion.div>
@@ -165,8 +165,8 @@ const HomePage = () => {
                         animate={{
                           transform: "translateX(0)",
                           transition: {
-                            duration: 0.5,
-                            delay: 4,
+                            duration: 0.3,
+                            delay: 2.5,
                           },
                         }}
                       ></motion.div>
@@ -182,8 +182,8 @@ const HomePage = () => {
                         animate={{
                           transform: "translateX(0)",
                           transition: {
-                            duration: 0.5,
-                            delay: 4,
+                            duration: 0.3,
+                            delay: 2.5,
                           },
                         }}
                       ></motion.div>
@@ -225,8 +225,8 @@ const HomePage = () => {
                         animate={{
                           transform: "translateY(0)",
                           transition: {
-                            duration: 0.5,
-                            delay: 4,
+                            duration: 0.3,
+                            delay: 2.5,
                           },
                         }}
                       ></motion.div>
@@ -248,8 +248,8 @@ const HomePage = () => {
                         animate={{
                           transform: "translateY(0)",
                           transition: {
-                            duration: 0.5,
-                            delay: 4,
+                            duration: 0.3,
+                            delay: 2.5,
                           },
                         }}
                       ></motion.div>
@@ -271,8 +271,8 @@ const HomePage = () => {
                         animate={{
                           transform: "translateY(0)",
                           transition: {
-                            duration: 0.5,
-                            delay: 4,
+                            duration: 0.3,
+                            delay: 2.5,
                           },
                         }}
                       ></motion.div>
@@ -297,7 +297,7 @@ const HomePage = () => {
                     width: 3,
                     transition: {
                       duration: 0.2,
-                      delay: 1.5,
+                      delay: 1,
                     },
                   }}
                 ></motion.div>
@@ -308,7 +308,7 @@ const HomePage = () => {
                       animate={{ opacity: 1 }}
                       transition={{
                         duration: 0.5,
-                        delay: i / 7 + 1.5,
+                        delay: i / 7 + 1,
                       }}
                       key={i}
                       className={cn(
@@ -323,14 +323,14 @@ const HomePage = () => {
                     </motion.span>
                   ))}
                 </div>
-                <div className="ml-0 lg:ml-2 absolute -bottom-2 left-0 flex">
+                <div className="ml-0 lg:ml-2 absolute -bottom-1 lg:-bottom-2 left-0 flex">
                   {DESCRIPTION.map((el, i) => (
                     <motion.span
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{
-                        duration: 0.5,
-                        delay: i / 20 + 2.5,
+                        duration: 0.3,
+                        delay: i / 30 + 1.5,
                       }}
                       key={i}
                       className={`font-extralight inline-block ${FuturaNow.className} mx-[1px]`}
@@ -352,7 +352,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.1,
-                      delay: i / 20 + 1 + 4,
+                      delay: i / 20 + 3,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -368,7 +368,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.1,
-                      delay: i / 20 + 0.5 + 1 + 4,
+                      delay: i / 20 + 0.5 + 3,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -384,7 +384,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.1,
-                      delay: i / 20 + 0.8 + 1 + 4,
+                      delay: i / 20 + 0.8 + 3,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -400,7 +400,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.3,
-                      delay: i / 20 + 1.2 + 1 + 4,
+                      delay: i / 20 + 1.2 + 3,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
