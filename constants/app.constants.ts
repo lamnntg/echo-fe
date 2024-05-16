@@ -27,6 +27,7 @@ export enum RoutesEnum {
   VAN_PHONG = "/van-phong",
   NHA_PHO = "/nha-pho",
   NHA_HANG = "/nha-hang",
+  THUC_TE = "/du-an-da-hoan-thanh",
 }
 
 export const MENU_HOME = [
