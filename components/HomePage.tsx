@@ -86,7 +86,7 @@ const HomePage = () => {
     }
     const timeoutTwo = setTimeout(() => {
       setStep(StepEnums.THREE);
-    }, 5000);
+    }, 4500);
     return () => {
       clearTimeout(timeoutTwo);
     };
@@ -118,7 +118,7 @@ const HomePage = () => {
       >
         <p
           className={cn(
-            "text-center absolute left-[50%] translate-x-[-50%] bottom-4 z-10 text-white",
+            "text-center absolute left-[50%] translate-x-[-50%] bottom-4 z-10 text-white text-nowrap",
             FuturaNow.className
           )}
         >
@@ -354,7 +354,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.1,
-                      delay: i / 20 + 3,
+                      delay: i / 30 + 3,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -370,7 +370,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.1,
-                      delay: i / 20 + 0.5 + 3,
+                      delay: i / 30 + 0.35 + 3,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -386,7 +386,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.1,
-                      delay: i / 20 + 0.8 + 3,
+                      delay: i / 30 + 0.6 + 3,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
@@ -402,7 +402,7 @@ const HomePage = () => {
                     animate={{ opacity: 1 }}
                     transition={{
                       duration: 0.3,
-                      delay: i / 20 + 1.2 + 3,
+                      delay: i / 30 + 0.9 + 3,
                     }}
                     key={i}
                     className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
