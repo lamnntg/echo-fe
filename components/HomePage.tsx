@@ -80,17 +80,17 @@ const HomePage = () => {
     };
   }, [isMobile, isMobileLarge]);
 
-  useEffect(() => {
-    if (!loaded) {
-      return;
-    }
-    const timeoutTwo = setTimeout(() => {
-      setStep(StepEnums.THREE);
-    }, 5000);
-    return () => {
-      clearTimeout(timeoutTwo);
-    };
-  }, [loaded]);
+  // useEffect(() => {
+  //   if (!loaded) {
+  //     return;
+  //   }
+  //   const timeoutTwo = setTimeout(() => {
+  //     setStep(StepEnums.THREE);
+  //   }, 5000);
+  //   return () => {
+  //     clearTimeout(timeoutTwo);
+  //   };
+  // }, [loaded]);
 
   useEffect(() => {
     if (step === StepEnums.THREE) {
@@ -301,46 +301,48 @@ const HomePage = () => {
                     },
                   }}
                 ></motion.div>
-                <div className="relative -top-6 sm:-top-2 md:-top-9 left-0 flex">
-                  {TITLE.map((el, i) => (
-                    <motion.span
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{
-                        duration: 0.5,
-                        delay: i / 7 + 1,
-                      }}
-                      key={i}
-                      className={cn(
-                        `mr-1 leading-none font-medium inline-block text-[#333]`,
-                        Litera.className
-                      )}
-                      style={{
-                        fontSize: RESOLUTION.line1.fontSize,
-                      }}
-                    >
-                      {el}
-                    </motion.span>
-                  ))}
-                </div>
-                <div className="ml-0 lg:ml-2 absolute -bottom-1 lg:-bottom-2 left-0 flex">
-                  {DESCRIPTION.map((el, i) => (
-                    <motion.span
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{
-                        duration: 0.3,
-                        delay: i / 30 + 1.5,
-                      }}
-                      key={i}
-                      className={`font-extralight inline-block ${FuturaNow.className} mx-[1px]`}
-                      style={{
-                        fontSize: RESOLUTION.line2.fontSize,
-                      }}
-                    >
-                      {el}
-                    </motion.span>
-                  ))}
+                <div className="flex flex-col h-full justify-between">
+                  <div className="flex">
+                    {TITLE.map((el, i) => (
+                      <motion.span
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                          duration: 0.5,
+                          delay: i / 7 + 1,
+                        }}
+                        key={i}
+                        className={cn(
+                          `mr-1 leading-[0.7] font-medium inline-block text-[#333]`,
+                          Litera.className
+                        )}
+                        style={{
+                          fontSize: RESOLUTION.line1.fontSize,
+                        }}
+                      >
+                        {el}
+                      </motion.span>
+                    ))}
+                  </div>
+                  <div className="ml-0 lg:ml-2 flex">
+                    {DESCRIPTION.map((el, i) => (
+                      <motion.span
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                          duration: 0.3,
+                          delay: i / 30 + 1.5,
+                        }}
+                        key={i}
+                        className={`font-extralight inline-block ${FuturaNow.className} mx-[1px] translate-y-[6px]`}
+                        style={{
+                          fontSize: RESOLUTION.line2.fontSize,
+                        }}
+                      >
+                        {el}
+                      </motion.span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
