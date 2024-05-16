@@ -80,17 +80,17 @@ const HomePage = () => {
     };
   }, [isMobile, isMobileLarge]);
 
-  // useEffect(() => {
-  //   if (!loaded) {
-  //     return;
-  //   }
-  //   const timeoutTwo = setTimeout(() => {
-  //     setStep(StepEnums.THREE);
-  //   }, 5000);
-  //   return () => {
-  //     clearTimeout(timeoutTwo);
-  //   };
-  // }, [loaded]);
+  useEffect(() => {
+    if (!loaded) {
+      return;
+    }
+    const timeoutTwo = setTimeout(() => {
+      setStep(StepEnums.THREE);
+    }, 5000);
+    return () => {
+      clearTimeout(timeoutTwo);
+    };
+  }, [loaded]);
 
   useEffect(() => {
     if (step === StepEnums.THREE) {
@@ -334,7 +334,7 @@ const HomePage = () => {
                           delay: i / 30 + 1.5,
                         }}
                         key={i}
-                        className={`font-extralight inline-block ${FuturaNow.className} mx-[1px] translate-y-[6px]`}
+                        className={`font-extralight inline-block ${FuturaNow.className} mx-[1px] translate-y-[5px] lg:translate-y-[8px]`}
                         style={{
                           fontSize: RESOLUTION.line2.fontSize,
                         }}
