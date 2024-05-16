@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   other: {
     ["or:title"]: "ECHO Design",
     ["og:site_name"]: "ECHO Design",
+    ["viewport"]: "width=device-width, initial-scale=1.0",
   },
 };
 

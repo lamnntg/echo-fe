@@ -18,9 +18,11 @@ const Team = () => {
   const { isDesktop, isMobileLargeDown, isMobile } = useBreakpoint();
   const [mySwipper, setMySwipper] = useState<SwiperType>();
   return (
-    <div className="container mx-auto mt-[120px]">
+    <div className="container mx-auto mt-[60px] md:mt-[80px] lg:mt-[120px]">
       <h3 className="text-primary text-2xl">ECHO DESIGN</h3>
-      <p className="text-[52px] font-semibold mt-1">ĐỘI NGŨ</p>
+      <p className="text-4xl my-3 mt-4 lg:text-[52px] font-semibold mt-1">
+        ĐỘI NGŨ
+      </p>
       <div className="flex items-end mb-6 flex-col md:flex-row">
         <p className="text-[#222]">
           Với sự đa dạng về kinh nghiệm và chuyên môn, mỗi thành viên của nhóm

@@ -27,14 +27,14 @@ export default function Introduce() {
           style={{ objectFit: "cover", height: 400 }}
           alt="Thumnail"
         />
-        <p className="absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%] z-[2] text-5xl text-white">
+        <p className="absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%] z-[2] text-4xl text-nowrap lg:text-5xl text-white">
           Về ECHO Design
         </p>
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-[1]"></div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 container mx-auto items-center my-[100px]">
         <div>
-          <h1 className="text-[45px] font-semibold text-black leading-[45px] mb-6">
+          <h1 className="text-[30px] lg:text-[45px] font-semibold text-black leading-[45px] mb-6">
             CÔNG TY CỔ PHẦN ECHO DESIGN
           </h1>
           <p className="text-[15px] font-[300] text-[#222] leading-7 tracking-wide">
@@ -133,25 +133,25 @@ export default function Introduce() {
       </div>
 
       <div className="container mx-auto mt-[100px]">
-        <h3 className="text-[39px] text-center uppercase mb-10">
+        <h3 className="text-3xl lg:text-[39px] text-center uppercase mb-10">
           Dịch vụ cung cấp
         </h3>
         <div className="flex items-center justify-center mt-6 gap-[60px] flex-col md:flex-row ">
           <div className="flex flex-col items-center gap-4 text-primary w-[33.33%]">
             <Building size={40} />
-            <p className="text-2xl font-medium text-primary text-center">
+            <p className="text-xl lg:text-2xl text-nowrap font-medium text-primary text-center">
               Thiết kế kiến trúc, nội thất
             </p>
           </div>
           <div className="flex flex-col items-center gap-4 text-primary w-[33.33%]">
             <SquarePen size={40} />
-            <p className="text-2xl font-medium text-primary text-center text-nowrap">
+            <p className="text-xl lg:text-2xl text-nowrap font-medium text-primary text-center text-nowrap">
               Thi công hoàn thiện kiến trúc, nội thất
             </p>
           </div>
           <div className="flex flex-col items-center gap-4 text-primary w-[33.33%]">
             <Building2 size={40} />
-            <p className="text-2xl font-medium text-primary text-center">
+            <p className="text-xl lg:text-2xl text-nowrap font-medium text-primary text-center">
               Quản lý dự án
             </p>
           </div>
