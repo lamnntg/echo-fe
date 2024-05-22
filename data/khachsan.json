@@ -9,6 +9,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vQ0VUQURJTkUvQ0VUQURJTkUgSE9URUwuMS5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vQ0VUQURJTkUvMS5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vQ0VUQURJTkUvMi5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vQ0VUQURJTkUvMy5qcGc=&version_id=null",
@@ -23,7 +24,7 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "MARRIGOLD HOTEL",
+        "name": "MARRGOLD HOTEL - HÀ NỘIL",
         "slug": "marrigold-hotel",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -32,6 +33,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vTUFSUklHT0xEIEhPVEVML01BUlJJR09MRCBIT1RFTC4xICgxKS5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vTUFSUklHT0xEIEhPVEVML3o1MjY4MTUxNTE1NTYyXzVmMDYxNjNkZTQ1M2JjZjQ4ZmE1NjFkODg0MTZkN2U4LmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vTUFSUklHT0xEIEhPVEVML3o1MjY4MTUxNTQ1OTE1XzMzNDc4ZTJjMjljODlmZDI1ZTgwMmM0ODRkZmYzMGVmLmpwZw==",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vTUFSUklHT0xEIEhPVEVML3o1MjY4MTUxNjAwNjM1XzdhNDIzZWQ5ZTYyYTQzY2Q5NTI3ZGI2OWRhZjljYjEzLmpwZw==",
@@ -53,7 +55,7 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "MINA HOTEL 01",
+        "name": "MINA HOTEL 1 - BẮC NINH",
         "slug": "mina-hotel-1",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -62,6 +64,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vTUlOQSBIT1RFTCAwMS9NSU5BIEhPVEVMLjUuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vTUlOQSBIT1RFTCAwMS9BUyAxLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vTUlOQSBIT1RFTCAwMS9BUyAyLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vTUlOQSBIT1RFTCAwMS9BUyAzLmpwZw==&version_id=null",
@@ -119,7 +122,7 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "MINA HOTEL 02",
+        "name": "MINA HOTEL 2 - BẮC NINH",
         "slug": "mina-hotel-2",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -128,6 +131,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vTUlOQSBIT1RFTCAwMi9NSU5BIEhPVEVMIDIuMjEuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vTUlOQSBIT1RFTCAwMi9CQSBUVSAxLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vTUlOQSBIT1RFTCAwMi9CQSBUVSAyLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9LSMOBQ0ggU+G6oE4vTUlOQSBIT1RFTCAwMi9ESUEgVFJVTkcgSEFJIDEuanBn&version_id=null",

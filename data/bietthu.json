@@ -1,6 +1,6 @@
 [
     {
-        "name": "XANH VILLAS",
+        "name": "BIỆT THỰ NGHỈ DƯỠNG ĐƠN LẬP XANH VILLAS",
         "slug": "xanh-villas",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -29,7 +29,7 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "VINHOMES IMPERIA HP",
+        "name": "BIỆT THỰ  ĐƠN LẬP VINHOMES IMPERIA",
         "slug": "vinhomes-imperia-hp",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -69,12 +69,12 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "VILLA BÌNH MINH GARDEN",
+        "name": "SHOPHOUSE LIỀN KỀ BÌNH MINH GADERN",
         "slug": "villa-binh-minh-garden",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
-        "design_by": "W2D Studio",
+        "design_by": "MR MẠNH",
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
@@ -93,12 +93,12 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "VILLA ĐỒNG NAI",
+        "name": "BIỆT THỰ ĐỒNG NAI",
         "slug": "villa-dong-nai",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
-        "design_by": "W2D Studio",
+        "design_by": "MRS THỦY",
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
@@ -113,39 +113,12 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "VILLA HẢI DƯƠNG",
-        "slug": "villa-hai-duong",
-        "address": "T-Palace - Hà Nội",
-        "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
-        "year_completed": "07/2023",
-        "design_by": "W2D Studio",
-        "photo": "Nguyễn Thái Thạch",
-        "status": "completed",
-        "images": [
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYwMzk2ODVfN2Q5MDNlMzQ2OGNjYzJjOGYyYWJjMTBkMzEzM2RhYjcuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYwNDQ4NzNfYjlhZGM1ZDE4MGJjYjg2YmVmZTJhZTFhZWNlMTkyMGQuanBn",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYwNzA2MDJfM2IxMDc5YmEzNzU1ODY0OTg0MDhlYTdjNmMxOTJlMDguanBn",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYwOTc2MzRfODUyNTI3ZTQ5MDlkYjQxOGY2ZWViOTczZWRkODAzNWEuanBn",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYwOTc2MzVfY2Q1MGRiYTlmNDg2MTEwODkwZjc0NWQ3OGE0NTZiMzYuanBn",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYwOTc2MzhfZTliOGFkYjFiNTg0OTgyYWQ3YTA1YTg1ZGNkYzQ5OGYuanBn",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYwOTc2NzFfNGZiZGFiNTdmZTM5NDYyM2M5ZTIzZWY3MDliZTFlZDUuanBn",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYxMjM2MTZfODk5MjY5YmFjMTAyZDkyYTAyYTBiM2FmN2QzZDM2YzIuanBn",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYxNTA0NDBfOWFhZWQ4NWM1YWZmNzY3MDI4YTNmYzAwYjk5ZDExM2EuanBn",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYxNzg1NjJfN2UxYWJhMGZlOTVlMjE4MzQwODBjMjZkMTlmZWZmMmIuanBn",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYyMDI5NzJfZGY1YzJiMTg1M2IxOWVmNjBmOGY0ZDI0Y2Y0NTdkZWMuanBn",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYyMTc4NzZfM2I2MTUyNjJkOTFjOGE2ZDczZjlhMTBkM2M5OGMwYzUuanBn",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYyMzI3MjBfNmZmM2NlNWJkZmY1Mjk2ZDg3YjQ2MGUzYTE3Mzg3OGYuanBn",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIEjhuqJJIETGr8agTkcvejUzMTE4OTYyNDc3NTJfY2YxMWIzZjliOGQ5MWRmNTdmNjYxODgxNmNjNTkwZjQuanBn"
-        ],
-        "description": "MR DU - XANH VILLAS"
-    },
-    {
-        "name": "VILLA SƠN LA",
+        "name": "BIỆT THỰ SƠN LA",
         "slug": "villa-son-la",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
-        "design_by": "W2D Studio",
+        "design_by": "MR BẢO",
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
@@ -175,6 +148,99 @@
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIFPGoE4gTEEvejUzMTE4ODA2NzQ0MjFfNjE3NmQxNGYxYWY3NzcwNDJkMWQ5YjFhNjVhNjlkMjEuanBn",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIFPGoE4gTEEvejUzMTE4ODA2ODA2MTlfYjFlYTMwMjk1NTMwOWE3ZmRkYWRlMzBiOTExNDY0ODQuanBn",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1L1ZJTExBIFPGoE4gTEEvejUzMTE4ODA2OTE2NzFfYzdiMWY2MjA0NGE3MDYwNGViZGJmZjZlNjIyMzlkNTQuanBn"
+        ],
+        "description": "MR DU - XANH VILLAS"
+    },
+    {
+        "name": "BIỆT THỰ ĐƠN LẬP THÀNH PHỐ GIAO LƯU",
+        "slug": "biet-thu-don-lap-thanh-pho-giao-luu",
+        "address": "T-Palace - Hà Nội",
+        "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
+        "year_completed": "07/2023",
+        "design_by": "MR TRƯỜNG",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuNS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMTEuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMTIuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMTMuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMTUuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMTkuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMi5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMjAuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMjEuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMjQuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMjcuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMjguanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMjkuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMy5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMzEuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuMzQuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuNC5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuNi5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuNy5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuOC5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzYuIE1SIFRSxq/hu5xORyAtIFRQIEdJQU8gTMavVS9NUiBUUsav4bucTkcgLSBUUCBHSUFPIEzGr1UuOS5qcGc=&version_id=null"
+        ],
+        "description": "MR DU - XANH VILLAS"
+    },
+    {
+        "name": "BIỆT THỰ ĐƠN LẬP VINHOMES HARMONY",
+        "slug": "biet-thu-don-lap-vin-home",
+        "address": "T-Palace - Hà Nội",
+        "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
+        "year_completed": "07/2023",
+        "design_by": "MR NAM",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjEwLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjUuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjcuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjguanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjkuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjI1LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjI2LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjI4LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjMyLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjM2LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjM3LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjM4LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjQyLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjQzLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjQ0LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjQ4LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjQ5LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjUxLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjU1LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjU5LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzcuIE1SIE5BTSAtIFZJTkhPTUVTIEhBTU9OWS9NUiBOQU0gLSBWSU5IT01FUyBIQVJNT05ZLjYxLmpwZw==&version_id=null"
+        ],
+        "description": "MR DU - XANH VILLAS"
+    },
+    {
+        "name": "BIỆT THỰ ĐƠN LẬP GAMUDA GADERN",
+        "slug": "biet-thu-don-lap-vin-home",
+        "address": "T-Palace - Hà Nội",
+        "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
+        "year_completed": "07/2023",
+        "design_by": "MR QUAN",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzguIE1SIFFVQU4gLSBHQU1VREEgR0FERVJOLzUuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzguIE1SIFFVQU4gLSBHQU1VREEgR0FERVJOLzEuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzguIE1SIFFVQU4gLSBHQU1VREEgR0FERVJOLzIuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzguIE1SIFFVQU4gLSBHQU1VREEgR0FERVJOLzMuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzguIE1SIFFVQU4gLSBHQU1VREEgR0FERVJOLzQuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzguIE1SIFFVQU4gLSBHQU1VREEgR0FERVJOLzYuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzguIE1SIFFVQU4gLSBHQU1VREEgR0FERVJOLzguanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzguIE1SIFFVQU4gLSBHQU1VREEgR0FERVJOLzkuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzguIE1SIFFVQU4gLSBHQU1VREEgR0FERVJOLzEwLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzguIE1SIFFVQU4gLSBHQU1VREEgR0FERVJOLzExLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzguIE1SIFFVQU4gLSBHQU1VREEgR0FERVJOLzEyLmpwZw==&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     }

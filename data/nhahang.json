@@ -1,6 +1,30 @@
 [
     {
-        "name": "NARITA",
+        "name": "CƠM NHỎ - BẮC NINH",
+        "slug": "com-nho-bac-ninh",
+        "address": "T-Palace - Hà Nội",
+        "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
+        "year_completed": "07/2023",
+        "design_by": "MRS THOAN",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL25hcml0YS9TSE9QIExPR08vMi5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL0PGoE0gTkjhu44vQ8agTSBOSOG7jiAtIELhuq5DIE5JTkguMi5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL0PGoE0gTkjhu44vQ8agTSBOSOG7jiAtIELhuq5DIE5JTkguMy5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL0PGoE0gTkjhu44vQ8agTSBOSOG7jiAtIELhuq5DIE5JTkguNC5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL0PGoE0gTkjhu44vQ8agTSBOSOG7jiAtIELhuq5DIE5JTkguNi5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL0PGoE0gTkjhu44vQ8agTSBOSOG7jiAtIELhuq5DIE5JTkguNy5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL0PGoE0gTkjhu44vQ8agTSBOSOG7jiAtIELhuq5DIE5JTkguOS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL0PGoE0gTkjhu44vQ8agTSBOSOG7jiAtIELhuq5DIE5JTkguMTQuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL0PGoE0gTkjhu44vQ8agTSBOSOG7jiAtIELhuq5DIE5JTkguMTcuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL0PGoE0gTkjhu44vQ8agTSBOSOG7jiAtIELhuq5DIE5JTkguMTguanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9uaGFoYW5nL0PGoE0gTkjhu44vQ8agTSBOSOG7jiAtIELhuq5DIE5JTkguMjAuanBn&version_id=null"
+        ],
+        "description": "MR DU - XANH VILLAS"
+    },
+    {
+        "name": "NARITA JAPANESE RESTAURANT- HÀ NỘI",
         "slug": "narita",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",

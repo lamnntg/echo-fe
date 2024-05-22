@@ -1,6 +1,6 @@
 [
     {
-        "name": "TL NO1",
+        "name": "THĂNG LONG NUMBER 1",
         "slug": "tl-no1",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -46,6 +46,7 @@
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS90aHVjLXRlL1RMIE5PMS9QTjAyLjA0LmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS90aHVjLXRlL1RMIE5PMS9QTjAyLjA2LmpwZw==&version_id=null"
         ],
+        "video": "https://www.youtube.com/embed/VDeQ4VD8YWw?si=FLyS0R0cPBPQ1p34",
         "description": "MR DU - XANH VILLAS"
     },
     {
@@ -85,6 +86,7 @@
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS90aHVjLXRlL1RMIE5PMSAyL1BOMDIuMDUuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS90aHVjLXRlL1RMIE5PMSAyL1BOMDIuMDYuanBn&version_id=null"
         ],
+        "video": "https://www.youtube.com/embed/Upq08EwHqJg?si=gxv0msA5zodA6yR6",
         "description": "MR DU - XANH VILLAS"
     }
 ]

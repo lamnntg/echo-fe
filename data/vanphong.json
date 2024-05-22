@@ -1,6 +1,6 @@
 [
     {
-        "name": "AMAVET",
+        "name": "CÔNG TY AMAVET, HƯNG YÊN",
         "slug": "amavet",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -9,8 +9,9 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzEuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvVsSCTiBQSMOSTkcgQU1BVkVUIC0gSMOAIE7hu5hJLjIuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzIuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzEuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzMuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzQuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9hbWF2ZXQvU0hPUCBMT0dPL1BIw5JORyBI4buMUCAxLzUuanBn&version_id=null",
@@ -25,7 +26,7 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "COLAVIT",
+        "name": "TẬP ĐOÀN COLAVI - ĐÔNG TRIỀU, QUẢNG NINH",
         "slug": "colavit",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -34,6 +35,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9jb2xhdmkvVsSCTiBQSMOSTkcgQ09MQVZJIC0gSMOAIE7hu5hJLjEuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9jb2xhdmkvU0hPUCBMT0dPL0zDg05IIMSQ4bqgTyAyLzEuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9jb2xhdmkvU0hPUCBMT0dPL0zDg05IIMSQ4bqgTyAyLzIuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9jb2xhdmkvU0hPUCBMT0dPL0zDg05IIMSQ4bqgTyAyLzMuanBn&version_id=null"
@@ -41,8 +43,8 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "HINODE",
-        "slug": "hinode",
+        "name": "VĂN PHÒNG INVESTCONS, HÀ NỘI",
+        "slug": "investcon",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
         "year_completed": "07/2023",
@@ -50,6 +52,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvVsSCTiBQSMOSTkcgSU5WRVNUQ09OUyAtIEjDgCBO4buYSS4xLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvQ0hVIFRJQ0ggMS5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvQ0hVIFRJQ0ggMi5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9ISU5PREUvR0lBTSBET0MgMi5qcGc=&version_id=null",
@@ -68,7 +71,7 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "MYOR",
+        "name": "TẬP ĐOÀN MYOR - HÀ NỘI",
         "slug": "myor",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -77,6 +80,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SL1bEgk4gUEjDkk5HIE1ZT1IgLSBIw4AgTuG7mEkuMS5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzEuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzIuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9NWU9SLzMuanBn&version_id=null",
@@ -92,7 +96,7 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "THAN KHOANG SAN",
+        "name": "TĐ THAN KHOÁNG SẢN - QUẢNG NINH",
         "slug": "than-khoang-san",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -101,13 +105,14 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy90aGFuIGtob2FuZyBzYW4vVMSQIFRIQU4gS0hPw4FORyBT4bqiTiAtIEjDgCBO4buYSS42LmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy90aGFuIGtob2FuZyBzYW4vU0hPUCBMT0dPL0zEkC8xLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy90aGFuIGtob2FuZyBzYW4vU0hPUCBMT0dPL0zEkC8yLmpwZw==&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "WIDO GAME",
+        "name": "VĂN PHÒNG WIDO GAME - HÀ NỘI",
         "slug": "wido-game",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -116,6 +121,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvVlAgV0lETyBHQU1FIC0gSMOAIE7hu5hJLjEyLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvU0FOSCAxLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvU0FOSCAzLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS92YW5waG9uZy9XSURPIEdBTUUvU0FOSCA0LmpwZw==&version_id=null",

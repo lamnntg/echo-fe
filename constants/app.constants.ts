@@ -11,6 +11,7 @@ import VietAnh from "@/public/VietAnh.jpg";
 import YenChi from "@/public/YenChi.jpg";
 import MinhBang from "@/public/MinhBang.jpg";
 import NoAvatar from "@/public/no-avatar.png";
+import sanvuon from "@/data/sanvuon.json";
 
 export enum RoutesEnum {
   HOME = "/",
@@ -28,6 +29,7 @@ export enum RoutesEnum {
   NHA_PHO = "/nha-pho",
   NHA_HANG = "/nha-hang",
   THUC_TE = "/du-an-da-hoan-thanh",
+  SAN_VUON = "san-vuon",
 }
 
 export const MENU_HOME = [
@@ -66,6 +68,12 @@ export const MENU_HOME = [
     to: RoutesEnum.NHA_HANG,
     type: 6,
     data: shop,
+  },
+  {
+    label: "Kiến trúc sân vườn",
+    to: RoutesEnum.SAN_VUON,
+    type: 7,
+    data: sanvuon,
   },
 ];
 

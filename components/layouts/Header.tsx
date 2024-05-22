@@ -265,7 +265,7 @@ const Header = () => {
                   },
                   {
                     href: RoutesEnum.NHA_HANG,
-                    label: "Thiết kế Nhà hàng",
+                    label: "Thiết kế kiến trúc, sân vườn",
                   },
                 ],
               }}

@@ -18,6 +18,7 @@ import { MENU_HOME, RoutesEnum } from "@/constants/app.constants";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 import khachsan from "@/data/khachsan.json";
+import thucte from "@/data/thuc-te.json";
 
 const TITLE = "E C H O".split(" ");
 const DESCRIPTION = "A R C H I T E C T U R E . I N T E R I O R".split(" ");
@@ -313,7 +314,7 @@ const HomePage = () => {
                         }}
                         key={i}
                         className={cn(
-                          `mr-1 leading-[0.7] font-medium inline-block text-[#333]`,
+                          `mr-1 leading-[0.8] lg:leading-[0.74] font-medium inline-block text-[#333]`,
                           Litera.className
                         )}
                         style={{
@@ -334,7 +335,7 @@ const HomePage = () => {
                           delay: i / 30 + 1.5,
                         }}
                         key={i}
-                        className={`font-extralight inline-block ${FuturaNow.className} mx-[1px] translate-y-[5px] lg:translate-y-[8px]`}
+                        className={`font-extralight inline-block ${FuturaNow.className} mx-[1px] translate-y-[3px] lg:translate-y-[3px]`}
                         style={{
                           fontSize: RESOLUTION.line2.fontSize,
                         }}
@@ -357,7 +358,7 @@ const HomePage = () => {
                       delay: i / 30 + 3,
                     }}
                     key={i}
-                    className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
+                    className={`text-base sm:text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
                   >
                     {el}
                   </motion.span>
@@ -373,7 +374,7 @@ const HomePage = () => {
                       delay: i / 30 + 0.35 + 3,
                     }}
                     key={i}
-                    className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
+                    className={`text-base sm:text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
                   >
                     {el}
                   </motion.span>
@@ -389,7 +390,7 @@ const HomePage = () => {
                       delay: i / 30 + 0.6 + 3,
                     }}
                     key={i}
-                    className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
+                    className={`text-base sm:text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
                   >
                     {el}
                   </motion.span>
@@ -405,7 +406,7 @@ const HomePage = () => {
                       delay: i / 30 + 0.9 + 3,
                     }}
                     key={i}
-                    className={`text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
+                    className={`text-base sm:text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
                   >
                     {el}
                   </motion.span>
@@ -599,7 +600,7 @@ const HomePage = () => {
           <div className="bg-[#efefef] mt-10">
             <div className="container mx-auto">
               <div className="grid grid-cols-2 gap-6 pt-10">
-                {khachsan.slice(0, 2).map((item) => (
+                {thucte.slice(0, 2).map((item) => (
                   <div key={item.slug} className="cursor-pointer">
                     <img
                       src={item.images[0]}
@@ -610,7 +611,7 @@ const HomePage = () => {
                       className="h-[200px] md:h-[250px] lg:h-[400px]"
                       alt="Thumnail"
                       onClick={() =>
-                        router.push(RoutesEnum.KHACH_SAN + "/" + item.slug)
+                        router.push(RoutesEnum.THUC_TE + "/" + item.slug)
                       }
                     />
                   </div>
@@ -618,7 +619,7 @@ const HomePage = () => {
               </div>
               <div className="text-center mt-8 pb-6 flex justify-center">
                 <Link
-                  href={RoutesEnum.KHACH_SAN}
+                  href={RoutesEnum.THUC_TE}
                   className="bg-[#1c1c1c] text-white w-[140px] flex justify-center items-center py-3 rounded-md border border-solid border-black hover:bg-white transition hover:text-black"
                 >
                   Xem thêm

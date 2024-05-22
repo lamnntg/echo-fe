@@ -1,6 +1,6 @@
 [
     {
-        "name": "THANH HOÁ",
+        "name": "THƯỜNG XUÂN, THANH HÓA",
         "slug": "chien-thanh-hoa",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -9,6 +9,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUiBDSEnhur5OIC0gVEhBTkggSMOTQS9NUiBDSEnhur5OIC0gVEhBTkggSMOTQS4xLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUiBDSEnhur5OIC0gVEhBTkggSMOTQS9QQy9XQy9XQyBNQVNURVIvMS5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUiBDSEnhur5OIC0gVEhBTkggSMOTQS9QQy9XQy9XQyBNQVNURVIvMi5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUiBDSEnhur5OIC0gVEhBTkggSMOTQS9QQy9XQy9XQyBNQVNURVIvNi5qcGc=&version_id=null",
@@ -19,7 +20,7 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "QUẢNG NINH",
+        "name": "ĐÔNG TRIỀU, QUẢNG NINH",
         "slug": "lien-quang-ninh",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -28,6 +29,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC4xLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC9NQVNURVIgMDEgLSBLSU5IIFRSQS5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC9NQVNURVIgMDEuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC9NQVNURVIgMDIuanBn&version_id=null",
@@ -55,6 +57,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUiBMw50gLSBIw4AgTkFNL01SIEzDnSAtIEjDgCBOQU0uMi5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUiBMw50gLSBIw4AgTkFNL1NIT1AgTE9HTy8xLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUiBMw50gLSBIw4AgTkFNL1NIT1AgTE9HTy8yLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUiBMw50gLSBIw4AgTkFNL1NIT1AgTE9HTy8zLmpwZw==&version_id=null",
@@ -67,7 +70,7 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "QUẢNG NINH",
+        "name": "ĐÔNG TRIỀU, QUẢNG NINH",
         "slug": "quang-quang-ninh",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -86,7 +89,7 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "HOÀ MÃ",
+        "name": "HOÀ MÃ, HÀ NỘI",
         "slug": "huong-hoa-ma",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -95,8 +98,8 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgSMavxqBORyAtIEjDkkEgTcODL0xWICgxKS5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgSMavxqBORyAtIEjDkkEgTcODL0xWICgyKS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgSMavxqBORyAtIEjDkkEgTcODL0xWICgxKS5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgSMavxqBORyAtIEjDkkEgTcODLzEuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgSMavxqBORyAtIEjDkkEgTcODL01TICgxKS5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgSMavxqBORyAtIEjDkkEgTcODL01TICgyKS5qcGc=&version_id=null",
@@ -129,6 +132,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgTkhVTkcgLSBWxKhOSCBQSMOaQy9NUlMgTkhVTkcgLSBWxKhOSCBQSMOaQy4xMy5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgTkhVTkcgLSBWxKhOSCBQSMOaQy96NDczODU5NDU5ODE0NV8yMjdmNzhmNWM3YjQ4NTk4Mzc5ZjAxZTc1ZTdhMzJhYy5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgTkhVTkcgLSBWxKhOSCBQSMOaQy96NDczODU5NDU4Mjg3Nl9jY2U4NzA1YWNkN2NkOTZmNzMyYzBkYzdmNTZhNmMxOS5qcGc=",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgTkhVTkcgLSBWxKhOSCBQSMOaQy96NDczODU5NDU4ODk0N18yYWNkNjI0MTM1ZGJhODA5M2FmMjI5YjQwZjMyMTc1My5qcGc=",
@@ -158,7 +162,7 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
-        "name": "LONG BIÊN",
+        "name": "LONG BIÊN, HÀ NỘI",
         "slug": "thoan-long-bien",
         "address": "T-Palace - Hà Nội",
         "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
@@ -167,6 +171,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgVEhPQU4gLSBMT05HIEJJw4pOL01SUyBUSE9BTiAtIEjDgCBO4buYSS4xNy5qcGc=&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgVEhPQU4gLSBMT05HIEJJw4pOLzEuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgVEhPQU4gLSBMT05HIEJJw4pOLzIuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9OSMOAIMSQ4bqkVC9NUlMgVEhPQU4gLSBMT05HIEJJw4pOLzMuanBn&version_id=null",
