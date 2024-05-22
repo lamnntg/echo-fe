@@ -140,11 +140,11 @@ const Header = () => {
                     },
                     {
                       href: RoutesEnum.KHACH_SAN,
-                      label: "Thiết kế khách sạn, coffee",
+                      label: "Thiết kế nhà hàng, khách sạn, coffee",
                     },
                     {
-                      href: RoutesEnum.NHA_HANG,
-                      label: "Thiết kế Nhà hàng",
+                      href: RoutesEnum.SAN_VUON,
+                      label: "Thiết kế kiến trúc sân vườn",
                     },
                   ],
                 }}
@@ -261,10 +261,10 @@ const Header = () => {
                   },
                   {
                     href: RoutesEnum.KHACH_SAN,
-                    label: "Thiết kế khách sạn, coffee",
+                    label: "Thiết kế nhà hàng, khách sạn, coffee",
                   },
                   {
-                    href: RoutesEnum.NHA_HANG,
+                    href: RoutesEnum.SAN_VUON,
                     label: "Thiết kế kiến trúc, sân vườn",
                   },
                 ],

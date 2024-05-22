@@ -1,7 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import data from "@/data/thuc-te.json";
+import data from "@/data/sanvuon.json";
 import { RoutesEnum } from "@/constants/app.constants";
 import Product from "@/components/atoms/Product";
 
@@ -11,13 +11,13 @@ const page = () => {
       <div className="border-b border-solid border-[ebebeb] py-4 flex items-center gap-2 text-gray-700">
         <Link href="/">Trang chủ</Link>
         <ChevronRight />
-        <span>Dự án đã hoàn thành</span>
+        <span>Thiết kế kiến trúc sân vườn </span>
       </div>
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {data.map((item) => (
           <Product
             key={item.slug}
-            to={RoutesEnum.THUC_TE + "/" + item.slug}
+            to={RoutesEnum.SAN_VUON + "/" + item.slug}
             item={item}
           />
         ))}

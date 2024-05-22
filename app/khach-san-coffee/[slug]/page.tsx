@@ -1,12 +1,13 @@
 import React from "react";
 import data from "@/data/khachsan.json";
+import nhahang from "@/data/nhahang.json";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { RoutesEnum } from "@/constants/app.constants";
 
 const page = ({ params }: { params: { slug: string } }) => {
-  const item = data.find((item) => item.slug === params.slug);
+  const item = data.concat(nhahang).find((item) => item.slug === params.slug);
   if (!item) {
     return notFound();
   }

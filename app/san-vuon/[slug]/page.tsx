@@ -1,5 +1,5 @@
 import React from "react";
-import data from "@/data/khachsan.json";
+import data from "@/data/sanvuon.json";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
@@ -15,7 +15,7 @@ const page = ({ params }: { params: { slug: string } }) => {
       <div className="border-b border-solid border-[#ebebeb] py-4 flex items-center gap-2 text-gray-700">
         <Link href={RoutesEnum.HOME}>Trang chủ</Link>
         <ChevronRight />
-        <Link href={RoutesEnum.KHACH_SAN}>Khách sạn - coffee</Link>
+        <Link href={RoutesEnum.SAN_VUON}>Thiết kế kiến trúc sân vườn</Link>
         <ChevronRight />
         <span>{item.name}</span>
       </div>
