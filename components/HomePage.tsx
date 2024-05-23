@@ -17,7 +17,6 @@ import Link from "next/link";
 import { MENU_HOME, RoutesEnum } from "@/constants/app.constants";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
-import khachsan from "@/data/khachsan.json";
 import thucte from "@/data/thuc-te.json";
 
 const TITLE = "E C H O".split(" ");
@@ -314,7 +313,7 @@ const HomePage = () => {
                         }}
                         key={i}
                         className={cn(
-                          `mr-1 leading-[0.8] lg:leading-[0.74] font-medium inline-block text-[#333]`,
+                          `mr-1 leading-[0.8] lg:leading-[0.74] font-bold md:font-medium inline-block text-[#333]`,
                           Litera.className
                         )}
                         style={{
@@ -335,7 +334,7 @@ const HomePage = () => {
                           delay: i / 30 + 1.5,
                         }}
                         key={i}
-                        className={`font-extralight inline-block ${FuturaNow.className} mx-[1px] translate-y-[3px] lg:translate-y-[3px]`}
+                        className={`font-medium lg:font-extralight inline-block ${FuturaNow.className} mx-[1px] translate-y-[3px] lg:translate-y-[3px]`}
                         style={{
                           fontSize: RESOLUTION.line2.fontSize,
                         }}

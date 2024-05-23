@@ -21,7 +21,7 @@ const Footer = () => {
   }
   return (
     <div className="bg-[#4b4b4b] text-white pt-10 pb-6">
-      <div className="container mx-auto grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-2">
+      <div className="container mx-auto grid gap-8 lg:gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-2">
         <div>
           <Image
             src={LogoWhite}
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col">
-          <p className="mb-7">VỀ CHÚNG TÔI</p>
+          <p className="mb-2 md:mb-7">VỀ CHÚNG TÔI</p>
           <Link className="mb-3 transition hover:text-primary" href="/">
             Trang chủ
           </Link>
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <p className="mb-7">LIÊN HỆ CHÚNG TÔI</p>
+          <p className="mb-2 md:mb-7">LIÊN HỆ CHÚNG TÔI</p>
           <div className="flex items-center gap-2 mb-3 transition hover:text-primary cursor-pointer">
             <Link
               href={FACEBOOK_LINK}
@@ -102,7 +102,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <p className="mb-7">FANPAGE</p>
+          <p className="mb-2 md:mb-7">FANPAGE</p>
           <div className="flex items-center gap-2 mb-3 transition hover:text-primary cursor-pointer">
             <iframe
               src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fed.interior.architecture&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=433043327764949"
