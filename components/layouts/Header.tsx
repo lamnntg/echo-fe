@@ -12,7 +12,11 @@ import clsx from "clsx";
 import { useAppStore } from "@/store/app.store";
 import { usePathname } from "next/navigation";
 import DropdownMenu from "../DropdownMenu";
-import { FACEBOOK_LINK, RoutesEnum } from "@/constants/app.constants";
+import {
+  dropdownMenuItems,
+  FACEBOOK_LINK,
+  RoutesEnum,
+} from "@/constants/app.constants";
 import { cn } from "@/lib/utils";
 
 const menu = {
@@ -121,32 +125,7 @@ const Header = () => {
               <DropdownMenu
                 item={{
                   label: "Dự án thiết kế",
-                  items: [
-                    {
-                      href: RoutesEnum.CHUNG_CU,
-                      label: "Thiết kế nội thất chung cư",
-                    },
-                    {
-                      href: RoutesEnum.NHA_PHO,
-                      label: "Thiết kế nội thất nhà phố",
-                    },
-                    {
-                      href: RoutesEnum.BIET_THU,
-                      label: "Thiết kế nội thất biệt thự",
-                    },
-                    {
-                      href: RoutesEnum.VAN_PHONG,
-                      label: "Thiết kế nội thất văn phòng",
-                    },
-                    {
-                      href: RoutesEnum.KHACH_SAN,
-                      label: "Thiết kế nhà hàng, khách sạn, coffee",
-                    },
-                    {
-                      href: RoutesEnum.SAN_VUON,
-                      label: "Thiết kế kiến trúc sân vườn",
-                    },
-                  ],
+                  items: dropdownMenuItems,
                 }}
               />
               <Link
@@ -242,32 +221,7 @@ const Header = () => {
             <DropdownMenu
               item={{
                 label: "Dự án thiết kế",
-                items: [
-                  {
-                    href: RoutesEnum.CHUNG_CU,
-                    label: "Thiết kế nội thất chung cư",
-                  },
-                  {
-                    href: RoutesEnum.NHA_PHO,
-                    label: "Thiết kế nội thất nhà phố",
-                  },
-                  {
-                    href: RoutesEnum.BIET_THU,
-                    label: "Thiết kế nội thất biệt thự",
-                  },
-                  {
-                    href: RoutesEnum.VAN_PHONG,
-                    label: "Thiết kế nội thất văn phòng",
-                  },
-                  {
-                    href: RoutesEnum.KHACH_SAN,
-                    label: "Thiết kế nhà hàng, khách sạn, coffee",
-                  },
-                  {
-                    href: RoutesEnum.SAN_VUON,
-                    label: "Thiết kế kiến trúc, sân vườn",
-                  },
-                ],
+                items: dropdownMenuItems,
               }}
             />
             <Link

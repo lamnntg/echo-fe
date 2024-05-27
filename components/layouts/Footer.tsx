@@ -10,8 +10,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { FACEBOOK_LINK } from "@/constants/app.constants";
+import {
+  dropdownMenuItems,
+  FACEBOOK_LINK,
+  RoutesEnum,
+} from "@/constants/app.constants";
 import { FileVideo, NotepadText } from "lucide-react";
+import DropdownMenu from "../DropdownMenu";
 
 const Footer = () => {
   const { showFooter } = useAppStore();
@@ -21,7 +26,7 @@ const Footer = () => {
   }
   return (
     <div className="bg-[#4b4b4b] text-white pt-10 pb-6">
-      <div className="container mx-auto grid gap-8 lg:gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-2">
+      <div className="container mx-auto lg:flex lg:flex-wrap gap-8 px-2 grid grid-cols-1 md:grid-cols-2">
         <div>
           <Image
             src={LogoWhite}
@@ -65,10 +70,17 @@ const Footer = () => {
           >
             Giới thiệu
           </Link>
-          <Link className="mb-3 transition hover:text-primary" href="/">
-            Dự án thiết kế
-          </Link>
-          <Link className="mb-3 transition hover:text-primary" href="/">
+          <DropdownMenu
+            item={{
+              label: "Dự án thiết kế",
+              items: dropdownMenuItems,
+            }}
+            isFooter={true}
+          />
+          <Link
+            className="mb-3 transition hover:text-primary"
+            href={RoutesEnum.THUC_TE}
+          >
             Dự án thi công hoàn thiện
           </Link>
         </div>

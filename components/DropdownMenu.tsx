@@ -47,19 +47,26 @@ const subMenuAnimate = {
 
 type DropdownMenuProps = {
   item: DropdownLink;
+  isFooter?: boolean;
+  showMenu?: boolean;
 };
 
-const DropdownMenu: FC<DropdownMenuProps> = ({ item }) => {
+const DropdownMenu: FC<DropdownMenuProps> = ({ item, isFooter, showMenu }) => {
   const pathname = usePathname();
   const { isDesktopDown } = useBreakpoint();
-  const [showSubMenu, setShowSubMenu] = useState(false);
+  const [showSubMenu, setShowSubMenu] = useState(showMenu);
   const [isHover, setIsHover] = useState(false);
 
   const toggleHoverMenu = () => {
     setIsHover(!isHover);
   };
-  return isDesktopDown ? (
-    <div className="text-nowrap px-4 gap-2 transition cursor-pointer my-3 leading-6 text-base">
+  return isDesktopDown || isFooter ? (
+    <div
+      className={cn(
+        "text-nowrap px-4 gap-2 transition cursor-pointer my-3 leading-6 text-base",
+        isFooter && "px-0 my-0 mb-3"
+      )}
+    >
       <div
         className={cn(
           "flex items-center gap-2 hover:text-primary",

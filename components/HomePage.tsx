@@ -41,7 +41,7 @@ const HomePage = () => {
   const router = useRouter();
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
+  const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
   const [mounted, setMounted] = useState(false);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
   const [type, setType] = useState(1);
@@ -482,14 +482,20 @@ const HomePage = () => {
             <div className="flex-1">
               <h3 className="text-3xl mb-8">ECHO DESIGN</h3>
               <p>
-                Là công ty chuyên sâu trong lĩnh vực tư vấn{" "}
-                <span className="font-semibold">
-                  thiết kế nội thất và thi công nội/ngoại thất
-                </span>{" "}
-                khách sạn, nhà hàng, biệt thự, chung cư, penthouse, nhà phố,
-                resort. Bằng tâm huyết cùng sự am hiểu và sáng tạo, đội ngũ tự
-                tin mang tới quý khách hàng những phong cách kiến trúc giàu tính
-                thẩm mỹ, nâng tầm giá trị.
+                Lời đầu tiên, chúng tôi - CÔNG TY CỔ PHẦN ECHO DESIGN gửi tới
+                Quý khách hàng lời chào trân trọng, lời chúc sức khoẻ, thành
+                công, thịnh vượng và gặp nhiều may mắn. ECHO Design được thành
+                lập bởi đội ngũ kiến trúc sư, thiết kế nội thất đầy sáng tạo và
+                nhiệt huyết kết hợp với đội ngũ thợ thi công tay nghề cao, giàu
+                kinh nghiêm dưới sự giám sát chặt chẽ của các quản lý và kỹ sư
+                sẽ mang đến những không gian sống và hưởng thụ hoàn hảo cho mỗi
+                quý khách hàng. Với khẩu hiệu “Thiết kế vượt thời gian, tiếng
+                vang vượt thời đại”, cùng sự chuyên sâu trong lĩnh vực nghiên
+                cứu khoa học về sản xuất nội thất và các giải pháp thi công tối
+                ưu, chúng tôi luôn mong muốn mang đến cho quý khách hàng những
+                thiết kế độc đáo, mang tính tương lai, và biến những thiết kế ấy
+                trở thành hiện thực nhằm nâng cao chất lượng cuộc sống của quý
+                khách hàng.
               </p>
               <div>
                 <Link
@@ -554,19 +560,36 @@ const HomePage = () => {
               </div>
               <div className="grid grid-cols-2 gap-6">
                 {productDesign.data.slice(0, 2).map((item) => (
-                  <div key={item.slug} className="cursor-pointer">
-                    <img
-                      src={item.images[0]}
-                      style={{
-                        objectFit: "cover",
-                        width: "100%",
-                      }}
-                      className="h-[200px] md:h-[250px] lg:h-[400px]"
-                      alt="Thumnail"
-                      onClick={() =>
-                        router.push(productDesign.to + "/" + item.slug)
-                      }
-                    />
+                  <div key={item.slug} className="relative">
+                    <div className="relative overflow-hidden group">
+                      <Link
+                        href={productDesign.to + "/" + item.slug}
+                        className="h-[255px] block"
+                      >
+                        <img
+                          src={item.images[0]}
+                          alt={item.name}
+                          width="100%"
+                          loading="lazy"
+                          className="h-[200px] md:h-[250px] lg:h-[400px]"
+                        />
+                      </Link>
+                      <Link
+                        href={productDesign.to + "/" + item.slug}
+                        className="text-white cursor-pointer transition flex-col group-hover:translate-y-[0%] translate-y-[100%] absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.3)] flex justify-center items-center"
+                      >
+                        <p className="text-xl">{item.name}</p>
+                        <Link
+                          href={productDesign.to + "/" + item.slug}
+                          className="text-primary cursor-pointer mt-3"
+                        >
+                          Xem chi tiết
+                        </Link>
+                      </Link>
+                    </div>
+                    <Link href={productDesign.to + "/" + item.slug}>
+                      <p className="mt-2 font-medium text-lg">{item.name}</p>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -600,19 +623,36 @@ const HomePage = () => {
             <div className="container mx-auto">
               <div className="grid grid-cols-2 gap-6 pt-10">
                 {thucte.slice(0, 2).map((item) => (
-                  <div key={item.slug} className="cursor-pointer">
-                    <img
-                      src={item.images[0]}
-                      style={{
-                        objectFit: "cover",
-                        width: "100%",
-                      }}
-                      className="h-[200px] md:h-[250px] lg:h-[400px]"
-                      alt="Thumnail"
-                      onClick={() =>
-                        router.push(RoutesEnum.THUC_TE + "/" + item.slug)
-                      }
-                    />
+                  <div key={item.slug} className="relative">
+                    <div className="relative overflow-hidden group">
+                      <Link
+                        href={RoutesEnum.THUC_TE + "/" + item.slug}
+                        className="h-[255px] block"
+                      >
+                        <img
+                          src={item.images[0]}
+                          alt={item.name}
+                          width="100%"
+                          loading="lazy"
+                          className="h-[200px] md:h-[250px] lg:h-[400px]"
+                        />
+                      </Link>
+                      <Link
+                        href={RoutesEnum.THUC_TE + "/" + item.slug}
+                        className="text-white cursor-pointer transition flex-col group-hover:translate-y-[0%] translate-y-[100%] absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.3)] flex justify-center items-center"
+                      >
+                        <p className="text-xl">{item.name}</p>
+                        <Link
+                          href={RoutesEnum.THUC_TE + "/" + item.slug}
+                          className="text-primary cursor-pointer mt-3"
+                        >
+                          Xem chi tiết
+                        </Link>
+                      </Link>
+                    </div>
+                    <Link href={RoutesEnum.THUC_TE + "/" + item.slug}>
+                      <p className="mt-2 font-medium text-lg">{item.name}</p>
+                    </Link>
                   </div>
                 ))}
               </div>

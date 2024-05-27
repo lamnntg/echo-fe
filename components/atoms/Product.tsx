@@ -40,7 +40,7 @@ const Product: FC<ProductProps> = ({ item, to }) => {
           href={to}
           className="text-white cursor-pointer transition flex-col group-hover:translate-y-[0%] translate-y-[100%] absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.3)] flex justify-center items-center"
         >
-          <p className="text-xl">{item.name}</p>
+          <p className="text-xl text-center">{item.name}</p>
           <Link href={to} className="text-primary cursor-pointer mt-3">
             Xem chi tiết
           </Link>
