@@ -41,7 +41,11 @@ const ContactFooter = () => {
             </Link>
           </div>
           <div className="mb-2 text-white bg-[#005be0] rounded-full w-10 h-10 flex justify-center items-center cursor-pointer">
-            <Link href="https://zalo.me/0886889995" target="_blank">
+            <Link
+              href="https://zalo.me/0886889995"
+              target="_blank"
+              className="text-[14px]"
+            >
               Zalo
             </Link>
           </div>

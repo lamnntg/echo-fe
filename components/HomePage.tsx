@@ -564,7 +564,7 @@ const HomePage = () => {
                     <div className="relative overflow-hidden group">
                       <Link
                         href={productDesign.to + "/" + item.slug}
-                        className="h-[255px] block"
+                        className="block"
                       >
                         <img
                           src={item.images[0]}
@@ -627,7 +627,7 @@ const HomePage = () => {
                     <div className="relative overflow-hidden group">
                       <Link
                         href={RoutesEnum.THUC_TE + "/" + item.slug}
-                        className="h-[255px] block"
+                        className="block"
                       >
                         <img
                           src={item.images[0]}
