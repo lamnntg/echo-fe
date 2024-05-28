@@ -18,6 +18,8 @@ import { MENU_HOME, RoutesEnum } from "@/constants/app.constants";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 import thucte from "@/data/thuc-te.json";
+import EchoImage from "@/public/echo.png";
+import ArchitectImage from "@/public/architect.png";
 
 const TITLE = "E C H O".split(" ");
 const DESCRIPTION = "A R C H I T E C T U R E . I N T E R I O R".split(" ");
@@ -134,7 +136,7 @@ const HomePage = () => {
         />
         {step === StepEnums.TWO && (
           <div className="w-full px-2 flex justify-center flex-col items-center">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-8">
               <div className="relative overflow-hidden">
                 <div
                   className={`flex relative gap-2 sm:gap-3 md:gap-4 items-end overflow-hidden`}
@@ -287,7 +289,7 @@ const HomePage = () => {
                 }}
               >
                 <motion.div
-                  className="absolute left-[-8px] top-0 bg-primary"
+                  className="absolute left-[-17px] top-0 bg-primary"
                   initial={{
                     height: "100%",
                     width: 0,
@@ -301,47 +303,46 @@ const HomePage = () => {
                     },
                   }}
                 ></motion.div>
-                <div className="flex flex-col h-full justify-between">
-                  <div className="flex">
-                    {TITLE.map((el, i) => (
-                      <motion.span
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{
-                          duration: 0.5,
-                          delay: i / 7 + 1,
-                        }}
-                        key={i}
-                        className={cn(
-                          `mr-1 leading-[0.8] lg:leading-[0.74] font-bold md:font-medium inline-block text-[#333]`,
-                          Litera.className
-                        )}
-                        style={{
-                          fontSize: RESOLUTION.line1.fontSize,
-                        }}
-                      >
-                        {el}
-                      </motion.span>
-                    ))}
+                <div className="flex flex-col justify-between h-full">
+                  <div className="h-[60%] w-[170px] sm:w-[260px] md:w-[360px] lg:w-[360px] relative overflow-hidden">
+                    <img className="h-full w-full" src={EchoImage.src} alt="" />
+                    <motion.div
+                      initial={{
+                        width: "100%",
+                        right: 0,
+                      }}
+                      animate={{
+                        width: 0,
+                        right: 0,
+                        transition: {
+                          duration: 0.8,
+                          delay: 1,
+                        },
+                      }}
+                      className="absolute top-0 right-0 w-full bg-white h-full"
+                    ></motion.div>
                   </div>
-                  <div className="ml-0 lg:ml-2 flex">
-                    {DESCRIPTION.map((el, i) => (
-                      <motion.span
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{
-                          duration: 0.3,
-                          delay: i / 30 + 1.5,
-                        }}
-                        key={i}
-                        className={`font-medium lg:font-extralight inline-block ${FuturaNow.className} mx-[1px] translate-y-[3px] lg:translate-y-[3px]`}
-                        style={{
-                          fontSize: RESOLUTION.line2.fontSize,
-                        }}
-                      >
-                        {el}
-                      </motion.span>
-                    ))}
+                  <div className="h-[15%] w-[170px] sm:w-[260px] md:w-[360px] lg:w-[360px] relative overflow-hidden">
+                    <img
+                      className="h-full w-full"
+                      src={ArchitectImage.src}
+                      alt=""
+                    />
+                    <motion.div
+                      initial={{
+                        width: "100%",
+                        right: 0,
+                      }}
+                      animate={{
+                        width: 0,
+                        right: 0,
+                        transition: {
+                          duration: 0.7,
+                          delay: 1.8,
+                        },
+                      }}
+                      className="absolute top-0 right-0 w-full bg-white h-full"
+                    ></motion.div>
                   </div>
                 </div>
               </div>
