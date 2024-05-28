@@ -614,7 +614,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9jaHVuZ2N1LzE3LiBNUiBMw4JNIC0gUk9ZQUwgQ0lUWS9NUiBMw4JNIC0gUk9ZQUwgQ0lUWS44LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9jaHVuZ2N1LzE3LiBNUiBMw4JNIC0gUk9ZQUwgQ0lUWS9NUiBMQcyCTSAtIFJPWUFMIENJVFkuMTAuanBn&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9jaHVuZ2N1LzE3LiBNUiBMw4JNIC0gUk9ZQUwgQ0lUWS9NUiBMw4JNIC0gUk9ZQUwgQ0lUWS4xLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9jaHVuZ2N1LzE3LiBNUiBMw4JNIC0gUk9ZQUwgQ0lUWS9NUiBMw4JNIC0gUk9ZQUwgQ0lUWS4yLmpwZw==&version_id=null",
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9jaHVuZ2N1LzE3LiBNUiBMw4JNIC0gUk9ZQUwgQ0lUWS9NUiBMw4JNIC0gUk9ZQUwgQ0lUWS40LmpwZw==&version_id=null",
