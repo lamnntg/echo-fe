@@ -173,6 +173,11 @@ export const data: Record<
     label: "Thiết kế kiến trúc sân vườn",
     link: RoutesEnum.SAN_VUON,
   },
+  ["du-an-da-hoan-thanh"]: {
+    products: thucte,
+    label: "Dự án đã hoàn thành",
+    link: RoutesEnum.THUC_TE,
+  },
 };
 
 export const dropdownMenuItems = [
