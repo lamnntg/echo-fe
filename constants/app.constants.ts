@@ -201,6 +201,10 @@ export const dropdownMenuItems = [
     href: RoutesEnum.SAN_VUON,
     label: "Thiết kế kiến trúc, sân vườn",
   },
+  {
+    href: RoutesEnum.SAN_VUON,
+    label: "Thiết kế nhà thờ",
+  },
 ];
 
 // {

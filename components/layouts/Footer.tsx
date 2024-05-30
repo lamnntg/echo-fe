@@ -37,7 +37,7 @@ const Footer = () => {
             alt="Logo"
           />
           <p className="mt-6">
-            Số 6 Kim Đồng, Giáp Bát, Hoàng Mai, Hanoi, Vietnam
+            Số 6 Kim Đồng, Giáp Bát, Hoàng Mai, Hà Nội, Việt Nam
           </p>
           <p className="mt-3">
             <Link

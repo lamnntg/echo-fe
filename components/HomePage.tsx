@@ -614,7 +614,7 @@ const HomePage = () => {
                 )}
               >
                 <span className="leading-[20px] md:leading-[40px] uppercase">
-                  Công trình hoàn thiện thực tế
+                  Dự án thi công
                 </span>
               </div>
             </div>

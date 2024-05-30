@@ -136,7 +136,7 @@ const Header = () => {
                 )}
                 prefetch
               >
-                Công trình hoàn thiện thực tế
+                Dự án thi công
               </Link>
               <DropdownMenu
                 item={{
@@ -232,7 +232,7 @@ const Header = () => {
               )}
               prefetch
             >
-              Công trình hoàn thiện thực tế
+              Dự án thi công
             </Link>
             <DropdownMenu
               item={{
