@@ -469,7 +469,7 @@ const HomePage = () => {
                 />
               </SwiperSlide>
             </Swiper>
-            <div className="absolute bottom-[50%] translate-y-[50%] left-24 z-10 uppercase font-semibold">
+            <div className="absolute bottom-[50%] translate-y-[50%] left-12 md:left-24 z-10 uppercase font-semibold">
               <p className="text-white text-[24px] md:text-[28px] lg:text-[56px]">
                 Thiết kế & thi công
               </p>
