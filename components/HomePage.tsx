@@ -416,7 +416,11 @@ const HomePage = () => {
           </div>
         )}
         {step === StepEnums.THREE && (
-          <div className="w-[100%] h-[100%] relative">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 1 } }}
+            className="w-[100%] h-[100%] relative"
+          >
             <Swiper
               className="w-[100%] h-[100%]"
               spaceBetween={30}
@@ -474,7 +478,7 @@ const HomePage = () => {
               </p>
             </div>
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-[9]"></div>
-          </div>
+          </motion.div>
         )}
       </div>
       {step === StepEnums.THREE && (

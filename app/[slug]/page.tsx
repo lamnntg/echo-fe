@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import Product from "@/components/atoms/Product";
 import { data } from "@/constants/app.constants";
 import { notFound } from "next/navigation";
 import PaginationCustom from "@/components/atoms/PaginationCustom";

@@ -13,6 +13,7 @@ import MinhBang from "@/public/MinhBang.jpg";
 import NoAvatar from "@/public/no-avatar.png";
 import sanvuon from "@/data/sanvuon.json";
 import thucte from "@/data/thuc-te.json";
+import nhatho from "@/data/nhatho.json";
 
 export enum RoutesEnum {
   HOME = "/",
@@ -30,7 +31,8 @@ export enum RoutesEnum {
   NHA_PHO = "/nha-pho",
   NHA_HANG = "/nha-hang",
   THUC_TE = "/du-an-da-hoan-thanh",
-  SAN_VUON = "san-vuon",
+  SAN_VUON = "/san-vuon",
+  NHA_THO = "/nha-tho",
 }
 
 export const MENU_HOME = [
@@ -41,13 +43,7 @@ export const MENU_HOME = [
     data: chungcu,
   },
   {
-    label: "Nhà phố",
-    to: RoutesEnum.NHA_PHO,
-    type: 2,
-    data: nhadat,
-  },
-  {
-    label: "Biệt thự",
+    label: "Biệt thự, nhà đất",
     to: RoutesEnum.BIET_THU,
     type: 3,
     data: bietthu,
@@ -59,22 +55,22 @@ export const MENU_HOME = [
     data: vanphong,
   },
   {
-    label: "Khách sạn, coffee",
+    label: "Nhà hàng, khách sạn, coffee",
     to: RoutesEnum.KHACH_SAN,
     type: 5,
     data: khachsan,
   },
   {
-    label: "Nhà hàng",
-    to: RoutesEnum.NHA_HANG,
+    label: "Kiến trúc, sân vườn",
+    to: RoutesEnum.SAN_VUON,
     type: 6,
     data: shop,
   },
   {
-    label: "Kiến trúc sân vườn",
-    to: RoutesEnum.SAN_VUON,
+    label: "Nhà thờ",
+    to: RoutesEnum.NHA_THO,
     type: 7,
-    data: sanvuon,
+    data: nhatho,
   },
 ];
 
@@ -178,6 +174,11 @@ export const data: Record<
     label: "Dự án đã hoàn thành",
     link: RoutesEnum.THUC_TE,
   },
+  ["nha-tho"]: {
+    products: nhatho,
+    label: "Thiết kế nhà thờ",
+    link: RoutesEnum.THUC_TE,
+  },
 };
 
 export const dropdownMenuItems = [
@@ -202,7 +203,7 @@ export const dropdownMenuItems = [
     label: "Thiết kế kiến trúc, sân vườn",
   },
   {
-    href: RoutesEnum.SAN_VUON,
+    href: RoutesEnum.NHA_THO,
     label: "Thiết kế nhà thờ",
   },
 ];
