@@ -49,7 +49,7 @@ const HomePage = () => {
   const router = useRouter();
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
+  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
   const [mounted, setMounted] = useState(false);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
   const [type, setType] = useState(1);
