@@ -26,7 +26,7 @@ const Footer = () => {
   }
   return (
     <div className="bg-[#4b4b4b] text-white pt-10 pb-6">
-      <div className="container mx-auto lg:flex lg:flex-wrap gap-8 px-2 grid grid-cols-1 md:grid-cols-2">
+      <div className="container mx-auto lg:flex lg:flex-wrap gap-8 grid grid-cols-1 md:grid-cols-2">
         <div>
           <Image
             src={LogoWhite}

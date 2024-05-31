@@ -16,6 +16,23 @@
         "description": "MR DU - XANH VILLAS"
     },
     {
+        "name": "BIỆT THỰ SONG LẬP ĐƠN VINHOMES RIVER SIDE",
+        "slug": "biet-thu-song-lap-don-vinhomes-river-side",
+        "address": "T-Palace - Hà Nội",
+        "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
+        "year_completed": "07/2023",
+        "design_by": "MRS LIÊN",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzIuIE1SUyBMSUXMgk4gLSBWSU5IT01FUyBSSVZFUiBTSURFL01SUyBMSUXMgk4gLSBWSU5IT01FUyBSSVZFUlNJREUuMi5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzIuIE1SUyBMSUXMgk4gLSBWSU5IT01FUyBSSVZFUiBTSURFL01SUyBMSUXMgk4gLSBWSU5IT01FUyBSSVZFUlNJREUuMS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzIuIE1SUyBMSUXMgk4gLSBWSU5IT01FUyBSSVZFUiBTSURFL01SUyBMSUXMgk4gLSBWSU5IT01FUyBSSVZFUlNJREUuMy5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzIuIE1SUyBMSUXMgk4gLSBWSU5IT01FUyBSSVZFUiBTSURFL01SUyBMSUXMgk4gLSBWSU5IT01FUyBSSVZFUlNJREUuNC5qcGc=&version_id=null"
+        ],
+        "description": "MR DU - XANH VILLAS"
+    },
+    {
         "name": "BIỆT THỰ ĐƠN LẬP VINHOMES HARMONY",
         "slug": "biet-thu-don-lap-vin-home-nam",
         "address": "T-Palace - Hà Nội",

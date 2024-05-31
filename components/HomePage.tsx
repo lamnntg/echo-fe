@@ -20,6 +20,12 @@ import { useRouter } from "next/navigation";
 import thucte from "@/data/thuc-te.json";
 import EchoImage from "@/public/echo.png";
 import ArchitectImage from "@/public/architect.png";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const TITLE = "E C H O".split(" ");
 const DESCRIPTION = "A R C H I T E C T U R E . I N T E R I O R".split(" ");
@@ -43,7 +49,7 @@ const HomePage = () => {
   const router = useRouter();
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
+  const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
   const [mounted, setMounted] = useState(false);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
   const [type, setType] = useState(1);
@@ -469,12 +475,15 @@ const HomePage = () => {
                 />
               </SwiperSlide>
             </Swiper>
-            <div className="absolute bottom-[50%] translate-y-[50%] left-12 md:left-24 z-10 uppercase font-semibold">
+            <div className="absolute bottom-[50%] translate-y-[50%] left-6 md:left-24 z-10 uppercase font-semibold">
               <p className="text-white text-[24px] md:text-[28px] lg:text-[56px]">
                 Thiết kế & thi công
               </p>
               <p className="text-primary  text-[24px]  md:text-[28px] lg:text-[56px]">
-                Kiến trúc nội thất chuyên nghiệp
+                Kiến trúc nội thất
+              </p>
+              <p className="text-primary  text-[24px]  md:text-[28px] lg:text-[56px]">
+                chuyên nghiệp
               </p>
             </div>
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-[9]"></div>
@@ -539,8 +548,8 @@ const HomePage = () => {
       {step === StepEnums.THREE && (
         <div>
           <div className="bg-[#efefef] mt-10">
-            <div className="container mx-auto">
-              <div className="flex justify-center py-6 flex-wrap">
+            <div className="container mx-auto pt-6">
+              <div className="justify-center pb-6 flex-wrap hidden md:flex">
                 {MENU_HOME.map((item, index) => (
                   <div
                     key={item.label}
@@ -563,7 +572,38 @@ const HomePage = () => {
                   </div>
                 ))}
               </div>
-              <div className="grid grid-cols-2 gap-6">
+              <Accordion
+                type="single"
+                collapsible
+                className="w-full bg-white mb-6 block md:hidden"
+              >
+                <AccordionItem value={productDesign.to}>
+                  <AccordionTrigger className="py-2 hover:no-underline">
+                    <p className="text-center w-full pl-4 text-base ">
+                      {productDesign.label}
+                    </p>
+                  </AccordionTrigger>
+                  <AccordionContent className="pb-0">
+                    {MENU_HOME.filter(
+                      (item) => item.type !== productDesign.type
+                    ).map((item, index) => (
+                      <p
+                        className={cn(
+                          "text-center text-base py-2 border-b border-solid border-secondary",
+                          index === 0 ? "border-t" : ""
+                        )}
+                        key={item.label}
+                        onClick={() => {
+                          setType(item.type);
+                        }}
+                      >
+                        {item.label}
+                      </p>
+                    ))}
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {productDesign.data.slice(0, 2).map((item) => (
                   <div key={item.slug} className="relative">
                     <div className="relative overflow-hidden group">
@@ -626,7 +666,7 @@ const HomePage = () => {
           </div>
           <div className="bg-[#efefef] mt-10">
             <div className="container mx-auto">
-              <div className="grid grid-cols-2 gap-6 pt-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
                 {thucte.slice(0, 2).map((item) => (
                   <div key={item.slug} className="relative">
                     <div className="relative overflow-hidden group">
