@@ -25,7 +25,7 @@ const ContactFooter = () => {
       </div>
       <div
         className={clsx(
-          "fixed right-2 bottom-[160px] z-10 transition-all opacity-75",
+          "fixed right-2 bottom-[160px] z-10 transition-all",
           active ? "translate-y-0" : "translate-y-[360px]"
         )}
       >
@@ -34,7 +34,7 @@ const ContactFooter = () => {
             <Link
               href="https://zalo.me/0886889995"
               target="_blank"
-              className="text-[14px] text-[#005be0]"
+              className="text-[14px] text-[#005be0] font-semibold"
             >
               Zalo
             </Link>
