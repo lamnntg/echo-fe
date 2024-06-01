@@ -30,29 +30,28 @@ const ContactFooter = () => {
         )}
       >
         <div>
-          <div className="mb-3 bg-white rounded-full w-10 h-10 overflow-hidden flex justify-center items-center cursor-pointer">
+          <div className="mb-2 text-white bg-[#fff] rounded-full w-10 h-10 flex justify-center items-center cursor-pointer">
+            <Link
+              href="https://zalo.me/0886889995"
+              target="_blank"
+              className="text-[14px] text-[#005be0]"
+            >
+              Zalo
+            </Link>
+          </div>
+          <div className="bg-[#fff] rounded-full w-10 h-10 flex justify-center items-center mb-3 cursor-pointer">
+            <a href="tel:+0886889995">
+              <FontAwesomeIcon icon={faPhone} color="#6db703" size="lg" />
+            </a>
+          </div>
+          <div className="mb-3 bg-[#fff] rounded-full w-10 h-10 overflow-hidden flex justify-center items-center cursor-pointer">
             <Link href="https://m.me/100144595512175" target="_blank">
               <FontAwesomeIcon
                 icon={faFacebookMessenger}
                 color="#0052c2"
                 size="3x"
-                fill="#fff"
               />
             </Link>
-          </div>
-          <div className="mb-2 text-white bg-[#005be0] rounded-full w-10 h-10 flex justify-center items-center cursor-pointer">
-            <Link
-              href="https://zalo.me/0886889995"
-              target="_blank"
-              className="text-[14px]"
-            >
-              Zalo
-            </Link>
-          </div>
-          <div className="bg-[#6db703] rounded-full w-10 h-10 flex justify-center items-center mb-3 cursor-pointer">
-            <a href="tel:+0886889995">
-              <FontAwesomeIcon icon={faPhone} color="#fff" size="lg" />
-            </a>
           </div>
           <div
             className="bg-[#f58634] rounded-full w-10 h-10 flex justify-center items-center cursor-pointer"

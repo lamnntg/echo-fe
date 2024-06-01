@@ -481,8 +481,9 @@ const HomePage = () => {
               </p>
               <p className="text-primary  text-[24px]  md:text-[28px] lg:text-[56px]">
                 Kiến trúc nội thất
+                <span className="hidden md:inline">, chuyên nghiệp</span>
               </p>
-              <p className="text-primary  text-[24px]  md:text-[28px] lg:text-[56px]">
+              <p className="block md:hidden text-primary text-[24px]  md:text-[28px] lg:text-[56px]">
                 chuyên nghiệp
               </p>
             </div>
