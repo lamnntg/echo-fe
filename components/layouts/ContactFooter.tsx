@@ -9,6 +9,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import Link from "next/link";
 import React, { memo, useState } from "react";
+import Zalo from "@/public/zalo.svg";
+import Messenger from "@/public/messenger.svg";
+import Phone from "@/public/phone.svg";
+import Image from "next/image";
 
 const ContactFooter = () => {
   const [active, setActive] = useState(true);
@@ -36,21 +40,17 @@ const ContactFooter = () => {
               target="_blank"
               className="text-[14px] text-[#005be0] font-semibold"
             >
-              Zalo
+              <Image src={Zalo} alt="zalo" />
             </Link>
           </div>
           <div className="bg-[#fff] rounded-full w-10 h-10 flex justify-center items-center mb-3 cursor-pointer">
             <a href="tel:+0886889995">
-              <FontAwesomeIcon icon={faPhone} color="#6db703" size="lg" />
+              <Image src={Phone} alt="phone" />
             </a>
           </div>
-          <div className="mb-3 bg-[#fff] rounded-full w-10 h-10 overflow-hidden flex justify-center items-center cursor-pointer">
+          <div className="mb-3 bg-[#fff] rounded-full w-10 h-10 flex justify-center items-center cursor-pointer">
             <Link href="https://m.me/100144595512175" target="_blank">
-              <FontAwesomeIcon
-                icon={faFacebookMessenger}
-                color="#0052c2"
-                size="3x"
-              />
+              <Image src={Messenger} alt="messenger" />
             </Link>
           </div>
           <div
