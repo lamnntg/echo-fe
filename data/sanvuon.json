@@ -93,5 +93,42 @@
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzQuIE1SIFRV4bqkTiAtIFZJTkhPTUVTIEhBTU9OWS9ROS5qcGVn&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
+    },
+    {
+        "name": "BIỆT THỰ HIỆN ĐẠI - Q VILLA - THÀNH PHỐ VINH",
+        "slug": "vinh-quang",
+        "address": "T-Palace - Hà Nội",
+        "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
+        "year_completed": "07/2023",
+        "design_by": "MR QUANG",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzYuIE1SIFFVQU5HIC0gVklOSC8xLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzYuIE1SIFFVQU5HIC0gVklOSC8yLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzYuIE1SIFFVQU5HIC0gVklOSC8zLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzYuIE1SIFFVQU5HIC0gVklOSC80LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzYuIE1SIFFVQU5HIC0gVklOSC81LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzYuIE1SIFFVQU5HIC0gVklOSC82LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzYuIE1SIFFVQU5HIC0gVklOSC83LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzYuIE1SIFFVQU5HIC0gVklOSC84LmpwZw==&version_id=null"
+        ],
+        "description": "MR DU - XANH VILLAS"
+    },
+    {
+        "name": "V.A HOUSE - HƯNG YÊN",
+        "slug": "hung-yen-viet-anh",
+        "address": "T-Palace - Hà Nội",
+        "area": "Diện tích: 700m2 nội thất – 200m2 sân vườn",
+        "year_completed": "07/2023",
+        "design_by": "MR VIET ANH",
+        "photo": "Nguyễn Thái Thạch",
+        "status": "completed",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzcuIE1SIFZJRVQgQU5IIC0gSMavTkcgWcOKTi8xLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzcuIE1SIFZJRVQgQU5IIC0gSMavTkcgWcOKTi8yLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zYW52dW9uLzcuIE1SIFZJRVQgQU5IIC0gSMavTkcgWcOKTi8zLmpwZw==&version_id=null"
+        ],
+        "description": "MR DU - XANH VILLAS"
     }
 ]
