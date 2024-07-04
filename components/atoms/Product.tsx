@@ -14,6 +14,7 @@ type ProductProps = {
     status: string;
     images: string[];
     description: string;
+    thumbnail: string;
   };
   to: string;
 };
@@ -24,7 +25,7 @@ const Product: FC<ProductProps> = ({ item, to }) => {
       <div className="relative overflow-hidden group">
         <Link href={to} className="h-[255px] block">
           <img
-            src={item.images[0]}
+            src={item.thumbnail || item.images[0]}
             alt={item.name}
             width="100%"
             loading="lazy"
