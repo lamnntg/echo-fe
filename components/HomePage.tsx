@@ -676,7 +676,7 @@ const HomePage = () => {
                         className="block"
                       >
                         <img
-                          src={item.images[0]}
+                          src={item.thumbnail}
                           alt={item.name}
                           width="100%"
                           loading="lazy"
