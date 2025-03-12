@@ -57,7 +57,7 @@ const Contact = () => {
           <ul className="border border-b-0 border-solid border-[rgba(0,0,0,.125)] rounded">
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <MapPin />
-              <span>Số 6 Kim Đồng, Giáp Bát, Hoàng Mai, Hà Nội </span>
+              <span>Số 41, Louis 2, Louis City, Hoàng Mai, Hà Nội </span>
             </li>
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <Phone />
