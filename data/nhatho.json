@@ -9,10 +9,10 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzEuIE1SIFNPzJtOIC0gVknMg05IIFBIVcyBQy8zLmpwZw==&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzEuIE1SIFNPzJtOIC0gVknMg05IIFBIVcyBQy8xLmpwZw==&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzEuIE1SIFNPzJtOIC0gVknMg05IIFBIVcyBQy8yLmpwZw==&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzEuIE1SIFNPzJtOIC0gVknMg05IIFBIVcyBQy80LmpwZw==&version_id=null"
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzEuIE1SIFNPzJtOIC0gVknMg05IIFBIVcyBQy8zLmpwZw==&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzEuIE1SIFNPzJtOIC0gVknMg05IIFBIVcyBQy8xLmpwZw==&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzEuIE1SIFNPzJtOIC0gVknMg05IIFBIVcyBQy8yLmpwZw==&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzEuIE1SIFNPzJtOIC0gVknMg05IIFBIVcyBQy80LmpwZw==&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
@@ -26,10 +26,10 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzIuIE1SIFZJRcyjzIJUIC0gUEhVzIEgVEhPzKMvMS5qcGc=&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzIuIE1SIFZJRcyjzIJUIC0gUEhVzIEgVEhPzKMvMi5qcGc=&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzIuIE1SIFZJRcyjzIJUIC0gUEhVzIEgVEhPzKMvMy5qcGc=&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzIuIE1SIFZJRcyjzIJUIC0gUEhVzIEgVEhPzKMvNC5qcGc=&version_id=null"
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzIuIE1SIFZJRcyjzIJUIC0gUEhVzIEgVEhPzKMvMS5qcGc=&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzIuIE1SIFZJRcyjzIJUIC0gUEhVzIEgVEhPzKMvMi5qcGc=&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzIuIE1SIFZJRcyjzIJUIC0gUEhVzIEgVEhPzKMvMy5qcGc=&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzIuIE1SIFZJRcyjzIJUIC0gUEhVzIEgVEhPzKMvNC5qcGc=&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
@@ -43,10 +43,10 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzMuIE1SIFRPzKNBIC0gVknMg05IIFBIVcyBQy80LmpwZw==&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzMuIE1SIFRPzKNBIC0gVknMg05IIFBIVcyBQy8xLmpwZw==&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzMuIE1SIFRPzKNBIC0gVknMg05IIFBIVcyBQy8yLmpwZw==&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzMuIE1SIFRPzKNBIC0gVknMg05IIFBIVcyBQy8zLmpwZw==&version_id=null"
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzMuIE1SIFRPzKNBIC0gVknMg05IIFBIVcyBQy80LmpwZw==&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzMuIE1SIFRPzKNBIC0gVknMg05IIFBIVcyBQy8xLmpwZw==&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzMuIE1SIFRPzKNBIC0gVknMg05IIFBIVcyBQy8yLmpwZw==&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzMuIE1SIFRPzKNBIC0gVknMg05IIFBIVcyBQy8zLmpwZw==&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
@@ -60,10 +60,10 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzQuIE1SIEtJRcyCTiAtIFRIQU5IIEhPzIFBLzIuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzQuIE1SIEtJRcyCTiAtIFRIQU5IIEhPzIFBLzEuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzQuIE1SIEtJRcyCTiAtIFRIQU5IIEhPzIFBLzMuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzQuIE1SIEtJRcyCTiAtIFRIQU5IIEhPzIFBLzQuanBn&version_id=null"
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzQuIE1SIEtJRcyCTiAtIFRIQU5IIEhPzIFBLzIuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzQuIE1SIEtJRcyCTiAtIFRIQU5IIEhPzIFBLzEuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzQuIE1SIEtJRcyCTiAtIFRIQU5IIEhPzIFBLzMuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzQuIE1SIEtJRcyCTiAtIFRIQU5IIEhPzIFBLzQuanBn&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
@@ -77,9 +77,9 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzYuIE1SIFRVQcyCzIFOIC0gUVVBzIlORyBOSU5ILzEuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzYuIE1SIFRVQcyCzIFOIC0gUVVBzIlORyBOSU5ILzIuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzYuIE1SIFRVQcyCzIFOIC0gUVVBzIlORyBOSU5ILzMuanBn&version_id=null"
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzYuIE1SIFRVQcyCzIFOIC0gUVVBzIlORyBOSU5ILzEuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzYuIE1SIFRVQcyCzIFOIC0gUVVBzIlORyBOSU5ILzIuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzYuIE1SIFRVQcyCzIFOIC0gUVVBzIlORyBOSU5ILzMuanBn&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     },
@@ -93,7 +93,7 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzYuIE1SIMSQVcybzIFDIC0gSFXMm05HIFlFzIJOLzEuanBn&version_id=null"
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS82LiBOSEHMgCBUSE/Mm8yALzYuIE1SIMSQVcybzIFDIC0gSFXMm05HIFlFzIJOLzEuanBn&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     }

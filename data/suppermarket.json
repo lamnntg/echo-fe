@@ -9,19 +9,19 @@
         "photo": "Nguyễn Thái Thạch",
         "status": "completed",
         "images": [
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzIuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzEuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzMuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzQuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzUuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzYuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzcuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzkuanBn&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzEwLmpwZw==&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzExLmpwZw==&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzEyLmpwZw==&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzEzLmpwZw==&version_id=null",
-            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzE0LmpwZw==&version_id=null"
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzIuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzEuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzMuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzQuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzUuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzYuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzcuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzkuanBn&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzEwLmpwZw==&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzExLmpwZw==&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzEyLmpwZw==&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzEzLmpwZw==&version_id=null",
+            "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9zdXBwZXJtYXJrZXQvZGFpbHltYXJrZXQvU0hPUCBMT0dPLzE0LmpwZw==&version_id=null"
         ],
         "description": "MR DU - XANH VILLAS"
     }

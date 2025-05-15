@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9pY29uLnBuZw==&version_id=null",
+        url: "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9pY29uLnBuZw==&version_id=null",
         alt: "thumbnailUrl",
         width: 400,
         height: 200,
