@@ -480,8 +480,8 @@ const HomePage = () => {
                 Thiết kế & thi công
               </p>
               <p className="text-primary  text-[24px]  md:text-[28px] lg:text-[56px]">
-                Kiến trúc nội thất
-                <span className="hidden md:inline">, chuyên nghiệp</span>
+                Kiến trúc
+                <span className="hidden md:inline">, nội thất chuyên nghiệp</span>
               </p>
               <p className="block md:hidden text-primary text-[24px]  md:text-[28px] lg:text-[56px]">
                 chuyên nghiệp
